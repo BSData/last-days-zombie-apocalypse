@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c8e4-cb55-a4f1-c47b" name="Survivor" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="ddab-c095-bf70-e8ba" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c8e4-cb55-a4f1-c47b" name="Survivor" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="ddab-c095-bf70-e8ba" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="dfd0-fca4-b29e-02e9" name="Good Samarithan" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
@@ -926,6 +926,7 @@
         <entryLink id="12d7-91fc-65cc-414d" name="ZZ - Close Quarter Combat Skills" hidden="false" collective="false" import="true" targetId="840c-ee82-0223-2c20" type="selectionEntryGroup"/>
         <entryLink id="88a3-0ad8-9cd7-2c64" name="Academic Skills" hidden="false" collective="false" import="true" targetId="7306-b7d2-a8a6-03b0" type="selectionEntryGroup"/>
         <entryLink id="4330-4199-4468-dd0b" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
+        <entryLink id="6237-0ab0-5c0b-847b" name="Select Survivalist Gunsmith Class" hidden="false" collective="false" import="true" targetId="d1f4-e34e-3a14-78e6" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="18.0"/>
@@ -1072,4 +1073,87 @@
       </costs>
     </selectionEntry>
   </selectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="d1f4-e34e-3a14-78e6" name="AA - Select Survivalist Gunsmith Class" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="1e3d-4b4a-3345-befe" name="Gunsmigth(Explosive)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2324-8996-1230-7d7c" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="9cae-53b2-6234-033a" name="GUNSMITH (FIREARM CLASS)" hidden="false" targetId="22a4-a532-c672-4316" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b531-24a1-b292-86b6" name="Gunsmigth(Heavy)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e50c-7325-ace2-cc3a" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="9371-4ec8-b4c1-3865" name="GUNSMITH (FIREARM CLASS)" hidden="false" targetId="22a4-a532-c672-4316" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="26bb-de03-1038-d5b1" name="Gunsmigth(Pistol)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf30-0e5e-a762-3d16" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="1542-9d1c-3ead-d57b" name="GUNSMITH (FIREARM CLASS)" hidden="false" targetId="22a4-a532-c672-4316" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4578-eec8-a42e-8869" name="Gunsmigth(Rifle)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbc8-e514-fbea-7e06" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="56ea-a8b4-2aff-2387" name="GUNSMITH (FIREARM CLASS)" hidden="false" targetId="22a4-a532-c672-4316" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0e34-c676-3c9a-37ad" name="Gunsmigth(Shotgun)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1ef-d842-87b9-b59c" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="7b7c-79ee-c838-a881" name="GUNSMITH (FIREARM CLASS)" hidden="false" targetId="22a4-a532-c672-4316" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="a7de-7361-5ad6-7f9e" name="Gunsmigth(SMG)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00b2-b37a-50c9-bb86" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="45de-0dbd-36c9-6fca" name="GUNSMITH (FIREARM CLASS)" hidden="false" targetId="22a4-a532-c672-4316" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="00df-36a2-b2db-5950" name="Gunsmigth(Sporting)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2a0-7ae8-a68d-46a8" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="f1ce-5cef-5631-6d78" name="GUNSMITH (FIREARM CLASS)" hidden="false" targetId="22a4-a532-c672-4316" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
 </catalogue>
