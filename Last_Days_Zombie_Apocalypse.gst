@@ -1161,10 +1161,17 @@
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4066-f1bd-e1b4-0124" type="equalTo"/>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5885-8227-bf3b-26d1" type="equalTo"/>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="729b-6b27-4de1-fea1" type="equalTo"/>
-                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9b77-b76e-2be0-9180" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="3a24-f9d1-6d68-8eec" type="equalTo"/>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a6fa-3931-f842-a502" type="equalTo"/>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="494d-d210-a80f-a24e" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="21f4-3883-112c-3a39" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9b77-b76e-2be0-9180" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8378-dd72-b746-a4b8" type="equalTo"/>
                     <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2a44-3c27-5042-9298" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="119e-8a25-70a3-266d" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8d30-e50f-2cf6-9cf5" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="30b0-37b3-790b-f1de" type="equalTo"/>
+                    <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="5f30-6b35-0762-5997" type="equalTo"/>
                   </conditions>
                 </conditionGroup>
               </conditionGroups>
@@ -1694,6 +1701,87 @@
           </rules>
           <costs>
             <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="2.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="d9ad-6ec0-b733-fb60" name="AA - Select Survivalist Gunsmith class" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="3a24-f9d1-6d68-8eec" name="Gunsmigth(Explosive)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c1f-5405-50ec-6f9a" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="1a0f-719f-044c-dbca" name="GUNSMITH (FIREARM CLASS)" hidden="false" targetId="22a4-a532-c672-4316" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8378-dd72-b746-a4b8" name="Gunsmigth(Heavy)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aaa7-1a32-1c98-9de1" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="170d-7918-1278-93a2" name="GUNSMITH (FIREARM CLASS)" hidden="false" targetId="22a4-a532-c672-4316" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="21f4-3883-112c-3a39" name="Gunsmigth(Pistol)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aaca-fbb4-fcae-4ab4" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="bff7-8859-8b8e-afd1" name="GUNSMITH (FIREARM CLASS)" hidden="false" targetId="22a4-a532-c672-4316" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="119e-8a25-70a3-266d" name="Gunsmigth(Rifle)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="489d-b7e8-94ee-8d95" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="765a-9b6c-5590-a663" name="GUNSMITH (FIREARM CLASS)" hidden="false" targetId="22a4-a532-c672-4316" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8d30-e50f-2cf6-9cf5" name="Gunsmigth(Shotgun)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e37-492a-d8ef-1f89" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="4bc5-86b5-bf24-57b6" name="GUNSMITH (FIREARM CLASS)" hidden="false" targetId="22a4-a532-c672-4316" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="30b0-37b3-790b-f1de" name="Gunsmigth(SMG)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4749-341f-65b5-b8d4" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="c068-9a40-5d79-b52c" name="GUNSMITH (FIREARM CLASS)" hidden="false" targetId="22a4-a532-c672-4316" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5f30-6b35-0762-5997" name="Gunsmigth(Sporting)" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3948-3ac3-5cd6-0565" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="99ed-ce10-036a-152a" name="GUNSMITH (FIREARM CLASS)" hidden="false" targetId="22a4-a532-c672-4316" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
