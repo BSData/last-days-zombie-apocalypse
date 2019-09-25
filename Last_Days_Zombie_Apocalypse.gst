@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ddab-c095-bf70-e8ba" name="Last Days Zombie Apocalypse" revision="1" battleScribeVersion="2.03" authorName="Andrea Nespeca" authorContact="andrea.nespeca@gmail.co" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ddab-c095-bf70-e8ba" name="Last Days Zombie Apocalypse" revision="2" battleScribeVersion="2.03" authorName="Andrea Nespeca" authorContact="andrea.nespeca@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="91b6-9e1a-c8f3-b62d" name="Last Day: Zombie Apocalypse"/>
   </publications>
@@ -446,47 +446,6 @@
           </infoLinks>
           <costs>
             <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="3.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="c49f-a451-553f-7675" name="Pump-Action Shotgun" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="896f-31b7-622a-6981" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="5407-828c-72e0-4abe" name="Pump-Action Shotgun" hidden="false" typeId="418a-0207-9e29-f81a" typeName="Ranged Weapon">
-              <modifierGroups>
-                <modifierGroup>
-                  <modifiers>
-                    <modifier type="increment" field="9f58-78dd-2e83-5dea" value="1">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bce1-a8d3-afe8-687a" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="3f82-7a7b-7fec-7c9a" value="1">
-                      <conditions>
-                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bce1-a8d3-afe8-687a" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </modifierGroup>
-              </modifierGroups>
-              <characteristics>
-                <characteristic name="Class" typeId="abc6-f4df-7fbf-ac85">Shotgun</characteristic>
-                <characteristic name="Range" typeId="b3f2-5f77-73cb-9110">6/12/18&quot;</characteristic>
-                <characteristic name="Damage" typeId="9f58-78dd-2e83-5dea">6/4/3</characteristic>
-                <characteristic name="RoF" typeId="aabc-427d-ce63-c9c2">1</characteristic>
-                <characteristic name="KnockBack" typeId="96f2-4ed4-bc44-1fb7">3/2/2</characteristic>
-                <characteristic name="Reload" typeId="3f82-7a7b-7fec-7c9a">5</characteristic>
-                <characteristic name="Special Rules" typeId="6e5f-8010-455a-a180">Stepped Fire, Point Blank</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="834c-c61c-bb4a-132b" name="STEPPED FIRE" hidden="false" targetId="c5f4-32db-e32e-7c11" type="rule"/>
-            <infoLink id="08ab-3b32-3e26-4b39" name="POINT BLANK" hidden="false" targetId="5e11-075a-07fa-1563" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="5.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e93e-be16-3e54-96b1" name="Hunting Bow" hidden="false" collective="false" import="true" type="upgrade">
@@ -940,6 +899,47 @@
           </infoLinks>
           <costs>
             <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ce21-a00b-a8ad-febd" name="Pump-Action Shotgun*" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49cd-f682-2e84-8644" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8718-2a21-6610-0706" name="Pump-Action Shotgun" hidden="false" typeId="418a-0207-9e29-f81a" typeName="Ranged Weapon">
+              <modifierGroups>
+                <modifierGroup>
+                  <modifiers>
+                    <modifier type="increment" field="9f58-78dd-2e83-5dea" value="1">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bce1-a8d3-afe8-687a" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="3f82-7a7b-7fec-7c9a" value="1">
+                      <conditions>
+                        <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bce1-a8d3-afe8-687a" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </modifierGroup>
+              </modifierGroups>
+              <characteristics>
+                <characteristic name="Class" typeId="abc6-f4df-7fbf-ac85">Shotgun</characteristic>
+                <characteristic name="Range" typeId="b3f2-5f77-73cb-9110">6/12/18&quot;</characteristic>
+                <characteristic name="Damage" typeId="9f58-78dd-2e83-5dea">6/4/3</characteristic>
+                <characteristic name="RoF" typeId="aabc-427d-ce63-c9c2">1</characteristic>
+                <characteristic name="KnockBack" typeId="96f2-4ed4-bc44-1fb7">3/2/2</characteristic>
+                <characteristic name="Reload" typeId="3f82-7a7b-7fec-7c9a">5</characteristic>
+                <characteristic name="Special Rules" typeId="6e5f-8010-455a-a180">Stepped Fire, Point Blank</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="af5a-8b1f-64cc-e9a2" name="STEPPED FIRE" hidden="false" targetId="c5f4-32db-e32e-7c11" type="rule"/>
+            <infoLink id="5167-33f7-a78b-7346" name="POINT BLANK" hidden="false" targetId="5e11-075a-07fa-1563" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
