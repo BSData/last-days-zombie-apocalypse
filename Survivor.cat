@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalogue id="c8e4-cb55-a4f1-c47b" name="Survivor" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="ddab-c095-bf70-e8ba" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
-    <selectionEntry id="dfd0-fca4-b29e-02e9" name="Good Samarithan" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="dfd0-fca4-b29e-02e9" name="Good Samarithan" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -71,16 +71,15 @@
           </constraints>
         </entryLink>
         <entryLink id="6d65-7fe9-c18e-3bcb" name="Melee Trained Weapon" hidden="false" collective="false" import="true" targetId="f21e-7417-5528-99d6" type="selectionEntryGroup"/>
-        <entryLink id="47df-486c-fd58-4dd8" name="Academic Skills" hidden="false" collective="false" import="true" targetId="7306-b7d2-a8a6-03b0" type="selectionEntryGroup"/>
         <entryLink id="51ba-a4d4-938c-1ed9" name="ZZ - Close Quarter Combat Skills" hidden="false" collective="false" import="true" targetId="840c-ee82-0223-2c20" type="selectionEntryGroup"/>
         <entryLink id="3e6e-b90f-e4d2-8182" name="ZZ - Academic Skills" hidden="false" collective="false" import="true" targetId="ca31-cd96-48e5-9a44" type="selectionEntryGroup"/>
         <entryLink id="8c5b-68fc-595f-d6b1" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f67b-30ad-9cd2-6eb7" name="Gang Member" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f67b-30ad-9cd2-6eb7" name="Gang Member" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="24b7-ca0c-97f0-1a93" name="Gang Member" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
           <characteristics>
@@ -149,10 +148,10 @@
         <entryLink id="6ff6-80f4-3e56-72c4" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="6.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="6.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9d9b-8ecf-aba6-dcc8" name="SARGE" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9d9b-8ecf-aba6-dcc8" name="SARGE" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="5b50-a4ac-a962-ad63" name="SARGE" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
           <characteristics>
@@ -226,10 +225,10 @@
         <entryLink id="5bc7-e94b-122e-e27a" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="21.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="21.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a534-c7c4-95d2-3169" name="COP" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="a534-c7c4-95d2-3169" name="COP" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -305,10 +304,10 @@
         <entryLink id="9386-6c41-20e4-0964" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5999-d697-881f-f368" name="Crony" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5999-d697-881f-f368" name="Crony" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="ebae-4c04-4cec-12f7" name="Crony" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
           <characteristics>
@@ -379,10 +378,10 @@
         <entryLink id="5958-fbe4-4eb6-eb7d" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="3.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="3.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="001d-12a7-5289-c5ec" name="DOG" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="001d-12a7-5289-c5ec" name="DOG" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="08cb-76ce-edb1-8ae9" name="DOG" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
           <characteristics>
@@ -407,10 +406,10 @@
         <categoryLink id="cf88-8d32-5d0d-3118" name="New CategoryLink" hidden="false" targetId="b944-50e6-cdc0-ddfb" primary="true"/>
       </categoryLinks>
       <costs>
-        <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="74d3-d1a1-bdbe-97b0" name="Firefighter" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="74d3-d1a1-bdbe-97b0" name="Firefighter" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="253e-7bef-dd45-c6c8" name="Firefigther" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
           <characteristics>
@@ -479,10 +478,10 @@
         <entryLink id="7457-e996-0489-63d7" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f24e-611b-8aa7-2018" name="GOON" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f24e-611b-8aa7-2018" name="GOON" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="88b7-bd5f-7f04-f334" name="Gang Member" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
           <characteristics>
@@ -551,10 +550,10 @@
         <entryLink id="c21f-52a4-f88a-b503" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f688-5a65-1eb8-3b4c" name="KID" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f688-5a65-1eb8-3b4c" name="KID" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -631,10 +630,10 @@
         <entryLink id="afd0-a2e7-f0e2-25c5" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="3.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="3.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6a4c-d625-2b32-d871" name="Rescue Worker" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6a4c-d625-2b32-d871" name="Rescue Worker" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="b825-08bd-8e3c-5b31" name="Rescue Worker" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
           <characteristics>
@@ -694,10 +693,10 @@
         <entryLink id="c74d-02cc-a723-d755" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="05d2-7b04-ac57-540d" name="SWAT" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="05d2-7b04-ac57-540d" name="SWAT" hidden="false" collective="false" import="true" type="model">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
@@ -778,10 +777,10 @@
         <entryLink id="a7b2-0b04-15b5-fc4f" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3d44-c545-c127-184f" name="Soldier" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3d44-c545-c127-184f" name="Soldier" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="cfa0-ccca-6ce5-9551" name="Soldier" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
           <characteristics>
@@ -852,10 +851,10 @@
         <entryLink id="f699-abd7-d3bf-2b78" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="50ba-5aa4-be5e-fecf" name="Survivalist" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="50ba-5aa4-be5e-fecf" name="Survivalist" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="8586-eaf8-6ae1-b59b" name="Survivalist" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
           <characteristics>
@@ -926,13 +925,138 @@
         <entryLink id="12d7-91fc-65cc-414d" name="ZZ - Close Quarter Combat Skills" hidden="false" collective="false" import="true" targetId="840c-ee82-0223-2c20" type="selectionEntryGroup"/>
         <entryLink id="88a3-0ad8-9cd7-2c64" name="Academic Skills" hidden="false" collective="false" import="true" targetId="7306-b7d2-a8a6-03b0" type="selectionEntryGroup"/>
         <entryLink id="4330-4199-4468-dd0b" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
-        <entryLink id="6237-0ab0-5c0b-847b" name="AA - Select Survivalist Gunsmith class" hidden="false" collective="false" import="true" targetId="d9ad-6ec0-b733-fb60" type="selectionEntryGroup"/>
+        <entryLink id="6237-0ab0-5c0b-847b" name="Gunsmith (Explosive)" hidden="false" collective="false" import="true" targetId="3f4d-2bd1-8fc8-d6e9" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2076-d223-0c5a-8813" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5297-91b8-dc9f-b141" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a1d6-bda0-ee47-6319" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7f10-3c8f-ad57-9421" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad3c-fc48-83c3-71d1" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1989-723f-78f2-abb5" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="5c8c-e996-7be1-6866" name="Gunsmith (Heavy)" hidden="false" collective="false" import="true" targetId="ad3c-fc48-83c3-71d1" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2076-d223-0c5a-8813" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5297-91b8-dc9f-b141" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a1d6-bda0-ee47-6319" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7f10-3c8f-ad57-9421" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f4d-2bd1-8fc8-d6e9" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1989-723f-78f2-abb5" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="5340-3543-dc22-b024" name="Gunsmith (Pistol)" hidden="false" collective="false" import="true" targetId="1989-723f-78f2-abb5" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2076-d223-0c5a-8813" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5297-91b8-dc9f-b141" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a1d6-bda0-ee47-6319" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7f10-3c8f-ad57-9421" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f4d-2bd1-8fc8-d6e9" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad3c-fc48-83c3-71d1" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="8188-7b3d-e2fc-ecbd" name="Gunsmith (Rifle)" hidden="false" collective="false" import="true" targetId="7f10-3c8f-ad57-9421" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2076-d223-0c5a-8813" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5297-91b8-dc9f-b141" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a1d6-bda0-ee47-6319" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1989-723f-78f2-abb5" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f4d-2bd1-8fc8-d6e9" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad3c-fc48-83c3-71d1" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="7bd6-1d8f-e0c1-9cd6" name="Gunsmith (Shotgun)" hidden="false" collective="false" import="true" targetId="a1d6-bda0-ee47-6319" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2076-d223-0c5a-8813" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5297-91b8-dc9f-b141" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7f10-3c8f-ad57-9421" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1989-723f-78f2-abb5" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f4d-2bd1-8fc8-d6e9" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad3c-fc48-83c3-71d1" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="16c9-d3af-fbe9-565e" name="Gunsmith (SMG)" hidden="false" collective="false" import="true" targetId="5297-91b8-dc9f-b141" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="2076-d223-0c5a-8813" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a1d6-bda0-ee47-6319" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7f10-3c8f-ad57-9421" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1989-723f-78f2-abb5" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f4d-2bd1-8fc8-d6e9" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad3c-fc48-83c3-71d1" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="3f76-3b92-fda6-e080" name="Gunsmith (Sporting)" hidden="false" collective="false" import="true" targetId="2076-d223-0c5a-8813" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5297-91b8-dc9f-b141" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a1d6-bda0-ee47-6319" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7f10-3c8f-ad57-9421" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1989-723f-78f2-abb5" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3f4d-2bd1-8fc8-d6e9" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad3c-fc48-83c3-71d1" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
-        <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="18.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="18.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f0e6-ccac-f6c1-3afb" name="Survivor" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f0e6-ccac-f6c1-3afb" name="Survivor" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="3ad7-f80c-f6e0-7b46" name="Survivor" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
           <characteristics>
@@ -985,7 +1109,74 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="535b-a5a8-b322-a509" name="Not Starting Equipments Trained*" hidden="false" collective="false" import="true" targetId="5ac6-1838-365d-cfc7" type="selectionEntryGroup"/>
+        <entryLink id="535b-a5a8-b322-a509" name="Not Starting Equipments Trained*" hidden="false" collective="false" import="true" targetId="5ac6-1838-365d-cfc7" type="selectionEntryGroup">
+          <entryLinks>
+            <entryLink id="41b7-534d-9094-2448" name="Combat Shotgun*" hidden="false" collective="false" import="true" targetId="5adc-69dd-d08d-4052" type="selectionEntry">
+              <infoLinks>
+                <infoLink id="2014-f1a9-f849-e93b" name="Combat Shotgun*" hidden="false" targetId="0bd3-b5e7-db46-3c76" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="9f58-78dd-2e83-5dea" value="7/5/5">
+                      <conditions>
+                        <condition field="selections" scope="f0e6-ccac-f6c1-3afb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a1d6-bda0-ee47-6319" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </entryLink>
+            <entryLink id="1a61-65ce-602d-089b" name="Military Sniper Rifle*" hidden="false" collective="false" import="true" targetId="578b-30f6-3d33-9e82" type="selectionEntry">
+              <infoLinks>
+                <infoLink id="9a68-5e70-d899-f83e" name="Military Sniper Rifle" hidden="false" targetId="4ef8-d76c-1521-ff74" type="profile">
+                  <modifierGroups>
+                    <modifierGroup>
+                      <conditions>
+                        <condition field="selections" scope="f0e6-ccac-f6c1-3afb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f10-3c8f-ad57-9421" type="equalTo"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="increment" field="9f58-78dd-2e83-5dea" value="1"/>
+                        <modifier type="decrement" field="3f82-7a7b-7fec-7c9a" value="1"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </infoLink>
+              </infoLinks>
+            </entryLink>
+            <entryLink id="1262-f3ed-9d9f-4930" name="Squad Automatic Weapon*" hidden="false" collective="false" import="true" targetId="8be6-f451-30ba-8e45" type="selectionEntry">
+              <infoLinks>
+                <infoLink id="20c4-59fb-3bc0-93c2" name="Squad Automatic Weapon*" hidden="false" targetId="6328-bd38-fc98-ca3a" type="profile">
+                  <modifierGroups>
+                    <modifierGroup>
+                      <conditions>
+                        <condition field="selections" scope="f0e6-ccac-f6c1-3afb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad3c-fc48-83c3-71d1" type="equalTo"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="increment" field="9f58-78dd-2e83-5dea" value="1"/>
+                        <modifier type="decrement" field="3f82-7a7b-7fec-7c9a" value="1"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </infoLink>
+              </infoLinks>
+            </entryLink>
+            <entryLink id="7c73-e20e-13c7-20b5" name="Minigun*" hidden="false" collective="false" import="true" targetId="9407-1e30-4c36-a9d6" type="selectionEntry">
+              <infoLinks>
+                <infoLink id="bf24-2a08-e25a-8e05" name="Minigun*" hidden="false" targetId="d53a-27e1-61aa-d016" type="profile">
+                  <modifierGroups>
+                    <modifierGroup>
+                      <conditions>
+                        <condition field="selections" scope="f0e6-ccac-f6c1-3afb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ad3c-fc48-83c3-71d1" type="equalTo"/>
+                      </conditions>
+                      <modifiers>
+                        <modifier type="increment" field="9f58-78dd-2e83-5dea" value="1"/>
+                        <modifier type="decrement" field="3f82-7a7b-7fec-7c9a" value="1"/>
+                      </modifiers>
+                    </modifierGroup>
+                  </modifierGroups>
+                </infoLink>
+              </infoLinks>
+            </entryLink>
+          </entryLinks>
+        </entryLink>
         <entryLink id="0063-b515-21fa-7b87" name="Ranged Trained Weapons" hidden="false" collective="false" import="true" targetId="d376-f738-588d-cb88" type="selectionEntryGroup">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a619-9f26-f6d3-7e6a" type="max"/>
@@ -999,10 +1190,10 @@
         <entryLink id="99d2-0f09-88fc-e80a" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="6.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="6.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3261-765e-1651-63ab" name="Tough Guy" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3261-765e-1651-63ab" name="Tough Guy" hidden="false" collective="false" import="true" type="model">
       <profiles>
         <profile id="9f47-356d-1c1d-62e4" name="Tough Guy" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
           <characteristics>
@@ -1067,9 +1258,10 @@
         <entryLink id="acd4-f223-eb7b-e85b" name="ZZ - Close Quarter Combat Skills" hidden="false" collective="false" import="true" targetId="840c-ee82-0223-2c20" type="selectionEntryGroup"/>
         <entryLink id="a4ca-a0a8-7fe6-d7f0" name="Academic Skills" hidden="false" collective="false" import="true" targetId="7306-b7d2-a8a6-03b0" type="selectionEntryGroup"/>
         <entryLink id="791c-ff0b-575b-ba0a" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
+        <entryLink id="5981-a5e4-eaf4-39d1" name="ZZ - Leadership Skills" hidden="false" collective="false" import="true" targetId="f733-f9b3-5262-ba36" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
-        <cost name="Scavange Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
