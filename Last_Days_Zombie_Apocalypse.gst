@@ -173,6 +173,10 @@
         <entryLink id="d67c-9002-86e6-6034" name="Not Starting Equipments Trained*" hidden="false" collective="false" import="true" targetId="5ac6-1838-365d-cfc7" type="selectionEntryGroup"/>
         <entryLink id="7bad-8287-7e90-7c17" name="Ranged Trained Weapons" hidden="false" collective="false" import="true" targetId="d376-f738-588d-cb88" type="selectionEntryGroup"/>
         <entryLink id="6484-9b63-4e7b-58cd" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
+        <entryLink id="3cc7-b695-57c7-e160" name="ZZ - Leadership Skills" hidden="false" collective="false" import="true" targetId="f733-f9b3-5262-ba36" type="selectionEntryGroup"/>
+        <entryLink id="4d60-68d4-e12f-61f4" name="ZZ - Shooting Skills" hidden="false" collective="false" import="true" targetId="7306-b7d2-a8a6-03b0" type="selectionEntryGroup"/>
+        <entryLink id="a37a-d85e-16d1-950c" name="ZZ - Close Quarter Combat Skills" hidden="false" collective="false" import="true" targetId="840c-ee82-0223-2c20" type="selectionEntryGroup"/>
+        <entryLink id="3b3e-a20c-0e85-227e" name="ZZ - Academic Skills" hidden="false" collective="false" import="true" targetId="ca31-cd96-48e5-9a44" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
@@ -224,6 +228,10 @@
         <entryLink id="adcd-e714-0565-0e61" name="Not Starting Equipments Trained*" hidden="false" collective="false" import="true" targetId="5ac6-1838-365d-cfc7" type="selectionEntryGroup"/>
         <entryLink id="1f49-962c-034f-8205" name="Ranged Weapons" hidden="false" collective="false" import="true" targetId="9865-2a5b-42e8-e3e9" type="selectionEntryGroup"/>
         <entryLink id="d402-cc4c-7761-235f" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
+        <entryLink id="f162-91a8-ee3c-2e2b" name="ZZ - Leadership Skills" hidden="false" collective="false" import="true" targetId="f733-f9b3-5262-ba36" type="selectionEntryGroup"/>
+        <entryLink id="7bb0-3d44-52cf-5fb7" name="ZZ - Shooting Skills" hidden="false" collective="false" import="true" targetId="7306-b7d2-a8a6-03b0" type="selectionEntryGroup"/>
+        <entryLink id="8ee4-74a3-0e9a-ea49" name="ZZ - Close Quarter Combat Skills" hidden="false" collective="false" import="true" targetId="840c-ee82-0223-2c20" type="selectionEntryGroup"/>
+        <entryLink id="8d84-83dd-3426-eb8f" name="ZZ - Athletic Skills" hidden="false" collective="false" import="true" targetId="6d2d-ffa4-d7b3-8095" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="15.0"/>
@@ -272,6 +280,11 @@
         <entryLink id="9c4c-b8e0-c870-d057" name="Ranged Trained Weapons" hidden="false" collective="false" import="true" targetId="d376-f738-588d-cb88" type="selectionEntryGroup"/>
         <entryLink id="f7fd-fb31-6631-b278" name="Not Starting Equipments Trained*" hidden="false" collective="false" import="true" targetId="5ac6-1838-365d-cfc7" type="selectionEntryGroup"/>
         <entryLink id="e9ad-5490-1659-77d4" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
+        <entryLink id="5691-54fb-ee26-3cc7" name="ZZ - Leadership Skills" hidden="false" collective="false" import="true" targetId="f733-f9b3-5262-ba36" type="selectionEntryGroup"/>
+        <entryLink id="0ed6-c349-1a3d-2216" name="ZZ - Shooting Skills" hidden="false" collective="false" import="true" targetId="7306-b7d2-a8a6-03b0" type="selectionEntryGroup"/>
+        <entryLink id="4599-d479-f244-9dc6" name="ZZ - Close Quarter Combat Skills" hidden="false" collective="false" import="true" targetId="840c-ee82-0223-2c20" type="selectionEntryGroup"/>
+        <entryLink id="2ae2-abf1-b77e-6d2b" name="ZZ - Athletic Skills" hidden="false" collective="false" import="true" targetId="6d2d-ffa4-d7b3-8095" type="selectionEntryGroup"/>
+        <entryLink id="d37a-93d8-6fb2-5d60" name="ZZ - Academic Skills" hidden="false" collective="false" import="true" targetId="ca31-cd96-48e5-9a44" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="18.0"/>
@@ -477,7 +490,7 @@
             <characteristic name="Class" typeId="abc6-f4df-7fbf-ac85">Rifle</characteristic>
             <characteristic name="Range" typeId="b3f2-5f77-73cb-9110">30&quot;</characteristic>
             <characteristic name="Damage" typeId="9f58-78dd-2e83-5dea">4</characteristic>
-            <characteristic name="RoF" typeId="aabc-427d-ce63-c9c2"></characteristic>
+            <characteristic name="RoF" typeId="aabc-427d-ce63-c9c2"/>
             <characteristic name="KnockBack" typeId="96f2-4ed4-bc44-1fb7">2</characteristic>
             <characteristic name="Reload" typeId="3f82-7a7b-7fec-7c9a">6</characteristic>
             <characteristic name="Special Rules" typeId="6e5f-8010-455a-a180">Noisy1, Lobotomizer1, Highly Specialized</characteristic>
