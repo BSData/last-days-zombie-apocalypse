@@ -71,7 +71,6 @@
           </constraints>
         </entryLink>
         <entryLink id="6d65-7fe9-c18e-3bcb" name="Melee Trained Weapon" hidden="false" collective="false" import="true" targetId="f21e-7417-5528-99d6" type="selectionEntryGroup"/>
-        <entryLink id="47df-486c-fd58-4dd8" name="Academic Skills" hidden="false" collective="false" import="true" targetId="7306-b7d2-a8a6-03b0" type="selectionEntryGroup"/>
         <entryLink id="51ba-a4d4-938c-1ed9" name="ZZ - Close Quarter Combat Skills" hidden="false" collective="false" import="true" targetId="840c-ee82-0223-2c20" type="selectionEntryGroup"/>
         <entryLink id="3e6e-b90f-e4d2-8182" name="ZZ - Academic Skills" hidden="false" collective="false" import="true" targetId="ca31-cd96-48e5-9a44" type="selectionEntryGroup"/>
         <entryLink id="8c5b-68fc-595f-d6b1" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
@@ -926,7 +925,13 @@
         <entryLink id="12d7-91fc-65cc-414d" name="ZZ - Close Quarter Combat Skills" hidden="false" collective="false" import="true" targetId="840c-ee82-0223-2c20" type="selectionEntryGroup"/>
         <entryLink id="88a3-0ad8-9cd7-2c64" name="Academic Skills" hidden="false" collective="false" import="true" targetId="7306-b7d2-a8a6-03b0" type="selectionEntryGroup"/>
         <entryLink id="4330-4199-4468-dd0b" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
-        <entryLink id="6237-0ab0-5c0b-847b" name="AA - Select Survivalist Gunsmith class" hidden="false" collective="false" import="true" targetId="d9ad-6ec0-b733-fb60" type="selectionEntryGroup"/>
+        <entryLink id="6237-0ab0-5c0b-847b" name="Gunsmith (Explosive)" hidden="false" collective="false" import="true" targetId="3f4d-2bd1-8fc8-d6e9" type="selectionEntry"/>
+        <entryLink id="5c8c-e996-7be1-6866" name="Gunsmith (Heavy)" hidden="false" collective="false" import="true" targetId="ad3c-fc48-83c3-71d1" type="selectionEntry"/>
+        <entryLink id="5340-3543-dc22-b024" name="Gunsmith (Pistol)" hidden="false" collective="false" import="true" targetId="1989-723f-78f2-abb5" type="selectionEntry"/>
+        <entryLink id="8188-7b3d-e2fc-ecbd" name="Gunsmith (Rifle)" hidden="false" collective="false" import="true" targetId="7f10-3c8f-ad57-9421" type="selectionEntry"/>
+        <entryLink id="7bd6-1d8f-e0c1-9cd6" name="Gunsmith (Shotgun)" hidden="false" collective="false" import="true" targetId="a1d6-bda0-ee47-6319" type="selectionEntry"/>
+        <entryLink id="16c9-d3af-fbe9-565e" name="Gunsmith (SMG)" hidden="false" collective="false" import="true" targetId="5297-91b8-dc9f-b141" type="selectionEntry"/>
+        <entryLink id="3f76-3b92-fda6-e080" name="Gunsmith (Sporting)" hidden="false" collective="false" import="true" targetId="2076-d223-0c5a-8813" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="18.0"/>
@@ -1134,6 +1139,7 @@
         <entryLink id="acd4-f223-eb7b-e85b" name="ZZ - Close Quarter Combat Skills" hidden="false" collective="false" import="true" targetId="840c-ee82-0223-2c20" type="selectionEntryGroup"/>
         <entryLink id="a4ca-a0a8-7fe6-d7f0" name="Academic Skills" hidden="false" collective="false" import="true" targetId="7306-b7d2-a8a6-03b0" type="selectionEntryGroup"/>
         <entryLink id="791c-ff0b-575b-ba0a" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
+        <entryLink id="5981-a5e4-eaf4-39d1" name="ZZ - Leadership Skills" hidden="false" collective="false" import="true" targetId="f733-f9b3-5262-ba36" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
