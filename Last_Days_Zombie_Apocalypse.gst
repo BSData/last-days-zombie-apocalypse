@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ddab-c095-bf70-e8ba" name="Last Days Zombie Apocalypse" revision="2" battleScribeVersion="2.03" authorName="Andrea Nespeca" authorContact="andrea.nespeca@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ddab-c095-bf70-e8ba" name="Last Days Zombie Apocalypse" revision="3" battleScribeVersion="2.03" authorName="Andrea Nespeca" authorContact="andrea.nespeca@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="91b6-9e1a-c8f3-b62d" name="Last Day: Zombie Apocalypse"/>
+    <publication id="7ef1-f5b1-da7f-ede3" name="Seasons"/>
   </publications>
   <costTypes>
     <costType id="c527-314d-4ba4-197c" name=" Scavenge Points" defaultCostLimit="-1.0"/>
@@ -177,6 +178,7 @@
         <entryLink id="4d60-68d4-e12f-61f4" name="ZZ - Shooting Skills" hidden="false" collective="false" import="true" targetId="7306-b7d2-a8a6-03b0" type="selectionEntryGroup"/>
         <entryLink id="a37a-d85e-16d1-950c" name="ZZ - Close Quarter Combat Skills" hidden="false" collective="false" import="true" targetId="840c-ee82-0223-2c20" type="selectionEntryGroup"/>
         <entryLink id="3b3e-a20c-0e85-227e" name="ZZ - Academic Skills" hidden="false" collective="false" import="true" targetId="ca31-cd96-48e5-9a44" type="selectionEntryGroup"/>
+        <entryLink id="099c-32a3-78ed-cc12" name="Conditions (Seasons)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
@@ -232,6 +234,7 @@
         <entryLink id="7bb0-3d44-52cf-5fb7" name="ZZ - Shooting Skills" hidden="false" collective="false" import="true" targetId="7306-b7d2-a8a6-03b0" type="selectionEntryGroup"/>
         <entryLink id="8ee4-74a3-0e9a-ea49" name="ZZ - Close Quarter Combat Skills" hidden="false" collective="false" import="true" targetId="840c-ee82-0223-2c20" type="selectionEntryGroup"/>
         <entryLink id="8d84-83dd-3426-eb8f" name="ZZ - Athletic Skills" hidden="false" collective="false" import="true" targetId="6d2d-ffa4-d7b3-8095" type="selectionEntryGroup"/>
+        <entryLink id="7d0e-5542-43c6-76b2" name="Conditions (Seasons)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="15.0"/>
@@ -285,6 +288,7 @@
         <entryLink id="4599-d479-f244-9dc6" name="ZZ - Close Quarter Combat Skills" hidden="false" collective="false" import="true" targetId="840c-ee82-0223-2c20" type="selectionEntryGroup"/>
         <entryLink id="2ae2-abf1-b77e-6d2b" name="ZZ - Athletic Skills" hidden="false" collective="false" import="true" targetId="6d2d-ffa4-d7b3-8095" type="selectionEntryGroup"/>
         <entryLink id="d37a-93d8-6fb2-5d60" name="ZZ - Academic Skills" hidden="false" collective="false" import="true" targetId="ca31-cd96-48e5-9a44" type="selectionEntryGroup"/>
+        <entryLink id="5773-2ee6-85ef-7ac8" name="Conditions (Seasons)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="18.0"/>
@@ -1454,6 +1458,50 @@
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup id="8bc3-f346-f70e-90e1" name="Conditions (Seasons)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true">
+      <selectionEntries>
+        <selectionEntry id="4d3c-68ef-b4cb-d924" name="Hunger: Hungry" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="abc8-51f6-57b9-96af" name="Hungry(Suffering)" hidden="false" targetId="9498-f8b3-4c85-f952" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="6671-3c67-88d4-bb60" name="Hunger: Starving" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="80f1-6d85-cad9-c900" name="Starving(Critical)" hidden="false" targetId="0927-a876-34cb-f990" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="8c19-1ff8-1b41-a938" name="Thirst: Thirsty" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="1f84-42ce-a2e6-2b8b" name="Thirsty(Suffering)" hidden="false" targetId="99dd-417f-9b36-01e6" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="fb57-32d7-e99e-9177" name="Thirst: Dehydrated" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="a15e-cd4f-2d91-1b22" name="Dehydrated(Critical)" hidden="false" targetId="92c1-65dc-dda8-f4ae" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="1688-e224-a4b7-f890" name="Health: Sick" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="e7ba-1d5b-01e8-9324" name="Sick(Suffering)" hidden="false" targetId="2ed9-17f1-e7d5-3273" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="b413-4591-8d56-8336" name="Health: Bedridden" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="41b3-ca76-def6-3f2b" name="Bedridden(Critical)" hidden="false" targetId="4675-8d05-761b-a5c4" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="486b-f195-d091-749d" name="Warmth: Cold" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="b772-89b3-67aa-3339" name="Cold(Suffering)" hidden="false" targetId="fdd9-fb04-a97f-22d3" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="32ad-9998-f4aa-da81" name="Warmth: Freezing" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+          <infoLinks>
+            <infoLink id="f5f0-114a-3f3d-9c8e" name="Freezing(Critical)" hidden="false" targetId="7832-12ae-9932-7ac1" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="16bf-e692-36e9-c968" name="AGRICULTURALIST" hidden="false">
@@ -1589,6 +1637,43 @@ only perform Actions marked with a ‘*’ in the Action phase</description>
     </rule>
     <rule id="5eb2-b94c-0101-e38d" name="SHORT CONTROLLED BURSTS" hidden="false">
       <description>This Character’s judicious use of Ammunition and counting their shots means they run out of ammo less frequently at inopportune times. Subtract -1 from the Dice Roll for all Ammo tests this Character makes. </description>
+    </rule>
+    <rule id="2ecb-65f0-af1a-2c58" name="BEAST OF BURDEN" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>A Character may Interact with this model to place or remove a Supply, Food, or Fuel Token from either model to the other.</description>
+    </rule>
+    <rule id="7936-580a-2a1a-4160" name="Mount" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>A Character may begin the game mounted on or take an Interact action to mount or dismount this model. While this model has a Character riding it, it may not activate in the Action Phase. If called upon to act in the Action Phase while not being ridden it will always move its full AP towards the nearest board edge unless another Friendly model is in Contact with it. This model may never be deployed into or on a structure.
+A Character mounted on a model with this Trait may only take Reload, Ride, and Interact Actions to dismount in the Action Phase. They may only fire Pistols in the Shooting Phase.
+Ride: The rider of this Animal and the mount itself may move 2” in a straight line through Open Terrain or 1” through Difficult Terrain	1 AP
+A model with this trait may not enter any structures.
+If attacked in the Shooting or CQC Phase an attacker must specify if they are targeting the Rider or the Mount. Zombies will always attack the Mount in preference of the Rider/s.
+If this model is ever taken Out of Action, its controlling player may place any Characters and Supply Tokens in contact with it, then remove it from the table.
+In the post-game sequence when rolling for Injuries for this model, do not roll on the normal Injury table. Instead, roll 1D6.
+On a 1 or 2, this model is killed. Remove it from the Group Roster. On a 3 or higher, it recovers in time for the next Encounter.</description>
+    </rule>
+    <rule id="9498-f8b3-4c85-f952" name="Hungry(Suffering)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>The character feels weak and cannot expend a huge amount of energy without the possibility of passing out. If deployed into a mission when at this level they may not take Run actions and will count any items with the Heavy attribute as one level Higher (Heavy 1 becomes 2, etc).</description>
+    </rule>
+    <rule id="0927-a876-34cb-f990" name="Starving(Critical)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>The Character is so weak from lack of food that they cannot do much more than hobble around the refuge and are nearly delirious. They cannot participate in Missions and count as a previous game casualty for the purposes of Zombie Attacks.</description>
+    </rule>
+    <rule id="2ed9-17f1-e7d5-3273" name="Sick(Suffering)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>The common cold is typically nothing to worry about up until you are forced into close quarters and have no access to medicine. While the Character does not suffer any ill effects at the moment there is a chance that they will spread the sickness to another member of the Group. If deployed into a Mission roll 1D6 for each other character not currently suffering from being Sick at the end of the game. On 1, they also become sick as the time spent at close quarters (sharing a tent overnight while travelling, hiding in a room, etc.) makes them ill. When this is done roll 1D6 for each Character that is currently Sick. On a roll of 1 or 2 they become Bedridden.</description>
+    </rule>
+    <rule id="4675-8d05-761b-a5c4" name="Bedridden(Critical)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>Without basic treatment or rest the illness has taken full grip and the Character is raving with fever. They may not be deployed on a mission and will count as a previous game casualty until this condition is treated.</description>
+    </rule>
+    <rule id="99dd-417f-9b36-01e6" name="Thirsty(Suffering)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>The Character can become feverish and distracted in the short term when suffering the minor effects of dehydration. If deployed into a mission or required to make a roll when at this level the Character suffers -1 to their Intelligence stat until they recover. In addition, any time the Character Runs when Thirsty roll 1D6. On the roll of a 1 they begin to feel dizzy and lose all remaining AP at the end of the run move and halve their CQC stat (rounded down) until the end of the turn.</description>
+    </rule>
+    <rule id="92c1-65dc-dda8-f4ae" name="Dehydrated(Critical)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>The Character is suffering from cramping, cracked and bleeding skin and gums, and descends into delirium. They cannot participate in Missions and count as a previous game casualty for the purposes of Zombie Attacks.</description>
+    </rule>
+    <rule id="fdd9-fb04-a97f-22d3" name="Cold(Suffering)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>The cold enhances almost any injury and can make them dangerous while outside and exposed. Torn clothes and open wounds can quickly freeze and become even worse. It is also incredibly hard to concentrate and work. If deployed into a mission this Character suffers a -1 Endurance penalty. In addition, any time they are assigned a Job in the post-game sequence roll 1D6. On the roll of a 1 they fail to complete their work. Any resources spent on the job are refunded. This is done after all Jobs are assigned so another Character will be unable to do be assigned the Job after the roll.</description>
+    </rule>
+    <rule id="7832-12ae-9932-7ac1" name="Freezing(Critical)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>The Character is near-death from hypothermia. They may not be sent on Missions and count as a previous game Casualty for the purposes of Zombie Attacks.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
