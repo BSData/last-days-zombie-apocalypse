@@ -1461,41 +1461,65 @@
     <selectionEntryGroup id="8bc3-f346-f70e-90e1" name="Conditions (Seasons)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true">
       <selectionEntries>
         <selectionEntry id="4d3c-68ef-b4cb-d924" name="Hunger: Hungry" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="feb2-2827-b180-dc86" type="max"/>
+          </constraints>
           <infoLinks>
             <infoLink id="abc8-51f6-57b9-96af" name="Hungry(Suffering)" hidden="false" targetId="9498-f8b3-4c85-f952" type="rule"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry id="6671-3c67-88d4-bb60" name="Hunger: Starving" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e2f-f1dd-6fbe-107e" type="max"/>
+          </constraints>
           <infoLinks>
             <infoLink id="80f1-6d85-cad9-c900" name="Starving(Critical)" hidden="false" targetId="0927-a876-34cb-f990" type="rule"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry id="8c19-1ff8-1b41-a938" name="Thirst: Thirsty" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="893a-7fe5-081b-a74e" type="max"/>
+          </constraints>
           <infoLinks>
             <infoLink id="1f84-42ce-a2e6-2b8b" name="Thirsty(Suffering)" hidden="false" targetId="99dd-417f-9b36-01e6" type="rule"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry id="fb57-32d7-e99e-9177" name="Thirst: Dehydrated" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69c1-1a09-7b0a-ab61" type="max"/>
+          </constraints>
           <infoLinks>
             <infoLink id="a15e-cd4f-2d91-1b22" name="Dehydrated(Critical)" hidden="false" targetId="92c1-65dc-dda8-f4ae" type="rule"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry id="1688-e224-a4b7-f890" name="Health: Sick" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4954-d171-286e-3474" type="max"/>
+          </constraints>
           <infoLinks>
             <infoLink id="e7ba-1d5b-01e8-9324" name="Sick(Suffering)" hidden="false" targetId="2ed9-17f1-e7d5-3273" type="rule"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry id="b413-4591-8d56-8336" name="Health: Bedridden" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62ef-31fe-256a-12bb" type="max"/>
+          </constraints>
           <infoLinks>
             <infoLink id="41b3-ca76-def6-3f2b" name="Bedridden(Critical)" hidden="false" targetId="4675-8d05-761b-a5c4" type="rule"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry id="486b-f195-d091-749d" name="Warmth: Cold" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e49b-6b83-9836-40b8" type="max"/>
+          </constraints>
           <infoLinks>
             <infoLink id="b772-89b3-67aa-3339" name="Cold(Suffering)" hidden="false" targetId="fdd9-fb04-a97f-22d3" type="rule"/>
           </infoLinks>
         </selectionEntry>
         <selectionEntry id="32ad-9998-f4aa-da81" name="Warmth: Freezing" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2113-c25f-95b9-880c" type="max"/>
+          </constraints>
           <infoLinks>
             <infoLink id="f5f0-114a-3f3d-9c8e" name="Freezing(Critical)" hidden="false" targetId="7832-12ae-9932-7ac1" type="rule"/>
           </infoLinks>
