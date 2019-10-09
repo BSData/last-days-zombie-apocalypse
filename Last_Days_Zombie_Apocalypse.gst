@@ -179,6 +179,7 @@
         <entryLink id="a37a-d85e-16d1-950c" name="ZZ - Close Quarter Combat Skills" hidden="false" collective="false" import="true" targetId="840c-ee82-0223-2c20" type="selectionEntryGroup"/>
         <entryLink id="3b3e-a20c-0e85-227e" name="ZZ - Academic Skills" hidden="false" collective="false" import="true" targetId="ca31-cd96-48e5-9a44" type="selectionEntryGroup"/>
         <entryLink id="099c-32a3-78ed-cc12" name="Conditions (Seasons)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
+        <entryLink id="ecc0-ae86-c020-a2ed" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
@@ -235,6 +236,7 @@
         <entryLink id="8ee4-74a3-0e9a-ea49" name="ZZ - Close Quarter Combat Skills" hidden="false" collective="false" import="true" targetId="840c-ee82-0223-2c20" type="selectionEntryGroup"/>
         <entryLink id="8d84-83dd-3426-eb8f" name="ZZ - Athletic Skills" hidden="false" collective="false" import="true" targetId="6d2d-ffa4-d7b3-8095" type="selectionEntryGroup"/>
         <entryLink id="7d0e-5542-43c6-76b2" name="Conditions (Seasons)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
+        <entryLink id="b716-e626-820e-3075" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="15.0"/>
@@ -289,6 +291,7 @@
         <entryLink id="2ae2-abf1-b77e-6d2b" name="ZZ - Athletic Skills" hidden="false" collective="false" import="true" targetId="6d2d-ffa4-d7b3-8095" type="selectionEntryGroup"/>
         <entryLink id="d37a-93d8-6fb2-5d60" name="ZZ - Academic Skills" hidden="false" collective="false" import="true" targetId="ca31-cd96-48e5-9a44" type="selectionEntryGroup"/>
         <entryLink id="5773-2ee6-85ef-7ac8" name="Conditions (Seasons)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
+        <entryLink id="46e9-4bec-8034-1e59" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="18.0"/>
@@ -1636,6 +1639,62 @@
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="d63b-6f62-93b8-c869" name="Leadership Master Skills" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="f759-3bb2-9358-5648" name="Charismatic" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d3f-8797-307a-7092" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c928-7380-a2df-a4d0" name="Charismatic" hidden="false" targetId="c7ed-2477-bae5-a63a" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="9bc8-f735-e48f-1632" name="Steely Resolve" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5d4-2b3c-8be2-7812" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="cae8-c45b-d09d-f452" name="Steely Resolve" hidden="false" targetId="543c-3082-4a53-8979" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="d14e-07e0-0fa5-f54b" name="Against all Odds" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9230-8129-289e-b7a4" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ec18-bd63-ee31-2271" name="Against all Odds" hidden="false" targetId="0189-a7b9-bab0-0416" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="f8a6-cc49-c432-aabd" name="Shooting Master Skills" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="6364-3f85-6223-41ec" name="Never Misses" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87be-134b-acc3-f00d" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4cf5-d311-e07b-5aaa" name="Never Misses" hidden="false" targetId="4e63-9d7e-9230-bdb3" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="418d-d9d7-30e4-8f01" name="Overwatch" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6cd-d13b-371c-db17" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="fd15-daae-a044-cb5f" name="Overwatch" hidden="false" targetId="3274-4e04-d900-67f9" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="bfc0-1b5f-5b0d-d7ce" name="Faster than You" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5f6-0b77-6c8f-1e83" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="8fa7-8f15-7cdb-b634" name="Faster than You" hidden="false" targetId="3320-a9b1-19d1-e4fc" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
@@ -1840,6 +1899,25 @@ On a 1 or 2, this model is killed. Remove it from the Group Roster. On a 3 or hi
     </rule>
     <rule id="336c-2a40-40e3-8fb7" name="Fast and Deadly" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
       <description>This Character knows exactly how to turn the tide when fighting a group. If in contact with more than one enemy, they may make two attacks when picked to fight in the CQC Phase, one immediately after the other. Each attack must target a separate enemy.</description>
+    </rule>
+    <rule id="d1f6-d2d4-856f-d7c7" name="New Rule" hidden="false"/>
+    <rule id="c7ed-2477-bae5-a63a" name="Charismatic" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>This Character is so charming that he can persuade the most belligerent of survivors to his way of thinking. Roll 2D6 and pick the highest result when having The Talk or participating in a Leadership Challenge.</description>
+    </rule>
+    <rule id="543c-3082-4a53-8979" name="Steely Resolve" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>This Character’s bravery knows almost no limits. They automatically pass Horror checks when being engaged by zombies and if the Leader of a Group on a mission roll an 2D6 when checking for Breaking Point and pick the lowest result so long as they are not Out of Action.</description>
+    </rule>
+    <rule id="0189-a7b9-bab0-0416" name="Against all Odds" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>This Character seems to somehow find the will to keep fighting when anyone else would lay down and die. So long as at least one other Group member is still on the table roll 1D6 when this Character loses their last point of Damage Capacity (regardless of how much damage the attack caused). On a 4, 5, or 6 do not remove the model from the table and restore it to one point of Damage Capacity remaining. This may occur multiple times per game. If this skill is used and the Character goes Out of Action later in the game, they must reroll the first result of ‘Full Recovery’ on the Injury table. The second 2D6 roll must be accepted instead. This may still be a ‘Full Recovery’.</description>
+    </rule>
+    <rule id="4e63-9d7e-9230-bdb3" name="Never Misses" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>Re-roll one failed roll to hit each time this Character fires a weapon (not once per Rate of Fire).</description>
+    </rule>
+    <rule id="3274-4e04-d900-67f9" name="Overwatch" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>This Character gains a free Locked and Loaded Token at the start of the Menace Phase each Turn.</description>
+    </rule>
+    <rule id="3320-a9b1-19d1-e4fc" name="Faster than You" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>Roll 1D6 each time this model is targeted by another Character using a Locked and Loaded Token. On a 4, 5, or 6 they may immediately fire one of their weapons as if it was the Shooting Phase at the enemy, targeting them before the Locked and Loaded Token is resolved.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
