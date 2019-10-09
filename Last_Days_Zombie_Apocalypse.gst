@@ -1467,6 +1467,9 @@
           <infoLinks>
             <infoLink id="abc8-51f6-57b9-96af" name="Hungry(Suffering)" hidden="false" targetId="9498-f8b3-4c85-f952" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="6671-3c67-88d4-bb60" name="Hunger: Starving" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -1475,6 +1478,9 @@
           <infoLinks>
             <infoLink id="80f1-6d85-cad9-c900" name="Starving(Critical)" hidden="false" targetId="0927-a876-34cb-f990" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="8c19-1ff8-1b41-a938" name="Thirst: Thirsty" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -1483,6 +1489,9 @@
           <infoLinks>
             <infoLink id="1f84-42ce-a2e6-2b8b" name="Thirsty(Suffering)" hidden="false" targetId="99dd-417f-9b36-01e6" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="fb57-32d7-e99e-9177" name="Thirst: Dehydrated" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -1491,6 +1500,9 @@
           <infoLinks>
             <infoLink id="a15e-cd4f-2d91-1b22" name="Dehydrated(Critical)" hidden="false" targetId="92c1-65dc-dda8-f4ae" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="1688-e224-a4b7-f890" name="Health: Sick" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -1499,6 +1511,9 @@
           <infoLinks>
             <infoLink id="e7ba-1d5b-01e8-9324" name="Sick(Suffering)" hidden="false" targetId="2ed9-17f1-e7d5-3273" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="b413-4591-8d56-8336" name="Health: Bedridden" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -1507,6 +1522,9 @@
           <infoLinks>
             <infoLink id="41b3-ca76-def6-3f2b" name="Bedridden(Critical)" hidden="false" targetId="4675-8d05-761b-a5c4" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="486b-f195-d091-749d" name="Warmth: Cold" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -1515,6 +1533,9 @@
           <infoLinks>
             <infoLink id="b772-89b3-67aa-3339" name="Cold(Suffering)" hidden="false" targetId="fdd9-fb04-a97f-22d3" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="32ad-9998-f4aa-da81" name="Warmth: Freezing" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -1523,8 +1544,99 @@
           <infoLinks>
             <infoLink id="f5f0-114a-3f3d-9c8e" name="Freezing(Critical)" hidden="false" targetId="7832-12ae-9932-7ac1" type="rule"/>
           </infoLinks>
+          <costs>
+            <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="16f0-a2c3-c088-955b" name="ZZZ - Master SKills" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="55c0-c528-c194-11df" name="Academic Master Skills" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="6e0d-8a0c-6f32-b8d0" name="Naturopath" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed36-905b-7371-96d5" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7608-45b6-8e58-a572" name="Naturopath" hidden="false" targetId="fc1c-834d-6ca6-7e2c" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="82c4-8043-0bd4-bc87" name="Street Surgeon" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c293-2db4-32b4-e2f1" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="1b61-b211-3c7b-9735" name="Street Surgeon" hidden="false" targetId="83ef-319f-1420-6209" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="4f8c-1df8-22ad-b79a" name="Supply Seeker" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19c0-6799-1131-d5fe" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="df05-ed71-38f3-1277" name="Supply Seeker" hidden="false" targetId="1d03-9c9c-cda6-a685" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="1532-bde5-2bec-fd5d" name="Athletic Master Skills" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="e6e6-a9fe-f9a0-590e" name="Tireless" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6da9-f0ac-813e-5d48" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="76db-0469-4061-eea7" name="Tireless" hidden="false" targetId="f2e4-240f-a6c8-4ae6" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="93fd-12aa-2105-4092" name="Lightning Fast" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13fc-2342-3084-80a4" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="d76c-b4db-9cdf-3601" name="Lightning Fast" hidden="false" targetId="42d3-d0d5-83a3-3e4f" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="6b48-d5a7-fd40-4cf1" name="Untouchable" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0548-4e10-4107-2824" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="3a30-cc34-e797-77f0" name="Untouchable" hidden="false" targetId="4d7d-effd-1b57-8e4e" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b5b0-39ac-bcfe-84d2" name="CQC Master Skills" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="bb3e-db93-db60-5f04" name="Unstoppable" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c29-55de-a42f-fc33" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0aa3-12fc-e8e5-8785" name="Unstoppable" hidden="false" targetId="d277-e0a2-2cda-a8ee" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="6f38-9f33-b4ac-e61a" name="Unbreakable" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52ea-c92f-6a6d-fb26" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="6e7e-4329-06cd-b9ba" name="Unbreakable" hidden="false" targetId="8598-013b-340c-feb4" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+            <selectionEntry id="11d6-e775-35c2-0b54" name="Fast and Deadly" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a60-8587-c42f-1a0a" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="9cd5-f4ff-7c0e-6f3e" name="Fast and Deadly" hidden="false" targetId="336c-2a40-40e3-8fb7" type="rule"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -1698,6 +1810,36 @@ On a 1 or 2, this model is killed. Remove it from the Group Roster. On a 3 or hi
     </rule>
     <rule id="7832-12ae-9932-7ac1" name="Freezing(Critical)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
       <description>The Character is near-death from hypothermia. They may not be sent on Missions and count as a previous game Casualty for the purposes of Zombie Attacks.</description>
+    </rule>
+    <rule id="7154-9e56-c36b-d8b9" name="HUNTER" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>If an Outdoorsman is given the Forage for Food Job in the post-game, he can make an TN6 Firearms test or a TN6 Intelligence test. If successful, the Outdoorsman may add +2 to his roll for Scavenging Food.</description>
+    </rule>
+    <rule id="fc1c-834d-6ca6-7e2c" name="Naturopath" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>Such is their knowledge of the plant world that this Character can produce 1D3 doses of Medicine when working a Fenced-In Garden instead of producing Scavenge Points or Food</description>
+    </rule>
+    <rule id="83ef-319f-1420-6209" name="Street Surgeon" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>This Character has become particularly good at stitching up wounds and setting bones. If they are alive and not Out of Action at the end of a game roll 1D6 for any character that suffers an Arm Injury, Leg Injury or is Blinded in One Eye. On a 4, 5, or 6 they treat this injury as a Full Recovery instead.</description>
+    </rule>
+    <rule id="1d03-9c9c-cda6-a685" name="Supply Seeker" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>This Character can find damn near anything and leads the Group to the best untapped resources. Place an additional Supply Token on the board in this Group’s half of the table using the normal restrictions for placement. In addition, roll 1D6 when inventorying a Supply Token this Character was carrying at the end of the game. On a 4, 5, or 6 you can set either or both dice rolls to be between 4 and 10 without rolling. If you do decide to roll one of the results, you must do so before setting the other to between 4 and 10.</description>
+    </rule>
+    <rule id="f2e4-240f-a6c8-4ae6" name="Tireless" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>This character completely ignores the Heavy attribute when carrying Equipment or Supplies. They may carry up to two Supply Tokens instead of only one.</description>
+    </rule>
+    <rule id="42d3-d0d5-83a3-3e4f" name="Lightning Fast" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>This Character may run twice per Action Phase.</description>
+    </rule>
+    <rule id="4d7d-effd-1b57-8e4e" name="Untouchable" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>This Character may move through other Characters (friendly or enemy) and zombies when it moves, provided it has enough movement to entirely clear their base. If they begin the Action Phase engaged, they must still pay the close to Break Contact as normal.</description>
+    </rule>
+    <rule id="d277-e0a2-2cda-a8ee" name="Unstoppable" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>This Character is a force of nature when fighting at close quarters. Roll 2D6 and pick the highest result when Attacking in CQC.</description>
+    </rule>
+    <rule id="8598-013b-340c-feb4" name="Unbreakable" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>Attacking this Character is like hitting a brick wall. Roll 2D6 and pick the highest result when Defending in CQC.</description>
+    </rule>
+    <rule id="336c-2a40-40e3-8fb7" name="Fast and Deadly" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>This Character knows exactly how to turn the tide when fighting a group. If in contact with more than one enemy, they may make two attacks when picked to fight in the CQC Phase, one immediately after the other. Each attack must target a separate enemy.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
