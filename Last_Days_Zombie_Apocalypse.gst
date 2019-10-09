@@ -1801,7 +1801,7 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
     </selectionEntryGroup>
-    <selectionEntryGroup id="64f3-b85e-02ee-0a8a" name="ZA - Rare Equipments" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="64f3-b85e-02ee-0a8a" name="ZA - Rare Equipments (only one)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50ee-d073-55a8-dcaa" type="max"/>
       </constraints>
