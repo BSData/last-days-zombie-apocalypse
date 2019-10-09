@@ -180,6 +180,7 @@
         <entryLink id="3b3e-a20c-0e85-227e" name="ZZ - Academic Skills" hidden="false" collective="false" import="true" targetId="ca31-cd96-48e5-9a44" type="selectionEntryGroup"/>
         <entryLink id="099c-32a3-78ed-cc12" name="Conditions (Seasons)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
         <entryLink id="ecc0-ae86-c020-a2ed" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
+        <entryLink id="6b97-31fc-9259-dd27" name="ZA - Rare Equipments" hidden="false" collective="false" import="true" targetId="64f3-b85e-02ee-0a8a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
@@ -237,6 +238,7 @@
         <entryLink id="8d84-83dd-3426-eb8f" name="ZZ - Athletic Skills" hidden="false" collective="false" import="true" targetId="6d2d-ffa4-d7b3-8095" type="selectionEntryGroup"/>
         <entryLink id="7d0e-5542-43c6-76b2" name="Conditions (Seasons)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
         <entryLink id="b716-e626-820e-3075" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
+        <entryLink id="e645-1304-6d9b-6f59" name="ZA - Rare Equipments" hidden="false" collective="false" import="true" targetId="64f3-b85e-02ee-0a8a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="15.0"/>
@@ -292,6 +294,7 @@
         <entryLink id="d37a-93d8-6fb2-5d60" name="ZZ - Academic Skills" hidden="false" collective="false" import="true" targetId="ca31-cd96-48e5-9a44" type="selectionEntryGroup"/>
         <entryLink id="5773-2ee6-85ef-7ac8" name="Conditions (Seasons)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
         <entryLink id="46e9-4bec-8034-1e59" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
+        <entryLink id="9d88-3731-c62f-7c4d" name="ZA - Rare Equipments" hidden="false" collective="false" import="true" targetId="64f3-b85e-02ee-0a8a" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="18.0"/>
@@ -1033,6 +1036,62 @@
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="4.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="580e-04ef-7813-641b" name="Flare Pistol" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="adcd-b7a3-9c0d-120a" type="max"/>
+      </constraints>
+      <profiles>
+        <profile id="8f57-f3ff-6eaf-e5af" name="Flare Pistol" hidden="false" typeId="418a-0207-9e29-f81a" typeName="Ranged Weapon">
+          <characteristics>
+            <characteristic name="Class" typeId="abc6-f4df-7fbf-ac85">Pistol</characteristic>
+            <characteristic name="Range" typeId="b3f2-5f77-73cb-9110">12&quot;</characteristic>
+            <characteristic name="Damage" typeId="9f58-78dd-2e83-5dea">0</characteristic>
+            <characteristic name="RoF" typeId="aabc-427d-ce63-c9c2">1</characteristic>
+            <characteristic name="KnockBack" typeId="96f2-4ed4-bc44-1fb7">1</characteristic>
+            <characteristic name="Reload" typeId="3f82-7a7b-7fec-7c9a">1</characteristic>
+            <characteristic name="Special Rules" typeId="6e5f-8010-455a-a180">Incendiary</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="3016-5dd4-2583-4b15" name="Incendiary" hidden="false" targetId="f385-9a8b-4898-4a57" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="069d-3dac-3a04-102e" name="Ice Axe" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="2cad-0055-8ef4-7cd5" name="Ice Axe" hidden="false" typeId="5b8f-a6e8-7cb3-2088" typeName="Melee Weapon">
+          <characteristics>
+            <characteristic name="CQC Modifier" typeId="0fb4-0a5f-5cac-2fb6">+/-0</characteristic>
+            <characteristic name="Strength Modifier" typeId="733c-1691-4f30-5314">+1</characteristic>
+            <characteristic name="Special Rules" typeId="4489-6dd8-9aa2-b650">You’ve Got to Shoot Them in the Head +1, Ignores the -1 You’ve Got to Shoot Them in the Head Penalty from Freezing, Snowing, or Blizzard Weather Condition as it is designed to cut through ice.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry id="c9c4-4e4d-fff7-0ef9" name="Motorcycle" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bc9-f7b0-cfa0-a7fb" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="c4ef-deb9-29e4-ef36" name="Motorcycle" hidden="false" targetId="3238-91f6-ed89-5e94" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="9bee-ba5b-0dd0-1016" name="Bicycle" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="180d-b1cd-9db9-9698" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="1c91-60a1-1905-ab28" name="Bicycle" hidden="false" targetId="d06b-3a94-28f6-2d8b" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="2f39-6822-35e1-7fc7" name="Tactical Vest*" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="467f-6e63-83ae-01e6" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="d3b3-077e-1f7a-aa64" name="Tactical Vest" hidden="false" targetId="490a-759a-294b-4131" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="9865-2a5b-42e8-e3e9" name="Ranged Weapons" hidden="false" collective="false" import="true">
@@ -1564,6 +1623,9 @@
               <infoLinks>
                 <infoLink id="7608-45b6-8e58-a572" name="Naturopath" hidden="false" targetId="fc1c-834d-6ca6-7e2c" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="82c4-8043-0bd4-bc87" name="Street Surgeon" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1572,6 +1634,9 @@
               <infoLinks>
                 <infoLink id="1b61-b211-3c7b-9735" name="Street Surgeon" hidden="false" targetId="83ef-319f-1420-6209" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="4f8c-1df8-22ad-b79a" name="Supply Seeker" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1580,6 +1645,9 @@
               <infoLinks>
                 <infoLink id="df05-ed71-38f3-1277" name="Supply Seeker" hidden="false" targetId="1d03-9c9c-cda6-a685" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1592,6 +1660,9 @@
               <infoLinks>
                 <infoLink id="76db-0469-4061-eea7" name="Tireless" hidden="false" targetId="f2e4-240f-a6c8-4ae6" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="93fd-12aa-2105-4092" name="Lightning Fast" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1600,6 +1671,9 @@
               <infoLinks>
                 <infoLink id="d76c-b4db-9cdf-3601" name="Lightning Fast" hidden="false" targetId="42d3-d0d5-83a3-3e4f" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="6b48-d5a7-fd40-4cf1" name="Untouchable" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1608,6 +1682,9 @@
               <infoLinks>
                 <infoLink id="3a30-cc34-e797-77f0" name="Untouchable" hidden="false" targetId="4d7d-effd-1b57-8e4e" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1620,6 +1697,9 @@
               <infoLinks>
                 <infoLink id="0aa3-12fc-e8e5-8785" name="Unstoppable" hidden="false" targetId="d277-e0a2-2cda-a8ee" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="6f38-9f33-b4ac-e61a" name="Unbreakable" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1628,6 +1708,9 @@
               <infoLinks>
                 <infoLink id="6e7e-4329-06cd-b9ba" name="Unbreakable" hidden="false" targetId="8598-013b-340c-feb4" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="11d6-e775-35c2-0b54" name="Fast and Deadly" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1636,6 +1719,9 @@
               <infoLinks>
                 <infoLink id="9cd5-f4ff-7c0e-6f3e" name="Fast and Deadly" hidden="false" targetId="336c-2a40-40e3-8fb7" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1648,6 +1734,9 @@
               <infoLinks>
                 <infoLink id="c928-7380-a2df-a4d0" name="Charismatic" hidden="false" targetId="c7ed-2477-bae5-a63a" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="9bc8-f735-e48f-1632" name="Steely Resolve" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1656,6 +1745,9 @@
               <infoLinks>
                 <infoLink id="cae8-c45b-d09d-f452" name="Steely Resolve" hidden="false" targetId="543c-3082-4a53-8979" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="d14e-07e0-0fa5-f54b" name="Against all Odds" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1664,6 +1756,9 @@
               <infoLinks>
                 <infoLink id="ec18-bd63-ee31-2271" name="Against all Odds" hidden="false" targetId="0189-a7b9-bab0-0416" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1676,6 +1771,9 @@
               <infoLinks>
                 <infoLink id="4cf5-d311-e07b-5aaa" name="Never Misses" hidden="false" targetId="4e63-9d7e-9230-bdb3" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="418d-d9d7-30e4-8f01" name="Overwatch" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1684,6 +1782,9 @@
               <infoLinks>
                 <infoLink id="fd15-daae-a044-cb5f" name="Overwatch" hidden="false" targetId="3274-4e04-d900-67f9" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="bfc0-1b5f-5b0d-d7ce" name="Faster than You" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1692,10 +1793,50 @@
               <infoLinks>
                 <infoLink id="8fa7-8f15-7cdb-b634" name="Faster than You" hidden="false" targetId="3320-a9b1-19d1-e4fc" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="64f3-b85e-02ee-0a8a" name="ZA - Rare Equipments" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50ee-d073-55a8-dcaa" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="d159-2bb1-2a34-f14a" name="Chainsaw" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" targetId="2d47-a0fe-1871-7e1a" type="selectionEntry">
+          <costs>
+            <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="553b-7eae-1628-82cf" name="Combat Shotgun*" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" targetId="5adc-69dd-d08d-4052" type="selectionEntry">
+          <costs>
+            <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="f983-d0df-efde-ac26" name="Flare Pistol" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" targetId="580e-04ef-7813-641b" type="selectionEntry">
+          <costs>
+            <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="5.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="a3f1-e1d5-1c39-942e" name="Motorcycle" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" targetId="c9c4-4e4d-fff7-0ef9" type="selectionEntry">
+          <costs>
+            <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="20.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="7424-fa63-3c82-3689" name="Bicycle" hidden="false" collective="false" import="true" targetId="9bee-ba5b-0dd0-1016" type="selectionEntry">
+          <costs>
+            <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="970c-991b-9e78-0a2a" name="Tactical Vest*" hidden="false" collective="false" import="true" targetId="2f39-6822-35e1-7fc7" type="selectionEntry">
+          <costs>
+            <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="15.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
@@ -1918,6 +2059,26 @@ On a 1 or 2, this model is killed. Remove it from the Group Roster. On a 3 or hi
     </rule>
     <rule id="3320-a9b1-19d1-e4fc" name="Faster than You" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
       <description>Roll 1D6 each time this model is targeted by another Character using a Locked and Loaded Token. On a 4, 5, or 6 they may immediately fire one of their weapons as if it was the Shooting Phase at the enemy, targeting them before the Locked and Loaded Token is resolved.</description>
+    </rule>
+    <rule id="f385-9a8b-4898-4a57" name="Incendiary" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>A Flare Pistol adds 0 to a Damage Roll if it hits a target. If the Damage Roll results in any damage to the target, make another Damage Roll. Continue making Damage Rolls until a roll fails to damage the target or they go Out of Action. A Flare Pistol targeting a zombie will set it ablaze but do no other Damage. A flaming zombie adds +1 to all Damage Rolls resulting from its CQC attacks.</description>
+    </rule>
+    <rule id="3238-91f6-ed89-5e94" name="Motorcycle" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>Most vehicles are entirely impractical to use during an Encounter, but a Motorcycle can be used to quickly get about. The biggest downside is that it makes a massive amount of Noise, attracting zombies to the Encounter area. This Equipment Item is not equipped to any one Character, but instead deployed like a Character during the Deployment part of an Encounter. In order to Deploy a Motorcycle, the Group must also expend one item of Fuel from their Group Roster at the beginning of each Encounter. It generates 3 Noise at the beginning of each Menace Phase. Unlike Characters, it must be clearly modelled with a ‘Front’, which will be used to determine in which direction it may move. Up to two Characters may begin the game mounted on a single Motorcycle. One will always be designated the Driver, the other the Passenger. It may not be deployed inside or on a structure.
+Only the Driver may expend AP when mounted on a Motorcycle. While on a Motorcycle, characters may only fire Pistols in the Shooting Phase and may only Defend in the CQC Phase. They may only take the Interact, Drive, or Reload actions. A Character in Contact with a Motorcycle may Interact with it to mount it provided there is no Driver or Passenger. A Driver or Passenger mounted on a Motorcycle may take an Interact action to dismount. Place the Character in Contact with it. The current Passenger may freely become the Driver at the start of their Activation at no cost or remain Passenger. A Motorcycle does not need to pay AP to Break Contact with zombies.
+Drive Motorcycle: The Driver of this piece of Equipment, the vehicle, and any passengers may turn up to 90 degrees and then move 3” in a straight line. Any Character contacted during this move must make a TN8 Strength test or suffer 1 damage and be pushed to one side. Any zombie contacted during this move automatically suffers Knockback 5. A vehicle will immediately stop if it contacts any type of terrain that is not open terrain outdoors.	1 AP
+A Motorcycle may only be deployed into an Encounter during the Spring, Summer, or Fall. Characters from other Groups may Interact with this piece of Equipment if there is no Driver or Passenger embarked on it and they have no one else in Contact. If it is in possession of another Group at the end of an Encounter it is automatically put into their Inventory. If it is left unattended at the end of an Encounter treat it like an unclaimed Supply Token.</description>
+    </rule>
+    <rule id="d06b-3a94-28f6-2d8b" name="Bicycle" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>Before the apocalypse a Bicycle was a way to stay healthy and reduce your carbon footprint. Now, it’s a mode of fast transport that doesn’t require food, is silent, and can outrun the living dead.
+This Equipment Item is not equipped to any one Character, but instead deployed like a Character during the Deployment part of an Encounter. One Character may begin the game mounted on each Bicycle and is designated the Driver.
+The Driver may expend AP when mounted on a Bicycle. While on a Bicycle, Characters may only fire Pistols in the Shooting Phase and may only Defend in the CQC Phase. They may only take the Interact, Peddle, or Reload actions. A Character in Contact with a Driverless Bicycle may Interact with it to mount it provided there is no current Driver. A Character mounted on a Bicycle may take an Interact action to dismount. Place the Character in Contact with it. While mounted on a Bicycle Characters may not interact with anything except the Bicycle. Unlike Characters, it must be clearly modelled with a ‘Front’, which will be used to determine in which direction it may move.
+Peddle: The Driver of this piece of Equipment and the vehicle may turn up to 90 degrees and then move 2” in a straight line. This vehicle will immediately stop if it contacts any type of terrain that is not open terrain outdoors or a Character or zombie.	1 AP
+In addition to any damage taken a Character that loses an opposed CQC test while mounted on a Bicycle immediately dismounts. A Bicycle may only be deployed into an Encounter in the Spring, Summer, or Fall.
+Characters from other Groups may Interact with this piece of Equipment if there is no Driver or Passenger embarked on it and they have no one else in Contact. If it is in possession of another Group at the end of an Encounter it is automatically put into their Inventory. If it is left unattended at the end of an Encounter treat it like an unclaimed Supply Token.</description>
+    </rule>
+    <rule id="490a-759a-294b-4131" name="Tactical Vest" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
+      <description>Often issued to police and security guards, this vest does not impede the movement of the wearer, and offers a bonus of +2 Endurance against damage from Ranged Attacks. It provides no benefit against damage from Close Quarter Combat Attacks. May not be combined with other armour.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
