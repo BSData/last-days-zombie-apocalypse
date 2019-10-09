@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c8e4-cb55-a4f1-c47b" name="Survivor" revision="2" battleScribeVersion="2.03" library="false" gameSystemId="ddab-c095-bf70-e8ba" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c8e4-cb55-a4f1-c47b" name="Survivor" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="ddab-c095-bf70-e8ba" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="dfd0-fca4-b29e-02e9" name="Good Samarithan" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -1262,6 +1262,324 @@
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1f4b-e922-db35-dd6b" name="Builder" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4389-57ba-14cd-495b" name="Builder" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
+          <characteristics>
+            <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77">6</characteristic>
+            <characteristic name="CQC" typeId="c9a5-0e15-592e-b420">3</characteristic>
+            <characteristic name="FA" typeId="27a9-9ee9-af76-5959"></characteristic>
+            <characteristic name="S" typeId="e790-ef53-584e-1df2">3</characteristic>
+            <characteristic name="E" typeId="4b91-ff1c-18ef-9b67">3</characteristic>
+            <characteristic name="DC" typeId="5dae-c04b-a65e-e09b">3</characteristic>
+            <characteristic name="C" typeId="637f-3681-b85c-016f">3</characteristic>
+            <characteristic name="I" typeId="6977-3618-a275-5671">4</characteristic>
+            <characteristic name="Special Rules" typeId="be7a-b80b-147b-6276">Engineer</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6fc0-7cbb-a815-b040" name="ENGINEER" hidden="false" targetId="b6a9-9025-05e7-5e5a" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f24d-cd07-f49a-4ce6" name="New CategoryLink" hidden="false" targetId="549d-0f4e-36b8-be34" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="3283-f615-b703-fec5" name="Melee Trained Weapon" hidden="false" collective="false" import="true" targetId="f21e-7417-5528-99d6" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86b2-4e27-cb16-fd2b" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5b15-e718-f50c-75a5" name="Melee Weapons" hidden="false" collective="false" import="true" targetId="fb15-baf1-f6c8-08a3" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cbcf-fcb3-bdaf-ba86" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f846-ae50-87d7-bf8a" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="8400-d6f7-3817-7c78" name="Ranged Trained Weapons" hidden="false" collective="false" import="true" targetId="d376-f738-588d-cb88" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdd7-4bdb-d513-e990" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="5a02-9f8d-897b-98be" name="Ranged Weapons" hidden="false" collective="false" import="true" targetId="9865-2a5b-42e8-e3e9" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cbcf-fcb3-bdaf-ba86" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ab5-9017-9814-0924" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f3da-f0ee-d5db-e74a" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
+        <entryLink id="660e-c961-a69c-db9e" name="Not Starting Equipments" hidden="false" collective="false" import="true" targetId="597e-11c7-a8e7-a163" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cbcf-fcb3-bdaf-ba86" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="22a0-943f-aa13-d5e5" name="Not Starting Equipments Trained*" hidden="false" collective="false" import="true" targetId="5ac6-1838-365d-cfc7" type="selectionEntryGroup"/>
+        <entryLink id="734b-b6f1-f94f-792c" name="ZZ - Academic Skills" hidden="false" collective="false" import="true" targetId="ca31-cd96-48e5-9a44" type="selectionEntryGroup"/>
+        <entryLink id="4397-a6ee-25bd-534d" name="ZZ - Athletic Skills" hidden="false" collective="false" import="true" targetId="6d2d-ffa4-d7b3-8095" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5b56-6de8-f087-9ed3" name="Burglar" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ccef-40d6-89e8-d9b4" name="Burglar" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
+          <characteristics>
+            <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77">7</characteristic>
+            <characteristic name="CQC" typeId="c9a5-0e15-592e-b420">3</characteristic>
+            <characteristic name="FA" typeId="27a9-9ee9-af76-5959">3</characteristic>
+            <characteristic name="S" typeId="e790-ef53-584e-1df2">3</characteristic>
+            <characteristic name="E" typeId="4b91-ff1c-18ef-9b67">3</characteristic>
+            <characteristic name="DC" typeId="5dae-c04b-a65e-e09b">3</characteristic>
+            <characteristic name="C" typeId="637f-3681-b85c-016f">3</characteristic>
+            <characteristic name="I" typeId="6977-3618-a275-5671">3</characteristic>
+            <characteristic name="Special Rules" typeId="be7a-b80b-147b-6276">Scavenger</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="6cef-8555-8d30-bc50" name="SCAVENGER" hidden="false" targetId="164b-0413-c353-1400" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c8ca-ab3a-091b-2b54" name="New CategoryLink" hidden="false" targetId="5530-1108-dadf-26a8" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="1af5-9cc6-a1ec-b1ab" name="Melee Trained Weapon" hidden="false" collective="false" import="true" targetId="f21e-7417-5528-99d6" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="267b-11d4-dbd6-e099" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="24dc-6736-8d62-5400" name="Melee Weapons" hidden="false" collective="false" import="true" targetId="fb15-baf1-f6c8-08a3" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cbcf-fcb3-bdaf-ba86" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d0a9-255e-3635-5a4d" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="7035-46f5-0417-c428" name="Ranged Trained Weapons" hidden="false" collective="false" import="true" targetId="d376-f738-588d-cb88" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8658-b8cb-9ff3-b09d" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f280-0544-00cf-b426" name="Ranged Weapons" hidden="false" collective="false" import="true" targetId="9865-2a5b-42e8-e3e9" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cbcf-fcb3-bdaf-ba86" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4baf-80a9-194c-babd" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="eeb8-11d5-550c-9741" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
+        <entryLink id="9bb2-ff58-75a2-b2d5" name="Not Starting Equipments" hidden="false" collective="false" import="true" targetId="597e-11c7-a8e7-a163" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cbcf-fcb3-bdaf-ba86" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="3b3d-24f2-1594-c005" name="Not Starting Equipments Trained*" hidden="false" collective="false" import="true" targetId="5ac6-1838-365d-cfc7" type="selectionEntryGroup"/>
+        <entryLink id="ee59-0c27-82f9-9d5d" name="ZZ - Athletic Skills" hidden="false" collective="false" import="true" targetId="6d2d-ffa4-d7b3-8095" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="86fe-421d-2fd7-af4d" name="Farmer" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="d680-a2f7-ffa9-f888" name="Farmer" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
+          <characteristics>
+            <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77">6</characteristic>
+            <characteristic name="CQC" typeId="c9a5-0e15-592e-b420">3</characteristic>
+            <characteristic name="FA" typeId="27a9-9ee9-af76-5959">3</characteristic>
+            <characteristic name="S" typeId="e790-ef53-584e-1df2"></characteristic>
+            <characteristic name="E" typeId="4b91-ff1c-18ef-9b67">3</characteristic>
+            <characteristic name="DC" typeId="5dae-c04b-a65e-e09b"></characteristic>
+            <characteristic name="C" typeId="637f-3681-b85c-016f"></characteristic>
+            <characteristic name="I" typeId="6977-3618-a275-5671">3</characteristic>
+            <characteristic name="Special Rules" typeId="be7a-b80b-147b-6276">Agriculturalist, Heavy Lifter</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="897b-343d-9e2f-ab8c" name="AGRICULTURALIST" hidden="false" targetId="16bf-e692-36e9-c968" type="rule"/>
+        <infoLink id="f962-bd43-386c-59e6" name="HEAVY LIFTER" hidden="false" targetId="6d41-ca3b-7986-3eaa" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="33f3-d525-d8ba-77e2" name="New CategoryLink" hidden="false" targetId="3934-f417-bab4-db18" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="6860-71cf-63b1-c379" name="Melee Trained Weapon" hidden="false" collective="false" import="true" targetId="f21e-7417-5528-99d6" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef03-f463-dbd6-ade5" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b0fa-0f6b-7891-3124" name="Melee Weapons" hidden="false" collective="false" import="true" targetId="fb15-baf1-f6c8-08a3" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cbcf-fcb3-bdaf-ba86" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f079-6536-bcad-0ce3" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="41d1-5ed9-d1de-bffc" name="Ranged Trained Weapons" hidden="false" collective="false" import="true" targetId="d376-f738-588d-cb88" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63bd-7005-9fc0-e529" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ccf1-da5e-1a04-1c93" name="Ranged Weapons" hidden="false" collective="false" import="true" targetId="9865-2a5b-42e8-e3e9" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cbcf-fcb3-bdaf-ba86" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e8c-4cbc-6183-9de4" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="22cd-8ad1-51eb-d4f9" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
+        <entryLink id="a2a1-04d9-212b-a3d2" name="Not Starting Equipments" hidden="false" collective="false" import="true" targetId="597e-11c7-a8e7-a163" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cbcf-fcb3-bdaf-ba86" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="0c3d-54a9-b212-51d3" name="Not Starting Equipments Trained*" hidden="false" collective="false" import="true" targetId="5ac6-1838-365d-cfc7" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3fa9-9bc4-5f9b-cd83" name="Horse" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b7c8-25de-f5d1-f357" name="Horse" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
+          <characteristics>
+            <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77"/>
+            <characteristic name="CQC" typeId="c9a5-0e15-592e-b420">2</characteristic>
+            <characteristic name="FA" typeId="27a9-9ee9-af76-5959">0</characteristic>
+            <characteristic name="S" typeId="e790-ef53-584e-1df2">4</characteristic>
+            <characteristic name="E" typeId="4b91-ff1c-18ef-9b67">4</characteristic>
+            <characteristic name="DC" typeId="5dae-c04b-a65e-e09b">4</characteristic>
+            <characteristic name="C" typeId="637f-3681-b85c-016f">4</characteristic>
+            <characteristic name="I" typeId="6977-3618-a275-5671">1</characteristic>
+            <characteristic name="Special Rules" typeId="be7a-b80b-147b-6276">Animal, Mount, Beast of Burden, Tireless (Master Skill)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="90e5-461d-a8fe-6ce3" name="ANIMAL" hidden="false" targetId="8b4d-a1d2-00da-3cc2" type="rule"/>
+        <infoLink id="d32f-97cd-0fc5-2eba" name="Mount" hidden="false" targetId="7936-580a-2a1a-4160" type="rule"/>
+        <infoLink id="6b86-d9cb-b587-12fb" name="BEAST OF BURDEN" hidden="false" targetId="2ecb-65f0-af1a-2c58" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="9b73-e496-209f-6fe5" name="New CategoryLink" hidden="false" targetId="b944-50e6-cdc0-ddfb" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="15.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="82e8-be93-2bed-4e63" name="Outdoorsman" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="69c8-ca9b-20d5-0f81" name="Outdoorsman" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
+          <characteristics>
+            <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77">6</characteristic>
+            <characteristic name="CQC" typeId="c9a5-0e15-592e-b420">3</characteristic>
+            <characteristic name="FA" typeId="27a9-9ee9-af76-5959"></characteristic>
+            <characteristic name="S" typeId="e790-ef53-584e-1df2"></characteristic>
+            <characteristic name="E" typeId="4b91-ff1c-18ef-9b67"></characteristic>
+            <characteristic name="DC" typeId="5dae-c04b-a65e-e09b"></characteristic>
+            <characteristic name="C" typeId="637f-3681-b85c-016f"></characteristic>
+            <characteristic name="I" typeId="6977-3618-a275-5671">3</characteristic>
+            <characteristic name="Special Rules" typeId="be7a-b80b-147b-6276">Hunter</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="03e2-cbf5-fd88-1f2e" name="New CategoryLink" hidden="false" targetId="b944-50e6-cdc0-ddfb" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="607d-0aa6-f032-3108" name="Melee Trained Weapon" hidden="false" collective="false" import="true" targetId="f21e-7417-5528-99d6" type="selectionEntryGroup"/>
+        <entryLink id="c01e-6ce6-2de8-b152" name="Melee Weapons" hidden="false" collective="false" import="true" targetId="fb15-baf1-f6c8-08a3" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cbcf-fcb3-bdaf-ba86" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4024-edf7-0628-4978" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="140f-d542-b69b-661c" name="Melee Weapons" hidden="false" collective="false" import="true" targetId="fb15-baf1-f6c8-08a3" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cbcf-fcb3-bdaf-ba86" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="354f-e85d-2b3c-db50" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="eb40-9a75-03a6-7eb5" name="Ranged Weapons" hidden="false" collective="false" import="true" targetId="9865-2a5b-42e8-e3e9" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cbcf-fcb3-bdaf-ba86" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc06-decc-afc2-41c5" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4ae6-62a8-e123-9fa7" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
+        <entryLink id="6aa6-d1cf-5312-648f" name="Not Starting Equipments" hidden="false" collective="false" import="true" targetId="597e-11c7-a8e7-a163" type="selectionEntryGroup"/>
+        <entryLink id="7efd-e3df-7128-671e" name="Not Starting Equipments Trained*" hidden="false" collective="false" import="true" targetId="5ac6-1838-365d-cfc7" type="selectionEntryGroup"/>
+        <entryLink id="e8d3-4827-460f-58f8" name="ZZ - Academic Skills" hidden="false" collective="false" import="true" targetId="ca31-cd96-48e5-9a44" type="selectionEntryGroup"/>
+        <entryLink id="92fd-de3a-6987-58c4" name="Academic Skills" hidden="false" collective="false" import="true" targetId="7306-b7d2-a8a6-03b0" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
