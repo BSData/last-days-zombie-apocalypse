@@ -74,6 +74,8 @@
         <entryLink id="51ba-a4d4-938c-1ed9" name="ZZ - Close Quarter Combat Skills" hidden="false" collective="false" import="true" targetId="840c-ee82-0223-2c20" type="selectionEntryGroup"/>
         <entryLink id="3e6e-b90f-e4d2-8182" name="ZZ - Academic Skills" hidden="false" collective="false" import="true" targetId="ca31-cd96-48e5-9a44" type="selectionEntryGroup"/>
         <entryLink id="8c5b-68fc-595f-d6b1" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
+        <entryLink id="a12e-ec7f-bdeb-6a16" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
+        <entryLink id="2bb0-49bf-0615-6d67" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
@@ -146,6 +148,8 @@
         <entryLink id="879a-021f-cb94-3a7c" name="ZZ - Close Quarter Combat Skills" hidden="false" collective="false" import="true" targetId="840c-ee82-0223-2c20" type="selectionEntryGroup"/>
         <entryLink id="9377-43f7-1f92-9dfb" name="ZZ - Shooting Skills" hidden="false" collective="false" import="true" targetId="7306-b7d2-a8a6-03b0" type="selectionEntryGroup"/>
         <entryLink id="6ff6-80f4-3e56-72c4" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
+        <entryLink id="679b-40f5-923f-3d40" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
+        <entryLink id="482c-a486-df1a-7271" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="6.0"/>
@@ -223,6 +227,8 @@
           </modifiers>
         </entryLink>
         <entryLink id="5bc7-e94b-122e-e27a" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
+        <entryLink id="c0f1-fd6c-6892-d1c6" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
+        <entryLink id="8afc-dd6f-41d8-a035" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="21.0"/>
@@ -302,6 +308,8 @@
           </modifiers>
         </entryLink>
         <entryLink id="9386-6c41-20e4-0964" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
+        <entryLink id="0cdc-5a43-1df6-7139" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
+        <entryLink id="aab8-bd06-c339-7b50" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
@@ -376,6 +384,8 @@
         </entryLink>
         <entryLink id="28c1-8b86-957c-9a76" name="ZZ - Academic Skills" hidden="false" collective="false" import="true" targetId="ca31-cd96-48e5-9a44" type="selectionEntryGroup"/>
         <entryLink id="5958-fbe4-4eb6-eb7d" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
+        <entryLink id="dc5a-7257-5f1f-89d9" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
+        <entryLink id="5a71-9934-e7e8-c06b" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="3.0"/>
@@ -476,6 +486,8 @@
         <entryLink id="c249-269f-28c1-1494" name="ZZ - Athletic Skills" hidden="false" collective="false" import="true" targetId="6d2d-ffa4-d7b3-8095" type="selectionEntryGroup"/>
         <entryLink id="15d9-9962-fc7a-b2ee" name="ZZ - Close Quarter Combat Skills" hidden="false" collective="false" import="true" targetId="840c-ee82-0223-2c20" type="selectionEntryGroup"/>
         <entryLink id="7457-e996-0489-63d7" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
+        <entryLink id="58c3-4c11-083e-1bb6" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
+        <entryLink id="78b2-2103-1604-9bf8" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
@@ -548,6 +560,8 @@
         <entryLink id="9173-e93c-e5fc-9e7c" name="ZZ - Close Quarter Combat Skills" hidden="false" collective="false" import="true" targetId="840c-ee82-0223-2c20" type="selectionEntryGroup"/>
         <entryLink id="c442-54b5-9455-89ab" name="ZZ - Athletic Skills" hidden="false" collective="false" import="true" targetId="6d2d-ffa4-d7b3-8095" type="selectionEntryGroup"/>
         <entryLink id="c21f-52a4-f88a-b503" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
+        <entryLink id="a494-5e3e-5a36-53e3" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
+        <entryLink id="7df8-0885-c7ba-6712" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
@@ -628,6 +642,8 @@
         <entryLink id="8a0d-2d3a-4d47-7008" name="Academic Skills" hidden="false" collective="false" import="true" targetId="7306-b7d2-a8a6-03b0" type="selectionEntryGroup"/>
         <entryLink id="b73d-eb3d-9d22-fdbd" name="ZZ - Academic Skills" hidden="false" collective="false" import="true" targetId="ca31-cd96-48e5-9a44" type="selectionEntryGroup"/>
         <entryLink id="afd0-a2e7-f0e2-25c5" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
+        <entryLink id="dce0-46ef-3674-d3fa" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
+        <entryLink id="f07e-d9c7-50a0-ed28" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="3.0"/>
@@ -691,6 +707,8 @@
         <entryLink id="3076-d661-d02c-dd3d" name="ZZ - Athletic Skills" hidden="false" collective="false" import="true" targetId="6d2d-ffa4-d7b3-8095" type="selectionEntryGroup"/>
         <entryLink id="95ad-458d-c335-b853" name="ZZ - Academic Skills" hidden="false" collective="false" import="true" targetId="ca31-cd96-48e5-9a44" type="selectionEntryGroup"/>
         <entryLink id="c74d-02cc-a723-d755" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
+        <entryLink id="21c0-d6ee-4242-c311" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
+        <entryLink id="da8f-34d9-6739-296a" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
@@ -775,6 +793,8 @@
           </constraints>
         </entryLink>
         <entryLink id="a7b2-0b04-15b5-fc4f" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
+        <entryLink id="c57a-bbb0-d40c-170c" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
+        <entryLink id="b6b6-9f47-04a0-a1a7" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
@@ -849,6 +869,8 @@
           </modifiers>
         </entryLink>
         <entryLink id="f699-abd7-d3bf-2b78" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
+        <entryLink id="1de0-60da-b786-2d6a" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
+        <entryLink id="ba0b-6de6-b23f-38ba" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
@@ -1051,6 +1073,8 @@
             </modifier>
           </modifiers>
         </entryLink>
+        <entryLink id="55aa-2d2c-73f6-2356" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
+        <entryLink id="f6fa-2081-0bcf-d392" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="18.0"/>
@@ -1188,6 +1212,8 @@
         <entryLink id="be56-2e97-3de0-d75e" name="ZZ - Athletic Skills" hidden="false" collective="false" import="true" targetId="6d2d-ffa4-d7b3-8095" type="selectionEntryGroup"/>
         <entryLink id="f0c0-fe77-79ad-3e9f" name="ZZ - Academic Skills" hidden="false" collective="false" import="true" targetId="ca31-cd96-48e5-9a44" type="selectionEntryGroup"/>
         <entryLink id="99d2-0f09-88fc-e80a" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
+        <entryLink id="7718-30f1-d40b-234b" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
+        <entryLink id="7900-a1bf-6680-4a28" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="6.0"/>
@@ -1259,6 +1285,8 @@
         <entryLink id="a4ca-a0a8-7fe6-d7f0" name="Academic Skills" hidden="false" collective="false" import="true" targetId="7306-b7d2-a8a6-03b0" type="selectionEntryGroup"/>
         <entryLink id="791c-ff0b-575b-ba0a" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
         <entryLink id="5981-a5e4-eaf4-39d1" name="ZZ - Leadership Skills" hidden="false" collective="false" import="true" targetId="f733-f9b3-5262-ba36" type="selectionEntryGroup"/>
+        <entryLink id="8db9-81e7-0a4b-ba24" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
+        <entryLink id="43c5-8926-569b-0e22" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
@@ -1270,7 +1298,7 @@
           <characteristics>
             <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77">6</characteristic>
             <characteristic name="CQC" typeId="c9a5-0e15-592e-b420">3</characteristic>
-            <characteristic name="FA" typeId="27a9-9ee9-af76-5959"></characteristic>
+            <characteristic name="FA" typeId="27a9-9ee9-af76-5959"/>
             <characteristic name="S" typeId="e790-ef53-584e-1df2">3</characteristic>
             <characteristic name="E" typeId="4b91-ff1c-18ef-9b67">3</characteristic>
             <characteristic name="DC" typeId="5dae-c04b-a65e-e09b">3</characteristic>
@@ -1334,6 +1362,8 @@
         <entryLink id="22a0-943f-aa13-d5e5" name="Not Starting Equipments Trained*" hidden="false" collective="false" import="true" targetId="5ac6-1838-365d-cfc7" type="selectionEntryGroup"/>
         <entryLink id="734b-b6f1-f94f-792c" name="ZZ - Academic Skills" hidden="false" collective="false" import="true" targetId="ca31-cd96-48e5-9a44" type="selectionEntryGroup"/>
         <entryLink id="4397-a6ee-25bd-534d" name="ZZ - Athletic Skills" hidden="false" collective="false" import="true" targetId="6d2d-ffa4-d7b3-8095" type="selectionEntryGroup"/>
+        <entryLink id="6b79-8cb3-15a6-0948" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
+        <entryLink id="16ea-0771-5021-7b43" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
@@ -1408,6 +1438,8 @@
         </entryLink>
         <entryLink id="3b3d-24f2-1594-c005" name="Not Starting Equipments Trained*" hidden="false" collective="false" import="true" targetId="5ac6-1838-365d-cfc7" type="selectionEntryGroup"/>
         <entryLink id="ee59-0c27-82f9-9d5d" name="ZZ - Athletic Skills" hidden="false" collective="false" import="true" targetId="6d2d-ffa4-d7b3-8095" type="selectionEntryGroup"/>
+        <entryLink id="92d5-493e-fbec-d9a5" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
+        <entryLink id="0a35-e142-bf08-ced5" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
@@ -1420,10 +1452,10 @@
             <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77">6</characteristic>
             <characteristic name="CQC" typeId="c9a5-0e15-592e-b420">3</characteristic>
             <characteristic name="FA" typeId="27a9-9ee9-af76-5959">3</characteristic>
-            <characteristic name="S" typeId="e790-ef53-584e-1df2"></characteristic>
+            <characteristic name="S" typeId="e790-ef53-584e-1df2"/>
             <characteristic name="E" typeId="4b91-ff1c-18ef-9b67">3</characteristic>
-            <characteristic name="DC" typeId="5dae-c04b-a65e-e09b"></characteristic>
-            <characteristic name="C" typeId="637f-3681-b85c-016f"></characteristic>
+            <characteristic name="DC" typeId="5dae-c04b-a65e-e09b"/>
+            <characteristic name="C" typeId="637f-3681-b85c-016f"/>
             <characteristic name="I" typeId="6977-3618-a275-5671">3</characteristic>
             <characteristic name="Special Rules" typeId="be7a-b80b-147b-6276">Agriculturalist, Heavy Lifter</characteristic>
           </characteristics>
@@ -1482,6 +1514,8 @@
           </modifiers>
         </entryLink>
         <entryLink id="0c3d-54a9-b212-51d3" name="Not Starting Equipments Trained*" hidden="false" collective="false" import="true" targetId="5ac6-1838-365d-cfc7" type="selectionEntryGroup"/>
+        <entryLink id="6419-a466-2677-7754" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
+        <entryLink id="49fa-a079-5cc8-e88c" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
@@ -1507,6 +1541,7 @@
         <infoLink id="90e5-461d-a8fe-6ce3" name="ANIMAL" hidden="false" targetId="8b4d-a1d2-00da-3cc2" type="rule"/>
         <infoLink id="d32f-97cd-0fc5-2eba" name="Mount" hidden="false" targetId="7936-580a-2a1a-4160" type="rule"/>
         <infoLink id="6b86-d9cb-b587-12fb" name="BEAST OF BURDEN" hidden="false" targetId="2ecb-65f0-af1a-2c58" type="rule"/>
+        <infoLink id="e0f4-2617-189d-e6ef" name="Tireless" hidden="false" targetId="f2e4-240f-a6c8-4ae6" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="9b73-e496-209f-6fe5" name="New CategoryLink" hidden="false" targetId="b944-50e6-cdc0-ddfb" primary="true"/>
@@ -1521,16 +1556,19 @@
           <characteristics>
             <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77">6</characteristic>
             <characteristic name="CQC" typeId="c9a5-0e15-592e-b420">3</characteristic>
-            <characteristic name="FA" typeId="27a9-9ee9-af76-5959"></characteristic>
-            <characteristic name="S" typeId="e790-ef53-584e-1df2"></characteristic>
-            <characteristic name="E" typeId="4b91-ff1c-18ef-9b67"></characteristic>
-            <characteristic name="DC" typeId="5dae-c04b-a65e-e09b"></characteristic>
-            <characteristic name="C" typeId="637f-3681-b85c-016f"></characteristic>
+            <characteristic name="FA" typeId="27a9-9ee9-af76-5959"/>
+            <characteristic name="S" typeId="e790-ef53-584e-1df2"/>
+            <characteristic name="E" typeId="4b91-ff1c-18ef-9b67"/>
+            <characteristic name="DC" typeId="5dae-c04b-a65e-e09b"/>
+            <characteristic name="C" typeId="637f-3681-b85c-016f"/>
             <characteristic name="I" typeId="6977-3618-a275-5671">3</characteristic>
             <characteristic name="Special Rules" typeId="be7a-b80b-147b-6276">Hunter</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink id="2ce2-d963-2971-57fb" name="HUNTER" hidden="false" targetId="7154-9e56-c36b-d8b9" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="03e2-cbf5-fd88-1f2e" name="New CategoryLink" hidden="false" targetId="b944-50e6-cdc0-ddfb" primary="true"/>
       </categoryLinks>
@@ -1577,6 +1615,8 @@
         <entryLink id="7efd-e3df-7128-671e" name="Not Starting Equipments Trained*" hidden="false" collective="false" import="true" targetId="5ac6-1838-365d-cfc7" type="selectionEntryGroup"/>
         <entryLink id="e8d3-4827-460f-58f8" name="ZZ - Academic Skills" hidden="false" collective="false" import="true" targetId="ca31-cd96-48e5-9a44" type="selectionEntryGroup"/>
         <entryLink id="92fd-de3a-6987-58c4" name="Academic Skills" hidden="false" collective="false" import="true" targetId="7306-b7d2-a8a6-03b0" type="selectionEntryGroup"/>
+        <entryLink id="dfc9-d6ab-f6d6-96b6" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
+        <entryLink id="58ea-d4fc-fa61-7005" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
