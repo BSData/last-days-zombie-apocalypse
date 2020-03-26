@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c8e4-cb55-a4f1-c47b" name="Survivor" revision="3" battleScribeVersion="2.03" library="false" gameSystemId="ddab-c095-bf70-e8ba" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c8e4-cb55-a4f1-c47b" name="Survivor" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="ddab-c095-bf70-e8ba" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="dfd0-fca4-b29e-02e9" name="Good Samarithan" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -1586,18 +1586,6 @@
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4024-edf7-0628-4978" type="max"/>
           </constraints>
         </entryLink>
-        <entryLink id="140f-d542-b69b-661c" name="Melee Weapons" hidden="false" collective="false" import="true" targetId="fb15-baf1-f6c8-08a3" type="selectionEntryGroup">
-          <modifiers>
-            <modifier type="set" field="hidden" value="true">
-              <conditions>
-                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="cbcf-fcb3-bdaf-ba86" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="354f-e85d-2b3c-db50" type="max"/>
-          </constraints>
-        </entryLink>
         <entryLink id="eb40-9a75-03a6-7eb5" name="Ranged Weapons" hidden="false" collective="false" import="true" targetId="9865-2a5b-42e8-e3e9" type="selectionEntryGroup">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
@@ -1617,6 +1605,11 @@
         <entryLink id="92fd-de3a-6987-58c4" name="Academic Skills" hidden="false" collective="false" import="true" targetId="7306-b7d2-a8a6-03b0" type="selectionEntryGroup"/>
         <entryLink id="dfc9-d6ab-f6d6-96b6" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
         <entryLink id="58ea-d4fc-fa61-7005" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
+        <entryLink id="7479-a779-add5-b47a" name="Ranged Trained Weapons" hidden="false" collective="false" import="true" targetId="d376-f738-588d-cb88" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="123d-6ee7-522a-5b91" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
