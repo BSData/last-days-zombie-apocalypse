@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c8e4-cb55-a4f1-c47b" name="Survivor" revision="4" battleScribeVersion="2.03" library="false" gameSystemId="ddab-c095-bf70-e8ba" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c8e4-cb55-a4f1-c47b" name="Survivor" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="ddab-c095-bf70-e8ba" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="dfd0-fca4-b29e-02e9" name="Good Samarithan" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -1298,7 +1298,7 @@
           <characteristics>
             <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77">6</characteristic>
             <characteristic name="CQC" typeId="c9a5-0e15-592e-b420">3</characteristic>
-            <characteristic name="FA" typeId="27a9-9ee9-af76-5959"/>
+            <characteristic name="FA" typeId="27a9-9ee9-af76-5959">3</characteristic>
             <characteristic name="S" typeId="e790-ef53-584e-1df2">3</characteristic>
             <characteristic name="E" typeId="4b91-ff1c-18ef-9b67">3</characteristic>
             <characteristic name="DC" typeId="5dae-c04b-a65e-e09b">3</characteristic>
@@ -1452,10 +1452,10 @@
             <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77">6</characteristic>
             <characteristic name="CQC" typeId="c9a5-0e15-592e-b420">3</characteristic>
             <characteristic name="FA" typeId="27a9-9ee9-af76-5959">3</characteristic>
-            <characteristic name="S" typeId="e790-ef53-584e-1df2"/>
+            <characteristic name="S" typeId="e790-ef53-584e-1df2">3</characteristic>
             <characteristic name="E" typeId="4b91-ff1c-18ef-9b67">3</characteristic>
-            <characteristic name="DC" typeId="5dae-c04b-a65e-e09b"/>
-            <characteristic name="C" typeId="637f-3681-b85c-016f"/>
+            <characteristic name="DC" typeId="5dae-c04b-a65e-e09b">3</characteristic>
+            <characteristic name="C" typeId="637f-3681-b85c-016f">3</characteristic>
             <characteristic name="I" typeId="6977-3618-a275-5671">3</characteristic>
             <characteristic name="Special Rules" typeId="be7a-b80b-147b-6276">Agriculturalist, Heavy Lifter</characteristic>
           </characteristics>
@@ -1525,7 +1525,7 @@
       <profiles>
         <profile id="b7c8-25de-f5d1-f357" name="Horse" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
           <characteristics>
-            <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77"/>
+            <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77">8</characteristic>
             <characteristic name="CQC" typeId="c9a5-0e15-592e-b420">2</characteristic>
             <characteristic name="FA" typeId="27a9-9ee9-af76-5959">0</characteristic>
             <characteristic name="S" typeId="e790-ef53-584e-1df2">4</characteristic>
@@ -1556,11 +1556,11 @@
           <characteristics>
             <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77">6</characteristic>
             <characteristic name="CQC" typeId="c9a5-0e15-592e-b420">3</characteristic>
-            <characteristic name="FA" typeId="27a9-9ee9-af76-5959"/>
-            <characteristic name="S" typeId="e790-ef53-584e-1df2"/>
-            <characteristic name="E" typeId="4b91-ff1c-18ef-9b67"/>
-            <characteristic name="DC" typeId="5dae-c04b-a65e-e09b"/>
-            <characteristic name="C" typeId="637f-3681-b85c-016f"/>
+            <characteristic name="FA" typeId="27a9-9ee9-af76-5959">3</characteristic>
+            <characteristic name="S" typeId="e790-ef53-584e-1df2">3</characteristic>
+            <characteristic name="E" typeId="4b91-ff1c-18ef-9b67">3</characteristic>
+            <characteristic name="DC" typeId="5dae-c04b-a65e-e09b">3</characteristic>
+            <characteristic name="C" typeId="637f-3681-b85c-016f">3</characteristic>
             <characteristic name="I" typeId="6977-3618-a275-5671">3</characteristic>
             <characteristic name="Special Rules" typeId="be7a-b80b-147b-6276">Hunter</characteristic>
           </characteristics>
