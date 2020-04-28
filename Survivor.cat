@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c8e4-cb55-a4f1-c47b" name="Survivor" revision="5" battleScribeVersion="2.03" library="false" gameSystemId="ddab-c095-bf70-e8ba" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c8e4-cb55-a4f1-c47b" name="Survivor" revision="6" battleScribeVersion="2.03" library="false" gameSystemId="ddab-c095-bf70-e8ba" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="dfd0-fca4-b29e-02e9" name="Good Samarithan" hidden="false" collective="false" import="true" type="model">
       <modifiers>
@@ -10,7 +10,49 @@
         </modifier>
       </modifiers>
       <profiles>
-        <profile id="16a8-3504-be6d-72ef" name="Good Samarithan" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
+        <profile id="79d8-9c5e-9d50-3fef" name="Good Samarithan" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
+          <modifiers>
+            <modifier type="increment" field="27a9-9ee9-af76-5959" value="1">
+              <repeats>
+                <repeat field="selections" scope="dfd0-fca4-b29e-02e9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7721-3f50-6e93-320d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="c9a5-0e15-592e-b420" value="1">
+              <repeats>
+                <repeat field="selections" scope="dfd0-fca4-b29e-02e9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4f83-94b1-ae49-f210" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="e790-ef53-584e-1df2" value="1">
+              <repeats>
+                <repeat field="selections" scope="dfd0-fca4-b29e-02e9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="910a-0769-23b6-2416" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="4b91-ff1c-18ef-9b67" value="1">
+              <repeats>
+                <repeat field="selections" scope="dfd0-fca4-b29e-02e9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a39d-d465-cc07-128c" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="f7f9-43eb-c02e-6f77" value="1">
+              <repeats>
+                <repeat field="selections" scope="dfd0-fca4-b29e-02e9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="72be-4de6-16ac-908e" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="5dae-c04b-a65e-e09b" value="1">
+              <repeats>
+                <repeat field="selections" scope="dfd0-fca4-b29e-02e9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9a29-feaf-1bfe-f436" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="637f-3681-b85c-016f" value="1">
+              <repeats>
+                <repeat field="selections" scope="dfd0-fca4-b29e-02e9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f04d-d642-3a5e-ac64" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="6977-3618-a275-5671" value="1">
+              <repeats>
+                <repeat field="selections" scope="dfd0-fca4-b29e-02e9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8afd-da26-9930-4081" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77">6</characteristic>
             <characteristic name="CQC" typeId="c9a5-0e15-592e-b420">3</characteristic>
@@ -76,9 +118,20 @@
         <entryLink id="8c5b-68fc-595f-d6b1" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
         <entryLink id="a12e-ec7f-bdeb-6a16" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
         <entryLink id="2bb0-49bf-0615-6d67" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
+        <entryLink id="5279-4f6c-4526-c4d9" name="Campaign Track" hidden="false" collective="false" import="true" targetId="a360-c7a4-7cc5-2ddc" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bbb6-3432-8990-923d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f67b-30ad-9cd2-6eb7" name="Gang Member" hidden="false" collective="false" import="true" type="model">
@@ -153,6 +206,8 @@
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="6.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9d9b-8ecf-aba6-dcc8" name="SARGE" hidden="false" collective="false" import="true" type="model">
@@ -232,6 +287,8 @@
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="21.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a534-c7c4-95d2-3169" name="COP" hidden="false" collective="false" import="true" type="model">
@@ -313,6 +370,8 @@
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5999-d697-881f-f368" name="Crony" hidden="false" collective="false" import="true" type="model">
@@ -389,6 +448,8 @@
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="3.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="001d-12a7-5289-c5ec" name="DOG" hidden="false" collective="false" import="true" type="model">
@@ -417,11 +478,55 @@
       </categoryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="74d3-d1a1-bdbe-97b0" name="Firefighter" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="253e-7bef-dd45-c6c8" name="Firefigther" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
+        <profile id="fe56-e439-c8f6-1d0a" name="Firefigther" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
+          <modifiers>
+            <modifier type="increment" field="27a9-9ee9-af76-5959" value="1">
+              <repeats>
+                <repeat field="selections" scope="74d3-d1a1-bdbe-97b0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7721-3f50-6e93-320d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="c9a5-0e15-592e-b420" value="1">
+              <repeats>
+                <repeat field="selections" scope="74d3-d1a1-bdbe-97b0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4f83-94b1-ae49-f210" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="e790-ef53-584e-1df2" value="1">
+              <repeats>
+                <repeat field="selections" scope="74d3-d1a1-bdbe-97b0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="910a-0769-23b6-2416" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="4b91-ff1c-18ef-9b67" value="1">
+              <repeats>
+                <repeat field="selections" scope="74d3-d1a1-bdbe-97b0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a39d-d465-cc07-128c" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="f7f9-43eb-c02e-6f77" value="1">
+              <repeats>
+                <repeat field="selections" scope="74d3-d1a1-bdbe-97b0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="72be-4de6-16ac-908e" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="5dae-c04b-a65e-e09b" value="1">
+              <repeats>
+                <repeat field="selections" scope="74d3-d1a1-bdbe-97b0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9a29-feaf-1bfe-f436" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="637f-3681-b85c-016f" value="1">
+              <repeats>
+                <repeat field="selections" scope="74d3-d1a1-bdbe-97b0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f04d-d642-3a5e-ac64" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="6977-3618-a275-5671" value="1">
+              <repeats>
+                <repeat field="selections" scope="74d3-d1a1-bdbe-97b0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8afd-da26-9930-4081" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77">8</characteristic>
             <characteristic name="CQC" typeId="c9a5-0e15-592e-b420">3</characteristic>
@@ -488,9 +593,20 @@
         <entryLink id="7457-e996-0489-63d7" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
         <entryLink id="58c3-4c11-083e-1bb6" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
         <entryLink id="78b2-2103-1604-9bf8" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
+        <entryLink id="d323-0542-a47f-6de8" name="Campaign Track" hidden="false" collective="false" import="true" targetId="a360-c7a4-7cc5-2ddc" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bbb6-3432-8990-923d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f24e-611b-8aa7-2018" name="GOON" hidden="false" collective="false" import="true" type="model">
@@ -565,6 +681,8 @@
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f688-5a65-1eb8-3b4c" name="KID" hidden="false" collective="false" import="true" type="model">
@@ -647,11 +765,55 @@
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="3.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6a4c-d625-2b32-d871" name="Rescue Worker" hidden="false" collective="false" import="true" type="model">
       <profiles>
-        <profile id="b825-08bd-8e3c-5b31" name="Rescue Worker" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
+        <profile id="17d1-5c29-657e-f1e9" name="Rescue Worker" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
+          <modifiers>
+            <modifier type="increment" field="27a9-9ee9-af76-5959" value="1">
+              <repeats>
+                <repeat field="selections" scope="6a4c-d625-2b32-d871" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7721-3f50-6e93-320d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="c9a5-0e15-592e-b420" value="1">
+              <repeats>
+                <repeat field="selections" scope="6a4c-d625-2b32-d871" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4f83-94b1-ae49-f210" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="e790-ef53-584e-1df2" value="1">
+              <repeats>
+                <repeat field="selections" scope="6a4c-d625-2b32-d871" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="910a-0769-23b6-2416" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="4b91-ff1c-18ef-9b67" value="1">
+              <repeats>
+                <repeat field="selections" scope="6a4c-d625-2b32-d871" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a39d-d465-cc07-128c" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="f7f9-43eb-c02e-6f77" value="1">
+              <repeats>
+                <repeat field="selections" scope="6a4c-d625-2b32-d871" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="72be-4de6-16ac-908e" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="5dae-c04b-a65e-e09b" value="1">
+              <repeats>
+                <repeat field="selections" scope="6a4c-d625-2b32-d871" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9a29-feaf-1bfe-f436" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="637f-3681-b85c-016f" value="1">
+              <repeats>
+                <repeat field="selections" scope="6a4c-d625-2b32-d871" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f04d-d642-3a5e-ac64" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="6977-3618-a275-5671" value="1">
+              <repeats>
+                <repeat field="selections" scope="6a4c-d625-2b32-d871" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8afd-da26-9930-4081" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77">6</characteristic>
             <characteristic name="CQC" typeId="c9a5-0e15-592e-b420">3</characteristic>
@@ -709,9 +871,20 @@
         <entryLink id="c74d-02cc-a723-d755" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true" targetId="5eec-c623-e033-367b" type="selectionEntryGroup"/>
         <entryLink id="21c0-d6ee-4242-c311" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
         <entryLink id="da8f-34d9-6739-296a" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
+        <entryLink id="1193-ec27-c81c-a448" name="Campaign Track" hidden="false" collective="false" import="true" targetId="a360-c7a4-7cc5-2ddc" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bbb6-3432-8990-923d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="05d2-7b04-ac57-540d" name="SWAT" hidden="false" collective="false" import="true" type="model">
@@ -798,6 +971,8 @@
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3d44-c545-c127-184f" name="Soldier" hidden="false" collective="false" import="true" type="model">
@@ -874,6 +1049,8 @@
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="50ba-5aa4-be5e-fecf" name="Survivalist" hidden="false" collective="false" import="true" type="model">
@@ -1078,6 +1255,8 @@
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="18.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f0e6-ccac-f6c1-3afb" name="Survivor" hidden="false" collective="false" import="true" type="model">
@@ -1217,6 +1396,8 @@
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="6.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3261-765e-1651-63ab" name="Tough Guy" hidden="false" collective="false" import="true" type="model">
@@ -1290,11 +1471,55 @@
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="9.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1f4b-e922-db35-dd6b" name="Builder" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="4389-57ba-14cd-495b" name="Builder" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
+        <profile id="133c-4ece-a7bc-1014" name="Builder" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
+          <modifiers>
+            <modifier type="increment" field="27a9-9ee9-af76-5959" value="1">
+              <repeats>
+                <repeat field="selections" scope="1f4b-e922-db35-dd6b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7721-3f50-6e93-320d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="c9a5-0e15-592e-b420" value="1">
+              <repeats>
+                <repeat field="selections" scope="1f4b-e922-db35-dd6b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4f83-94b1-ae49-f210" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="e790-ef53-584e-1df2" value="1">
+              <repeats>
+                <repeat field="selections" scope="1f4b-e922-db35-dd6b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="910a-0769-23b6-2416" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="4b91-ff1c-18ef-9b67" value="1">
+              <repeats>
+                <repeat field="selections" scope="1f4b-e922-db35-dd6b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a39d-d465-cc07-128c" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="f7f9-43eb-c02e-6f77" value="1">
+              <repeats>
+                <repeat field="selections" scope="1f4b-e922-db35-dd6b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="72be-4de6-16ac-908e" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="5dae-c04b-a65e-e09b" value="1">
+              <repeats>
+                <repeat field="selections" scope="1f4b-e922-db35-dd6b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="38a2-425b-a7d0-78c2" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="637f-3681-b85c-016f" value="1">
+              <repeats>
+                <repeat field="selections" scope="1f4b-e922-db35-dd6b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f04d-d642-3a5e-ac64" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="6977-3618-a275-5671" value="1">
+              <repeats>
+                <repeat field="selections" scope="1f4b-e922-db35-dd6b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8afd-da26-9930-4081" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77">6</characteristic>
             <characteristic name="CQC" typeId="c9a5-0e15-592e-b420">3</characteristic>
@@ -1364,9 +1589,20 @@
         <entryLink id="4397-a6ee-25bd-534d" name="ZZ - Athletic Skills" hidden="false" collective="false" import="true" targetId="6d2d-ffa4-d7b3-8095" type="selectionEntryGroup"/>
         <entryLink id="6b79-8cb3-15a6-0948" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
         <entryLink id="16ea-0771-5021-7b43" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
+        <entryLink id="45a1-ad65-700a-0f87" name="Campaign Track" hidden="false" collective="false" import="true" targetId="a360-c7a4-7cc5-2ddc" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bbb6-3432-8990-923d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5b56-6de8-f087-9ed3" name="Burglar" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
@@ -1443,11 +1679,55 @@
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="86fe-421d-2fd7-af4d" name="Farmer" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
-        <profile id="d680-a2f7-ffa9-f888" name="Farmer" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
+        <profile id="a602-bc4a-9aab-5812" name="Farmer" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
+          <modifiers>
+            <modifier type="increment" field="27a9-9ee9-af76-5959" value="1">
+              <repeats>
+                <repeat field="selections" scope="86fe-421d-2fd7-af4d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7721-3f50-6e93-320d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="c9a5-0e15-592e-b420" value="1">
+              <repeats>
+                <repeat field="selections" scope="86fe-421d-2fd7-af4d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4f83-94b1-ae49-f210" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="e790-ef53-584e-1df2" value="1">
+              <repeats>
+                <repeat field="selections" scope="86fe-421d-2fd7-af4d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="910a-0769-23b6-2416" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="4b91-ff1c-18ef-9b67" value="1">
+              <repeats>
+                <repeat field="selections" scope="86fe-421d-2fd7-af4d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a39d-d465-cc07-128c" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="f7f9-43eb-c02e-6f77" value="1">
+              <repeats>
+                <repeat field="selections" scope="86fe-421d-2fd7-af4d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="72be-4de6-16ac-908e" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="5dae-c04b-a65e-e09b" value="1">
+              <repeats>
+                <repeat field="selections" scope="86fe-421d-2fd7-af4d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9a29-feaf-1bfe-f436" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="637f-3681-b85c-016f" value="1">
+              <repeats>
+                <repeat field="selections" scope="86fe-421d-2fd7-af4d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f04d-d642-3a5e-ac64" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="6977-3618-a275-5671" value="1">
+              <repeats>
+                <repeat field="selections" scope="86fe-421d-2fd7-af4d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8afd-da26-9930-4081" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77">6</characteristic>
             <characteristic name="CQC" typeId="c9a5-0e15-592e-b420">3</characteristic>
@@ -1516,9 +1796,20 @@
         <entryLink id="0c3d-54a9-b212-51d3" name="Not Starting Equipments Trained*" hidden="false" collective="false" import="true" targetId="5ac6-1838-365d-cfc7" type="selectionEntryGroup"/>
         <entryLink id="6419-a466-2677-7754" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
         <entryLink id="49fa-a079-5cc8-e88c" name="Conditions (Seasons)" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
+        <entryLink id="b0d0-8940-8a72-cac7" name="Campaign Track" hidden="false" collective="false" import="true" targetId="a360-c7a4-7cc5-2ddc" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bbb6-3432-8990-923d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3fa9-9bc4-5f9b-cd83" name="Horse" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
@@ -1548,6 +1839,8 @@
       </categoryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="15.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="82e8-be93-2bed-4e63" name="Outdoorsman" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
@@ -1613,6 +1906,8 @@
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>

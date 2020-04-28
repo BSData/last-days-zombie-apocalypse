@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ddab-c095-bf70-e8ba" name="Last Days Zombie Apocalypse" revision="3" battleScribeVersion="2.03" authorName="Andrea Nespeca" authorContact="andrea.nespeca@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ddab-c095-bf70-e8ba" name="Last Days Zombie Apocalypse" revision="4" battleScribeVersion="2.03" authorName="Andrea Nespeca" authorContact="andrea.nespeca@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="91b6-9e1a-c8f3-b62d" name="Last Day: Zombie Apocalypse"/>
     <publication id="7ef1-f5b1-da7f-ede3" name="Seasons"/>
   </publications>
   <costTypes>
     <costType id="c527-314d-4ba4-197c" name=" Scavenge Points" defaultCostLimit="-1.0"/>
+    <costType id="3ef4-fb1a-98fe-87b3" name="Max Group" defaultCostLimit="-1.0"/>
+    <costType id="b34f-9647-091d-63f5" name="Empty Space" defaultCostLimit="-1.0"/>
   </costTypes>
   <profileTypes>
     <profileType id="98c9-b6e2-32a5-3fea" name="Characteristics">
@@ -49,6 +51,72 @@
   </categoryEntries>
   <forceEntries>
     <forceEntry id="2063-3c80-96c4-fc6b" name="Survivors" hidden="false">
+      <modifiers>
+        <modifier type="set" field="d46b-b382-984f-ae7d" value="2.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0d32-f22c-7a8f-39f7" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="d46b-b382-984f-ae7d" value="6.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="40e8-6367-a342-33f0" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="d46b-b382-984f-ae7d" value="8.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fab9-8239-7588-4573" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="d46b-b382-984f-ae7d" value="3.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4e7-0559-3b92-412a" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="d46b-b382-984f-ae7d" value="2.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c68-9441-460f-7915" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="d46b-b382-984f-ae7d" value="3.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a130-0341-02a9-f1c2" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="62c1-4475-892a-55f1" value="8.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="40e8-6367-a342-33f0" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="62c1-4475-892a-55f1" value="12.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="fab9-8239-7588-4573" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="62c1-4475-892a-55f1" value="6.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a4e7-0559-3b92-412a" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="62c1-4475-892a-55f1" value="8.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0d32-f22c-7a8f-39f7" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="62c1-4475-892a-55f1" value="8.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="1c68-9441-460f-7915" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="62c1-4475-892a-55f1" value="10.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a130-0341-02a9-f1c2" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="3ef4-fb1a-98fe-87b3" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62c1-4475-892a-55f1" type="max"/>
+        <constraint field="b34f-9647-091d-63f5" scope="roster" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d46b-b382-984f-ae7d" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="0ba4-a6a3-8281-e81c" name="Selfish" hidden="false" targetId="5530-1108-dadf-26a8" primary="false">
           <modifiers>
@@ -146,6 +214,48 @@
       </constraints>
       <profiles>
         <profile id="93ac-3845-d9f1-a9fc" name="The EveryDay Hero" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
+          <modifiers>
+            <modifier type="increment" field="27a9-9ee9-af76-5959" value="1">
+              <repeats>
+                <repeat field="selections" scope="3bd6-a6ec-0d5f-20b3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7721-3f50-6e93-320d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="c9a5-0e15-592e-b420" value="1">
+              <repeats>
+                <repeat field="selections" scope="3bd6-a6ec-0d5f-20b3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4f83-94b1-ae49-f210" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="e790-ef53-584e-1df2" value="1">
+              <repeats>
+                <repeat field="selections" scope="3bd6-a6ec-0d5f-20b3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="910a-0769-23b6-2416" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="4b91-ff1c-18ef-9b67" value="1">
+              <repeats>
+                <repeat field="selections" scope="3bd6-a6ec-0d5f-20b3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a39d-d465-cc07-128c" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="f7f9-43eb-c02e-6f77" value="1">
+              <repeats>
+                <repeat field="selections" scope="3bd6-a6ec-0d5f-20b3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="72be-4de6-16ac-908e" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="5dae-c04b-a65e-e09b" value="1">
+              <repeats>
+                <repeat field="selections" scope="3bd6-a6ec-0d5f-20b3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9a29-feaf-1bfe-f436" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="637f-3681-b85c-016f" value="1">
+              <repeats>
+                <repeat field="selections" scope="3bd6-a6ec-0d5f-20b3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f04d-d642-3a5e-ac64" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="6977-3618-a275-5671" value="1">
+              <repeats>
+                <repeat field="selections" scope="3bd6-a6ec-0d5f-20b3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8afd-da26-9930-4081" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77">6</characteristic>
             <characteristic name="CQC" typeId="c9a5-0e15-592e-b420">4</characteristic>
@@ -181,9 +291,20 @@
         <entryLink id="099c-32a3-78ed-cc12" name="Conditions (Seasons)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
         <entryLink id="ecc0-ae86-c020-a2ed" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
         <entryLink id="6b97-31fc-9259-dd27" name="ZA - Rare Equipments" hidden="false" collective="false" import="true" targetId="64f3-b85e-02ee-0a8a" type="selectionEntryGroup"/>
+        <entryLink id="b9df-bfa7-b2fd-33a8" name="Campaign Track" hidden="false" collective="false" import="true" targetId="a360-c7a4-7cc5-2ddc" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bbb6-3432-8990-923d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="12.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b327-81e0-b6f5-0845" name="The Merciless Thug" hidden="false" collective="false" import="true" type="upgrade">
@@ -203,7 +324,49 @@
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e99b-3332-fd67-8cb9" type="max"/>
       </constraints>
       <profiles>
-        <profile id="a853-0aed-6234-9193" name="The Merciless Thug" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
+        <profile id="d69a-0617-bcc2-bf4f" name="The Merciless Thug" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
+          <modifiers>
+            <modifier type="increment" field="27a9-9ee9-af76-5959" value="1">
+              <repeats>
+                <repeat field="selections" scope="b327-81e0-b6f5-0845" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7721-3f50-6e93-320d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="c9a5-0e15-592e-b420" value="1">
+              <repeats>
+                <repeat field="selections" scope="b327-81e0-b6f5-0845" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4f83-94b1-ae49-f210" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="e790-ef53-584e-1df2" value="1">
+              <repeats>
+                <repeat field="selections" scope="b327-81e0-b6f5-0845" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="910a-0769-23b6-2416" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="4b91-ff1c-18ef-9b67" value="1">
+              <repeats>
+                <repeat field="selections" scope="b327-81e0-b6f5-0845" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a39d-d465-cc07-128c" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="f7f9-43eb-c02e-6f77" value="1">
+              <repeats>
+                <repeat field="selections" scope="b327-81e0-b6f5-0845" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="72be-4de6-16ac-908e" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="5dae-c04b-a65e-e09b" value="1">
+              <repeats>
+                <repeat field="selections" scope="b327-81e0-b6f5-0845" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9a29-feaf-1bfe-f436" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="637f-3681-b85c-016f" value="1">
+              <repeats>
+                <repeat field="selections" scope="b327-81e0-b6f5-0845" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f04d-d642-3a5e-ac64" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="6977-3618-a275-5671" value="1">
+              <repeats>
+                <repeat field="selections" scope="b327-81e0-b6f5-0845" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8afd-da26-9930-4081" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77">6</characteristic>
             <characteristic name="CQC" typeId="c9a5-0e15-592e-b420">4</characteristic>
@@ -239,9 +402,20 @@
         <entryLink id="7d0e-5542-43c6-76b2" name="Conditions (Seasons)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
         <entryLink id="b716-e626-820e-3075" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
         <entryLink id="e645-1304-6d9b-6f59" name="ZA - Rare Equipments" hidden="false" collective="false" import="true" targetId="64f3-b85e-02ee-0a8a" type="selectionEntryGroup"/>
+        <entryLink id="45a0-e038-3f3d-84d9" name="Campaign Track" hidden="false" collective="false" import="true" targetId="a360-c7a4-7cc5-2ddc" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bbb6-3432-8990-923d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="15.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cbcf-fcb3-bdaf-ba86" name="The Professional" hidden="false" collective="false" import="true" type="upgrade">
@@ -261,7 +435,49 @@
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a50-c887-c16e-66db" type="max"/>
       </constraints>
       <profiles>
-        <profile id="13d8-2048-60ac-1e8a" name="The Professional" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
+        <profile id="f15f-f540-912c-9cc5" name="The Professional" hidden="false" typeId="98c9-b6e2-32a5-3fea" typeName="Characteristics">
+          <modifiers>
+            <modifier type="increment" field="27a9-9ee9-af76-5959" value="1">
+              <repeats>
+                <repeat field="selections" scope="cbcf-fcb3-bdaf-ba86" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="7721-3f50-6e93-320d" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="c9a5-0e15-592e-b420" value="1">
+              <repeats>
+                <repeat field="selections" scope="cbcf-fcb3-bdaf-ba86" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="4f83-94b1-ae49-f210" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="e790-ef53-584e-1df2" value="1">
+              <repeats>
+                <repeat field="selections" scope="cbcf-fcb3-bdaf-ba86" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="910a-0769-23b6-2416" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="4b91-ff1c-18ef-9b67" value="1">
+              <repeats>
+                <repeat field="selections" scope="cbcf-fcb3-bdaf-ba86" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a39d-d465-cc07-128c" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="f7f9-43eb-c02e-6f77" value="1">
+              <repeats>
+                <repeat field="selections" scope="cbcf-fcb3-bdaf-ba86" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="72be-4de6-16ac-908e" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="5dae-c04b-a65e-e09b" value="1">
+              <repeats>
+                <repeat field="selections" scope="cbcf-fcb3-bdaf-ba86" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="9a29-feaf-1bfe-f436" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="637f-3681-b85c-016f" value="1">
+              <repeats>
+                <repeat field="selections" scope="cbcf-fcb3-bdaf-ba86" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f04d-d642-3a5e-ac64" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="6977-3618-a275-5671" value="1">
+              <repeats>
+                <repeat field="selections" scope="cbcf-fcb3-bdaf-ba86" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8afd-da26-9930-4081" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <characteristics>
             <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77">6</characteristic>
             <characteristic name="CQC" typeId="c9a5-0e15-592e-b420">4</characteristic>
@@ -295,9 +511,219 @@
         <entryLink id="5773-2ee6-85ef-7ac8" name="Conditions (Seasons)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" targetId="8bc3-f346-f70e-90e1" type="selectionEntryGroup"/>
         <entryLink id="46e9-4bec-8034-1e59" name="ZZZ - Master SKills" hidden="false" collective="false" import="true" targetId="16f0-a2c3-c088-955b" type="selectionEntryGroup"/>
         <entryLink id="9d88-3731-c62f-7c4d" name="ZA - Rare Equipments" hidden="false" collective="false" import="true" targetId="64f3-b85e-02ee-0a8a" type="selectionEntryGroup"/>
+        <entryLink id="2d93-badc-4fa8-1031" name="Campaign Track" hidden="false" collective="false" import="true" targetId="a360-c7a4-7cc5-2ddc" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditions>
+                <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="bbb6-3432-8990-923d" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="18.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="1.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bbb6-3432-8990-923d" name="Campaign" publicationId="91b6-9e1a-c8f3-b62d" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="851b-f5b9-d8be-05c0" name="Group&apos;s Stash" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="7f94-9396-1ebe-dcb4" name="Melee Weapon" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="1e7b-481d-6379-65ba" name="Club*" hidden="false" collective="false" import="true" targetId="2128-ef50-b2b8-858c" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="778b-5938-6aa8-0133" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="bc92-3b1d-2be9-ed18" name="Knife*" hidden="false" collective="false" import="true" targetId="2082-cb0f-9a34-3821" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="821d-0c84-7d9a-2414" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="c6dd-7d20-2488-9944" name="Heavy Blade" hidden="false" collective="false" import="true" targetId="175a-41f7-273a-18e9" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="50d3-8472-dadf-3619" value="-1.0"/>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="3eb4-4c6d-89c0-6ebc" name="Heavy Club" hidden="false" collective="false" import="true" targetId="ea68-1638-d449-92f6" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="e445-e299-6a6b-e708" value="-1.0"/>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="61d1-170c-0fe4-88cf" name="Chainsaw" hidden="false" collective="false" import="true" targetId="2d47-a0fe-1871-7e1a" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="08a8-85cd-85b8-846f" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="0664-48b3-0073-4aba" name="Firearms" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="8499-6a94-72b5-7a2e" name="High-Powered Rifle*" hidden="false" collective="false" import="true" targetId="3642-f9cf-bb04-cda1" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="0abd-1746-7405-61f0" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="f84e-eeff-bc80-7ed8" name="Magnum*" hidden="false" collective="false" import="true" targetId="92c8-c448-5138-0320" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="5a70-f6c7-69c2-4566" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="b32e-c967-1143-d5d8" name="Military Assault Rifle*" hidden="false" collective="false" import="true" targetId="6ee7-a25c-cdf1-3339" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="6260-c3b6-b967-f111" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="16ec-a2a5-5004-7af5" name="Military SMG*" hidden="false" collective="false" import="true" targetId="add5-a60d-c094-5505" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="6144-85a8-55eb-c5db" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="989b-a421-6f46-810b" name="Pump-Action Shotgun*" hidden="false" collective="false" import="true" targetId="42e0-a05b-aafa-7853" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="2693-3710-bfa4-7ec8" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="7dfc-0266-ddfa-4908" name="Revolver*" hidden="false" collective="false" import="true" targetId="9ff2-f2fb-2c3f-7bd4" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="ad2c-c603-3022-2756" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="9b9d-5bc1-ccd0-07d0" name="Semi-Automatic*" hidden="false" collective="false" import="true" targetId="b34c-c0c6-fbf4-3260" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="1f65-ffc3-9bcc-2e6c" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="5bb6-d8f0-4207-7939" name="Squad Automatic Weapon*" hidden="false" collective="false" import="true" targetId="8be6-f451-30ba-8e45" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="ee7a-0292-eb16-dcf4" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="09a2-a834-5d2a-6da4" name="Hunting Bow" hidden="false" collective="false" import="true" targetId="6599-9fda-5972-7a4f" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="b3fc-57e1-0f33-65d7" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="7102-bd1f-6e39-1a7c" name="Hunting Crossbow" hidden="false" collective="false" import="true" targetId="5eea-7884-0ed4-a07d" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="5c33-daa5-6c06-1ac6" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="8272-c500-c756-d8be" name="Hunting Rifle" hidden="false" collective="false" import="true" targetId="0728-652d-b5f6-4ff3" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="5982-f761-5550-8f16" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="d61b-7770-2695-f92c" name="Sawn Off/Breech Loading Gun" hidden="false" collective="false" import="true" targetId="eddf-4e41-de05-dff7" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="f613-85d9-a375-08aa" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="8719-0821-9207-112a" name="Surplus Assault Rifle" hidden="false" collective="false" import="true" targetId="ebd3-95b0-7e73-f91f" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="90b5-fdaa-b087-bdf7" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="3d55-a986-b86c-36a7" name="Surplus SMG" hidden="false" collective="false" import="true" targetId="e80e-4e39-6781-10d3" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="343c-7e2a-e973-5ec0" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="0ee3-2289-b73c-fa38" name="Combat Shotgun*" hidden="false" collective="false" import="true" targetId="5adc-69dd-d08d-4052" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="9315-7524-50a1-f777" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="b1f1-43b3-49b3-0ddb" name="Military Sniper Rifle*" hidden="false" collective="false" import="true" targetId="578b-30f6-3d33-9e82" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="54c2-a4a9-23b0-8f5d" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="cd77-0cf1-3dd9-c1ef" name="Minigun*" hidden="false" collective="false" import="true" targetId="9407-1e30-4c36-a9d6" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="e4a0-dbf9-984d-026c" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="dd37-0be9-e2e7-4240" name="Thrown Explosive*" hidden="false" collective="false" import="true" targetId="18df-8880-2e19-ed92" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="e897-d8d8-352e-3a92" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="656c-8ee1-61e9-7f86" name="Fire Bomb" hidden="false" collective="false" import="true" targetId="8229-5d5d-a679-5bbe" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="8eae-c1b0-452e-a98d" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="8a2c-c9b0-e37d-1884" name="Equipment" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="430e-293b-6510-1356" name="Assault Armor (Heavy1)" hidden="false" collective="false" import="true" targetId="3046-d884-6442-47c6" type="selectionEntry"/>
+                <entryLink id="717c-032e-3436-d33d" name="Climbing Gear*" hidden="false" collective="false" import="true" targetId="30cd-5402-1d6e-c7d0" type="selectionEntry"/>
+                <entryLink id="aa78-5e33-432c-ed4b" name="Tactical Vest*" hidden="false" collective="false" import="true" targetId="4912-4dd0-f144-f16e" type="selectionEntry"/>
+                <entryLink id="a161-ce77-9c04-fb86" name="Mod-Kit" hidden="false" collective="false" import="true" targetId="3f64-3f22-a657-14cf" type="selectionEntry"/>
+                <entryLink id="104f-76a0-f84c-31ec" name="Noise-Maker" hidden="false" collective="false" import="true" targetId="3875-0a83-bf4a-9d91" type="selectionEntry"/>
+                <entryLink id="96ef-ba41-df40-5094" name="Reflex Sight*" hidden="false" collective="false" import="true" targetId="503b-8316-bf0d-243a" type="selectionEntry"/>
+                <entryLink id="017f-8933-b313-96c5" name="Riot Shield (Heavy 1)*" hidden="false" collective="false" import="true" targetId="d993-8b85-8993-50bf" type="selectionEntry"/>
+                <entryLink id="f298-885c-3764-3bbd" name="Scope*" hidden="false" collective="false" import="true" targetId="df87-1d11-7150-7bf1" type="selectionEntry"/>
+                <entryLink id="d849-82b3-039f-c742" name="Silencer*" hidden="false" collective="false" import="true" targetId="fd47-c843-97d8-a971" type="selectionEntry"/>
+                <entryLink id="e6d5-97c7-1f76-1a6a" name="Booze*" hidden="false" collective="false" import="true" targetId="ed4c-28cb-2d39-ab95" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="b9ea-27ca-e594-464c" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="ce60-1ad1-330b-5239" name="Medical Supplies*" hidden="false" collective="false" import="true" targetId="3a3b-e053-2d6d-0d2f" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+                    <modifier type="set" field="ef87-08c7-5075-2acf" value="-1.0"/>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b87b-2b80-2e02-64a4" name="Refuge" hidden="false" collective="false" import="true" targetId="e09d-aae7-9c24-f2a9" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56fc-7057-cf1f-be41" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="959e-23ce-d67e-dab9" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="69ae-b06b-0b70-7e1e" name="Unspent Scavange Point" hidden="false" collective="false" import="true" targetId="1539-db61-08bb-545e" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
   </selectionEntries>
@@ -309,6 +735,8 @@
       </constraints>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3642-f9cf-bb04-cda1" name="High-Powered Rifle*" hidden="false" collective="false" import="true" type="upgrade">
@@ -341,6 +769,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="7.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3f4d-2bd1-8fc8-d6e9" name="Gunsmith (Explosive)" hidden="false" collective="false" import="true" type="upgrade">
@@ -352,6 +782,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2076-d223-0c5a-8813" name="Gunsmith (Sporting)" hidden="false" collective="false" import="true" type="upgrade">
@@ -363,6 +795,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5297-91b8-dc9f-b141" name="Gunsmith (SMG)" hidden="false" collective="false" import="true" type="upgrade">
@@ -374,6 +808,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a1d6-bda0-ee47-6319" name="Gunsmith (Shotgun)" hidden="false" collective="false" import="true" type="upgrade">
@@ -385,6 +821,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7f10-3c8f-ad57-9421" name="Gunsmith (Rifle)" hidden="false" collective="false" import="true" type="upgrade">
@@ -399,6 +837,8 @@
       </categoryLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ad3c-fc48-83c3-71d1" name="Gunsmith (Heavy)" hidden="false" collective="false" import="true" type="upgrade">
@@ -410,6 +850,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1989-723f-78f2-abb5" name="Gunsmith (Pistol)" hidden="false" collective="false" import="true" type="upgrade">
@@ -421,6 +863,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8be6-f451-30ba-8e45" name="Squad Automatic Weapon*" hidden="false" collective="false" import="true" type="upgrade">
@@ -471,6 +915,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="10.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="578b-30f6-3d33-9e82" name="Military Sniper Rifle*" hidden="false" collective="false" import="true" type="upgrade">
@@ -490,6 +936,11 @@
             </conditionGroup>
           </conditionGroups>
         </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bbb6-3432-8990-923d" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54c2-a4a9-23b0-8f5d" type="max"/>
@@ -500,7 +951,7 @@
             <characteristic name="Class" typeId="abc6-f4df-7fbf-ac85">Rifle</characteristic>
             <characteristic name="Range" typeId="b3f2-5f77-73cb-9110">30&quot;</characteristic>
             <characteristic name="Damage" typeId="9f58-78dd-2e83-5dea">4</characteristic>
-            <characteristic name="RoF" typeId="aabc-427d-ce63-c9c2"/>
+            <characteristic name="RoF" typeId="aabc-427d-ce63-c9c2">1</characteristic>
             <characteristic name="KnockBack" typeId="96f2-4ed4-bc44-1fb7">2</characteristic>
             <characteristic name="Reload" typeId="3f82-7a7b-7fec-7c9a">6</characteristic>
             <characteristic name="Special Rules" typeId="6e5f-8010-455a-a180">Noisy1, Lobotomizer1, Highly Specialized</characteristic>
@@ -514,6 +965,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9407-1e30-4c36-a9d6" name="Minigun*" hidden="false" collective="false" import="true" type="upgrade">
@@ -532,6 +985,11 @@
               </conditions>
             </conditionGroup>
           </conditionGroups>
+        </modifier>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bbb6-3432-8990-923d" type="instanceOf"/>
+          </conditions>
         </modifier>
       </modifiers>
       <constraints>
@@ -558,6 +1016,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5adc-69dd-d08d-4052" name="Combat Shotgun*" hidden="false" collective="false" import="true" type="upgrade">
@@ -583,6 +1043,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="18df-8880-2e19-ed92" name="Thrown Explosive*" hidden="false" collective="false" import="true" type="upgrade">
@@ -610,6 +1072,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="92c8-c448-5138-0320" name="Magnum*" hidden="false" collective="false" import="true" type="upgrade">
@@ -634,6 +1098,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="3.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6ee7-a25c-cdf1-3339" name="Military Assault Rifle*" hidden="false" collective="false" import="true" type="upgrade">
@@ -663,6 +1129,8 @@
       </profiles>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="8.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="add5-a60d-c094-5505" name="Military SMG*" hidden="false" collective="false" import="true" type="upgrade">
@@ -692,6 +1160,8 @@
       </profiles>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="6.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="42e0-a05b-aafa-7853" name="Pump-Action Shotgun*" hidden="false" collective="false" import="true" type="upgrade">
@@ -717,6 +1187,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="5.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9ff2-f2fb-2c3f-7bd4" name="Revolver*" hidden="false" collective="false" import="true" type="upgrade">
@@ -738,6 +1210,8 @@
       </profiles>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="2.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b34c-c0c6-fbf4-3260" name="Semi-Automatic*" hidden="false" collective="false" import="true" type="upgrade">
@@ -759,6 +1233,8 @@
       </profiles>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="3.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2d47-a0fe-1871-7e1a" name="Chainsaw" hidden="false" collective="false" import="true" type="upgrade">
@@ -781,6 +1257,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8229-5d5d-a679-5bbe" name="Fire Bomb" hidden="false" collective="false" import="true" type="upgrade">
@@ -809,6 +1287,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="175a-41f7-273a-18e9" name="Heavy Blade" hidden="false" collective="false" import="true" type="upgrade">
@@ -830,6 +1310,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="3.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ea68-1638-d449-92f6" name="Heavy Club" hidden="false" collective="false" import="true" type="upgrade">
@@ -851,6 +1333,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="2.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2128-ef50-b2b8-858c" name="Club*" hidden="false" collective="false" import="true" type="upgrade">
@@ -868,6 +1352,8 @@
       </profiles>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="2.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2082-cb0f-9a34-3821" name="Knife*" hidden="false" collective="false" import="true" type="upgrade">
@@ -888,6 +1374,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="2.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6599-9fda-5972-7a4f" name="Hunting Bow" hidden="false" collective="false" import="true" type="upgrade">
@@ -914,6 +1402,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="3.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5eea-7884-0ed4-a07d" name="Hunting Crossbow" hidden="false" collective="false" import="true" type="upgrade">
@@ -941,6 +1431,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="4.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0728-652d-b5f6-4ff3" name="Hunting Rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -962,6 +1454,8 @@
       </profiles>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="4.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="eddf-4e41-de05-dff7" name="Sawn Off/Breech Loading Gun" hidden="false" collective="false" import="true" type="upgrade">
@@ -987,6 +1481,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="3.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ebd3-95b0-7e73-f91f" name="Surplus Assault Rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -1012,6 +1508,8 @@
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="6.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e80e-4e39-6781-10d3" name="Surplus SMG" hidden="false" collective="false" import="true" type="upgrade">
@@ -1034,6 +1532,8 @@
       </profiles>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="4.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="580e-04ef-7813-641b" name="Flare Pistol" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
@@ -1056,6 +1556,11 @@
       <infoLinks>
         <infoLink id="3016-5dd4-2583-4b15" name="Incendiary" hidden="false" targetId="f385-9a8b-4898-4a57" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="069d-3dac-3a04-102e" name="Ice Axe" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -1067,6 +1572,11 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="c9c4-4e4d-fff7-0ef9" name="Motorcycle" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1075,6 +1585,11 @@
       <infoLinks>
         <infoLink id="c4ef-deb9-29e4-ef36" name="Motorcycle" hidden="false" targetId="3238-91f6-ed89-5e94" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9bee-ba5b-0dd0-1016" name="Bicycle" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1083,6 +1598,11 @@
       <infoLinks>
         <infoLink id="1c91-60a1-1905-ab28" name="Bicycle" hidden="false" targetId="d06b-3a94-28f6-2d8b" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2f39-6822-35e1-7fc7" name="Tactical Vest*" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
@@ -1091,7 +1611,418 @@
       <infoLinks>
         <infoLink id="d3b3-077e-1f7a-aa64" name="Tactical Vest" hidden="false" targetId="490a-759a-294b-4131" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+      </costs>
     </selectionEntry>
+    <selectionEntry id="40e8-6367-a342-33f0" name="The Farm House" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="d0e1-9dc9-ffc2-8dd8" name="Fenced-OFF Garden" hidden="false" collective="false" import="true" targetId="dd46-a7ab-3773-8553" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="b34f-9647-091d-63f5" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e6d-b333-a5b2-7fe9" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b36-f44a-c05e-3a91" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4a5a-fd83-a46e-3ff6" name="Perks" hidden="false" collective="false" import="true" targetId="f2c7-7dda-cd3f-ad60" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fab9-8239-7588-4573" name="The Mall" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="855b-b849-eee2-30f7" name="Store Room" hidden="false" collective="false" import="true" targetId="22f2-9a37-bd0d-36c8" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="b34f-9647-091d-63f5" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0818-9dab-7ec1-101b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2466-c3a4-4634-9f7a" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="97f1-a591-a610-1e18" name="Perks" hidden="false" collective="false" import="true" targetId="f2c7-7dda-cd3f-ad60" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a4e7-0559-3b92-412a" name="The Gun Shop" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="c1e0-4ef6-d8e8-0b7f" name="Armoury" hidden="false" collective="false" import="true" targetId="3b4e-7a92-8bd9-ac08" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="b34f-9647-091d-63f5" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1da-eb4e-72d4-533f" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fa7-ac56-932a-60e3" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="cc58-7175-7ae8-a037" name="Fortified Windows" hidden="false" collective="false" import="true" targetId="230d-32c5-043d-64d6" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="b34f-9647-091d-63f5" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cb1-ff77-b749-4b6d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9982-e1b6-9d62-01a1" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="0a7c-f48d-2e9e-1d8c" name="Reinforced Door" hidden="false" collective="false" import="true" targetId="4781-c8bf-c708-a456" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="b34f-9647-091d-63f5" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ac0-7e84-4622-2ee5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbf2-1173-cb37-b360" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="4933-70f1-4b2b-73de" name="Perks" hidden="false" collective="false" import="true" targetId="f2c7-7dda-cd3f-ad60" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0d32-f22c-7a8f-39f7" name="The Police Station" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="ca81-43a9-2f9d-d89c" name="Radio Room" hidden="false" collective="false" import="true" targetId="34ad-c20e-f264-74be" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="b34f-9647-091d-63f5" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d55-692c-3770-94b8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4384-8030-f6f8-024c" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="27ed-9d9f-c935-6b14" name="Escape Vehicle" hidden="false" collective="false" import="true" targetId="154e-cfb2-10c2-74d5" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="b34f-9647-091d-63f5" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fab-492d-ae81-10a3" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a936-0416-b419-94d3" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a862-adbc-603e-86a4" name="Perks" hidden="false" collective="false" import="true" targetId="f2c7-7dda-cd3f-ad60" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1c68-9441-460f-7915" name="The Church" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="ec10-0401-918e-13c8" name="Solid Structure" hidden="false" collective="false" import="true" targetId="10ae-cac2-f141-60e6" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="b34f-9647-091d-63f5" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cddb-f52d-95a1-26ca" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="baf7-f70a-482b-bb98" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="e798-cf58-4c80-bf11" name="Watch Tower" hidden="false" collective="false" import="true" targetId="2310-78f9-0523-d0e0" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="b34f-9647-091d-63f5" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a9e-e8d3-1d3a-df5b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72a0-7010-98a8-7a3d" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="2e02-d18f-541a-8ad2" name="Perks" hidden="false" collective="false" import="true" targetId="f2c7-7dda-cd3f-ad60" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a130-0341-02a9-f1c2" name="The Prison" hidden="false" collective="false" import="true" type="upgrade">
+      <entryLinks>
+        <entryLink id="2ef6-7493-9dd1-10ba" name="Fences" hidden="false" collective="false" import="true" targetId="244e-d351-3316-24be" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="b34f-9647-091d-63f5" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="656d-5fa3-55f8-b294" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f3c-1ebb-3326-fd98" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="ebd9-2475-3842-5daa" name="Infirmary" hidden="false" collective="false" import="true" targetId="c097-b616-b543-8d7c" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="b34f-9647-091d-63f5" value="0.0"/>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd41-e8df-fad3-a722" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89b1-8196-f433-ebed" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="be80-df08-e8e8-2885" name="Perks" hidden="false" collective="false" import="true" targetId="f2c7-7dda-cd3f-ad60" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dd46-a7ab-3773-8553" name="Fenced-OFF Garden" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3b4e-7a92-8bd9-ac08" name="Armoury" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="da91-f9e1-d6d1-02cb" name="Bunk Beds" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="154e-cfb2-10c2-74d5" name="Escape Vehicle" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="244e-d351-3316-24be" name="Fences" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="230d-32c5-043d-64d6" name="Fortified Windows" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c097-b616-b543-8d7c" name="Infirmary" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="34ad-c20e-f264-74be" name="Radio Room" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4781-c8bf-c708-a456" name="Reinforced Door" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="10ae-cac2-f141-60e6" name="Solid Structure" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="22f2-9a37-bd0d-36c8" name="Store Room" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2310-78f9-0523-d0e0" name="Watch Tower" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1539-db61-08bb-545e" name="Unspent Scavange Point" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3046-d884-6442-47c6" name="Assault Armor (Heavy1)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1ade-611a-8663-5f25" name="HEAVY X" hidden="false" targetId="c6c4-e500-9aeb-c713" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ed4c-28cb-2d39-ab95" name="Booze*" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9ea-27ca-e594-464c" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="ef19-7424-5b8c-a6be" name="Booze*" hidden="false">
+          <description>Nothing puts the horror of a world of living corpses to rest like a stiff drink. Any Character equipped with this may choose to use it at the beginning of the game. The model will receive a +1 bonus to their CQC, Endurance, and Courage characteristics for the entire game, but will suffer a penalty of -1 to their Action Points, Firearms, and Intelligence characteristics as well. This item is one-use.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="2.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3a3b-e053-2d6d-0d2f" name="Medical Supplies*" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef87-08c7-5075-2acf" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="d71c-0e3d-4073-fc90" name="Medical Supplies*" hidden="false">
+          <description>Disinfectant, bandages, and painkillers can mean the difference between infection and death in this world without 911 and hospitals. As long as the model equipped with Medical Supplies is not Out of Action at the end of the game, they may use this equipment to adjust the total roll on the Injuries table up or down by one (e.g. an 8 to a 7 or a 10 to an 11). It can be used for secondary rolls. Yes, this can avoid a ‘Dead’ result! This can be combined with the First Aid Training skill to alter the final result after dice have been re-rolled. This item is one-use.</description>
+        </rule>
+      </rules>
+      <costs>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="2.0"/>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="30cd-5402-1d6e-c7d0" name="Climbing Gear*" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3f64-3f22-a657-14cf" name="Mod-Kit" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3875-0a83-bf4a-9d91" name="Noise-Maker" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="503b-8316-bf0d-243a" name="Reflex Sight*" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d993-8b85-8993-50bf" name="Riot Shield (Heavy 1)*" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1f06-fc5b-b595-29f0" name="HEAVY X" hidden="false" targetId="c6c4-e500-9aeb-c713" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="df87-1d11-7150-7bf1" name="Scope*" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fd47-c843-97d8-a971" name="Silencer*" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4912-4dd0-f144-f16e" name="Tactical Vest*" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="24fc-2854-24a6-994a" name="Unspent XP" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8707-7325-bb1f-c0ac" name="Level" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1745-c5ae-86c2-14cb" name="Captured" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c929-600b-92a2-b451" name="Arm Injury" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6fd5-b00e-ad08-8bc0" name="Blinded in One Eye" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6787-a054-5437-748b" name="Shell-Schoked" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c8d4-a0f5-627f-965e" name="Leg Injury" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7721-3f50-6e93-320d" name="+1 FA" hidden="false" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="4f83-94b1-ae49-f210" name="+1 CQC" hidden="false" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="72be-4de6-16ac-908e" name="+1 AP" hidden="false" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="910a-0769-23b6-2416" name="+1 S" hidden="false" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="a39d-d465-cc07-128c" name="+1 E" hidden="false" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="f04d-d642-3a5e-ac64" name="+1 C" hidden="false" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="8afd-da26-9930-4081" name="+1 I" hidden="false" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="9a29-feaf-1bfe-f436" name="+1 DC" hidden="false" collective="false" import="true" type="upgrade"/>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="9865-2a5b-42e8-e3e9" name="Ranged Weapons" hidden="false" collective="false" import="true">
@@ -1153,6 +2084,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f4fa-9dbe-50f9-6466" name="Fire and Maneuver" hidden="false" collective="false" import="true" type="upgrade">
@@ -1164,6 +2097,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="53ac-bb8d-d110-cfe0" name="Double tap" hidden="false" collective="false" import="true" type="upgrade">
@@ -1175,6 +2110,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="34c0-02b0-e745-06de" name="Short Controlled Burst" hidden="false" collective="false" import="true" type="upgrade">
@@ -1186,6 +2123,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b7e9-73f2-ab0b-0aa2" name="Sniper" hidden="false" collective="false" import="true" type="upgrade">
@@ -1197,6 +2136,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="dc2b-adb1-24d2-6251" name="Quick-load" hidden="false" collective="false" import="true" type="upgrade">
@@ -1208,6 +2149,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1223,6 +2166,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b642-21c9-9996-9d08" name="GearHead" hidden="false" collective="false" import="true" type="upgrade">
@@ -1234,6 +2179,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="20e9-c437-4ce4-5b65" name="Engineer" hidden="false" collective="false" import="true" type="upgrade">
@@ -1245,6 +2192,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8a96-4153-82ae-4bc7" name="Agriculturalist" hidden="false" collective="false" import="true" type="upgrade">
@@ -1256,6 +2205,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="93e6-04ac-a129-bf14" name="Scavenger" hidden="false" collective="false" import="true" type="upgrade">
@@ -1267,6 +2218,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1291,6 +2244,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="38a2-5e66-a96d-4a14" name="Sprinter" hidden="false" collective="false" import="true" type="upgrade">
@@ -1302,6 +2257,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="51bd-5870-439f-c911" name="Heavy Lifter" hidden="false" collective="false" import="true" type="upgrade">
@@ -1313,6 +2270,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b5e3-adcc-5411-00ff" name="Entry Man" hidden="false" collective="false" import="true" type="upgrade">
@@ -1324,6 +2283,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f341-da3b-9aec-0a04" name="Stalker" hidden="false" collective="false" import="true" type="upgrade">
@@ -1335,6 +2296,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d9d2-0a50-82ca-a888" name="Situatinal Awerness" hidden="false" collective="false" import="true" type="upgrade">
@@ -1346,6 +2309,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1361,6 +2326,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="471a-73ed-7ac5-e9e1" name="Martial arts" hidden="false" collective="false" import="true" type="upgrade">
@@ -1372,6 +2339,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a749-80fe-70f7-ebbd" name="Headhunter" hidden="false" collective="false" import="true" type="upgrade">
@@ -1383,6 +2352,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1afc-30c8-4269-eca5" name="Crowd Control" hidden="false" collective="false" import="true" type="upgrade">
@@ -1394,6 +2365,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4dd0-2d21-cbce-7620" name="Dirty Fighter" hidden="false" collective="false" import="true" type="upgrade">
@@ -1405,6 +2378,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d713-da7b-2204-fc34" name="Subdue" hidden="false" collective="false" import="true" type="upgrade">
@@ -1416,6 +2391,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1431,6 +2408,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="5f8d-1cec-688b-e3a8" name="Ambushers" hidden="false" collective="false" import="true" type="upgrade">
@@ -1442,6 +2421,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="eaa3-c2be-ddcb-16c6" name="Tag-Team" hidden="false" collective="false" import="true" type="upgrade">
@@ -1453,6 +2434,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6e83-490f-2976-12ab" name="Tactical Acumen" hidden="false" collective="false" import="true" type="upgrade">
@@ -1464,6 +2447,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f4f9-f86b-4bfe-de6e" name="Inspiration Presence" hidden="false" collective="false" import="true" type="upgrade">
@@ -1475,6 +2460,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a22e-3dfe-2d97-acc2" name="Rallying Cry" hidden="false" collective="false" import="true" type="upgrade">
@@ -1486,39 +2473,17 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="5eec-c623-e033-367b" name="ZA - Miscellaneous Equipment" hidden="false" collective="false" import="true">
-      <selectionEntries>
-        <selectionEntry id="8593-b85b-7d69-bfc7" name="Booze*" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5430-ebaa-b4a2-4ace" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="0806-6b6b-c5d9-1630" name="Booze*" hidden="false">
-              <description>Nothing puts the horror of a world of living corpses to rest like a stiff drink. Any Character equipped with this may choose to use it at the beginning of the game. The model will receive a +1 bonus to their CQC, Endurance, and Courage characteristics for the entire game, but will suffer a penalty of -1 to their Action Points, Firearms, and Intelligence characteristics as well. This item is one-use.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="2.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="188b-ba26-a334-7bbf" name="Medical Supplies*" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da62-d54c-c90d-148d" type="max"/>
-          </constraints>
-          <rules>
-            <rule id="4656-c95f-e4fe-bbd6" name="Medical Supplies*" hidden="false">
-              <description>Disinfectant, bandages, and painkillers can mean the difference between infection and death in this world without 911 and hospitals. As long as the model equipped with Medical Supplies is not Out of Action at the end of the game, they may use this equipment to adjust the total roll on the Injuries table up or down by one (e.g. an 8 to a 7 or a 10 to an 11). It can be used for secondary rolls. Yes, this can avoid a ‘Dead’ result! This can be combined with the First Aid Training skill to alter the final result after dice have been re-rolled. This item is one-use.</description>
-            </rule>
-          </rules>
-          <costs>
-            <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="2.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
+      <entryLinks>
+        <entryLink id="4d00-e435-b797-11bf" name="Booze*" hidden="false" collective="false" import="true" targetId="ed4c-28cb-2d39-ab95" type="selectionEntry"/>
+        <entryLink id="8144-0da0-89d4-3758" name="Medical Supplies*" hidden="false" collective="false" import="true" targetId="3a3b-e053-2d6d-0d2f" type="selectionEntry"/>
+      </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="8bc3-f346-f70e-90e1" name="Conditions (Seasons)" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true">
       <selectionEntries>
@@ -1531,6 +2496,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6671-3c67-88d4-bb60" name="Hunger: Starving" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
@@ -1542,6 +2509,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8c19-1ff8-1b41-a938" name="Thirst: Thirsty" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
@@ -1553,6 +2522,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="fb57-32d7-e99e-9177" name="Thirst: Dehydrated" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
@@ -1564,6 +2535,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1688-e224-a4b7-f890" name="Health: Sick" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
@@ -1575,6 +2548,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b413-4591-8d56-8336" name="Health: Bedridden" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
@@ -1586,6 +2561,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="486b-f195-d091-749d" name="Warmth: Cold" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
@@ -1597,6 +2574,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="32ad-9998-f4aa-da81" name="Warmth: Freezing" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
@@ -1608,6 +2587,8 @@
           </infoLinks>
           <costs>
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+            <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+            <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1625,6 +2606,8 @@
               </infoLinks>
               <costs>
                 <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+                <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+                <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="82c4-8043-0bd4-bc87" name="Street Surgeon" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
@@ -1636,6 +2619,8 @@
               </infoLinks>
               <costs>
                 <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+                <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+                <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4f8c-1df8-22ad-b79a" name="Supply Seeker" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
@@ -1647,6 +2632,8 @@
               </infoLinks>
               <costs>
                 <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+                <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+                <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1662,6 +2649,8 @@
               </infoLinks>
               <costs>
                 <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+                <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+                <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="93fd-12aa-2105-4092" name="Lightning Fast" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
@@ -1673,6 +2662,8 @@
               </infoLinks>
               <costs>
                 <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+                <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+                <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6b48-d5a7-fd40-4cf1" name="Untouchable" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
@@ -1684,6 +2675,8 @@
               </infoLinks>
               <costs>
                 <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+                <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+                <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1699,6 +2692,8 @@
               </infoLinks>
               <costs>
                 <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+                <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+                <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6f38-9f33-b4ac-e61a" name="Unbreakable" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
@@ -1710,6 +2705,8 @@
               </infoLinks>
               <costs>
                 <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+                <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+                <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="11d6-e775-35c2-0b54" name="Fast and Deadly" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
@@ -1721,6 +2718,8 @@
               </infoLinks>
               <costs>
                 <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+                <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+                <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1736,6 +2735,8 @@
               </infoLinks>
               <costs>
                 <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+                <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+                <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9bc8-f735-e48f-1632" name="Steely Resolve" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
@@ -1747,6 +2748,8 @@
               </infoLinks>
               <costs>
                 <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+                <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+                <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="d14e-07e0-0fa5-f54b" name="Against all Odds" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
@@ -1758,6 +2761,8 @@
               </infoLinks>
               <costs>
                 <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+                <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+                <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1773,6 +2778,8 @@
               </infoLinks>
               <costs>
                 <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+                <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+                <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="418d-d9d7-30e4-8f01" name="Overwatch" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
@@ -1784,6 +2791,8 @@
               </infoLinks>
               <costs>
                 <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+                <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+                <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="bfc0-1b5f-5b0d-d7ce" name="Faster than You" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
@@ -1795,6 +2804,8 @@
               </infoLinks>
               <costs>
                 <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+                <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+                <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1836,6 +2847,88 @@
             <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="15.0"/>
           </costs>
         </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="e09d-aae7-9c24-f2a9" name="Refuge" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="ea60-7d9c-296b-e8ee" name="The Farm House" hidden="false" collective="false" import="true" targetId="40e8-6367-a342-33f0" type="selectionEntry"/>
+        <entryLink id="333d-ecb9-d905-0c6f" name="The Mall" hidden="false" collective="false" import="true" targetId="fab9-8239-7588-4573" type="selectionEntry"/>
+        <entryLink id="629c-52c4-79a9-bd17" name="The Gun Shop" hidden="false" collective="false" import="true" targetId="a4e7-0559-3b92-412a" type="selectionEntry"/>
+        <entryLink id="c694-c56f-c3cb-91ee" name="The Police Station" hidden="false" collective="false" import="true" targetId="0d32-f22c-7a8f-39f7" type="selectionEntry"/>
+        <entryLink id="ddfe-33e2-3723-6a99" name="The Church" hidden="false" collective="false" import="true" targetId="1c68-9441-460f-7915" type="selectionEntry"/>
+        <entryLink id="9914-cb22-722a-bee5" name="The Prison" hidden="false" collective="false" import="true" targetId="a130-0341-02a9-f1c2" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="f2c7-7dda-cd3f-ad60" name="Perks" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="dc44-a1be-aeed-85b8" name="Fences" hidden="false" collective="false" import="true" targetId="244e-d351-3316-24be" type="selectionEntry"/>
+        <entryLink id="fdc5-6da4-3243-fd19" name="Fenced-OFF Garden" hidden="false" collective="false" import="true" targetId="dd46-a7ab-3773-8553" type="selectionEntry"/>
+        <entryLink id="5172-ef96-b346-4cfa" name="Escape Vehicle" hidden="false" collective="false" import="true" targetId="154e-cfb2-10c2-74d5" type="selectionEntry"/>
+        <entryLink id="5b9b-a3f5-7f97-067a" name="Bunk Beds" hidden="false" collective="false" import="true" targetId="da91-f9e1-d6d1-02cb" type="selectionEntry"/>
+        <entryLink id="ea0a-4ced-314d-63c0" name="Armoury" hidden="false" collective="false" import="true" targetId="3b4e-7a92-8bd9-ac08" type="selectionEntry"/>
+        <entryLink id="a31b-40f2-883b-bc2b" name="Fortified Windows" hidden="false" collective="false" import="true" targetId="230d-32c5-043d-64d6" type="selectionEntry"/>
+        <entryLink id="65b4-543a-f42f-91ac" name="Infirmary" hidden="false" collective="false" import="true" targetId="c097-b616-b543-8d7c" type="selectionEntry"/>
+        <entryLink id="cc81-9ff8-1f61-c462" name="Radio Room" hidden="false" collective="false" import="true" targetId="34ad-c20e-f264-74be" type="selectionEntry"/>
+        <entryLink id="674e-022c-33d9-8fac" name="Reinforced Door" hidden="false" collective="false" import="true" targetId="4781-c8bf-c708-a456" type="selectionEntry"/>
+        <entryLink id="bbd2-f8a2-7535-52ae" name="Solid Structure" hidden="false" collective="false" import="true" targetId="10ae-cac2-f141-60e6" type="selectionEntry"/>
+        <entryLink id="ec92-657b-2f60-3b4e" name="Store Room" hidden="false" collective="false" import="true" targetId="22f2-9a37-bd0d-36c8" type="selectionEntry"/>
+        <entryLink id="f679-adde-56c6-ea8b" name="Watch Tower" hidden="false" collective="false" import="true" targetId="2310-78f9-0523-d0e0" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="a360-c7a4-7cc5-2ddc" name="Campaign Track" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="600e-f722-c4e9-412a" name="Stat roll" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="bf77-887e-80e6-2c4c" name="+1 CQC" hidden="false" collective="false" import="true" targetId="4f83-94b1-ae49-f210" type="selectionEntry"/>
+            <entryLink id="f620-ce72-d8ca-2120" name="+1 FA" hidden="false" collective="false" import="true" targetId="7721-3f50-6e93-320d" type="selectionEntry"/>
+            <entryLink id="af97-8fd9-35d0-dfbd" name="+1 AP" hidden="false" collective="false" import="true" targetId="72be-4de6-16ac-908e" type="selectionEntry"/>
+            <entryLink id="c7e4-c27c-e684-7f8a" name="+1 C" hidden="false" collective="false" import="true" targetId="f04d-d642-3a5e-ac64" type="selectionEntry"/>
+            <entryLink id="38a2-425b-a7d0-78c2" name="+1 DC" hidden="false" collective="false" import="true" targetId="9a29-feaf-1bfe-f436" type="selectionEntry"/>
+            <entryLink id="16d7-0d50-baf5-8e0e" name="+1 E" hidden="false" collective="false" import="true" targetId="a39d-d465-cc07-128c" type="selectionEntry"/>
+            <entryLink id="7f32-46c5-9358-ef50" name="+1 I" hidden="false" collective="false" import="true" targetId="8afd-da26-9930-4081" type="selectionEntry"/>
+            <entryLink id="7ac9-67ed-66d1-dbb9" name="+1 S" hidden="false" collective="false" import="true" targetId="910a-0769-23b6-2416" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="795b-ff71-72ce-7d1e" name="Unspent XP" hidden="false" collective="false" import="true" targetId="24fc-2854-24a6-994a" type="selectionEntry"/>
+        <entryLink id="d0c6-879d-8c86-e818" name="Level" hidden="false" collective="false" import="true" targetId="8707-7325-bb1f-c0ac" type="selectionEntry"/>
+        <entryLink id="1b1d-55c0-976b-461d" name="Equipment" hidden="false" collective="false" import="true" targetId="b0d0-9131-e52a-50fe" type="selectionEntryGroup"/>
+        <entryLink id="c552-7c2d-3a16-decf" name="Injury Conditions" hidden="false" collective="false" import="true" targetId="b53c-4b65-3bab-0571" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="b0d0-9131-e52a-50fe" name="Equipment" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="5ded-6c21-e912-d0bc" name="Assault Armor (Heavy1)" hidden="false" collective="false" import="true" targetId="3046-d884-6442-47c6" type="selectionEntry"/>
+        <entryLink id="06de-5fa5-2065-9514" name="Climbing Gear*" hidden="false" collective="false" import="true" targetId="30cd-5402-1d6e-c7d0" type="selectionEntry"/>
+        <entryLink id="a08e-c0a1-44f3-3912" name="Tactical Vest*" hidden="false" collective="false" import="true" targetId="4912-4dd0-f144-f16e" type="selectionEntry"/>
+        <entryLink id="3ec0-890e-0d27-640e" name="Mod-Kit" hidden="false" collective="false" import="true" targetId="3f64-3f22-a657-14cf" type="selectionEntry"/>
+        <entryLink id="deb9-8af3-d52c-5b29" name="Noise-Maker" hidden="false" collective="false" import="true" targetId="3875-0a83-bf4a-9d91" type="selectionEntry"/>
+        <entryLink id="353c-935d-6ba6-5462" name="Reflex Sight*" hidden="false" collective="false" import="true" targetId="503b-8316-bf0d-243a" type="selectionEntry"/>
+        <entryLink id="ceec-f548-feaf-7266" name="Riot Shield (Heavy 1)*" hidden="false" collective="false" import="true" targetId="d993-8b85-8993-50bf" type="selectionEntry"/>
+        <entryLink id="7bdd-f2b1-0755-8def" name="Scope*" hidden="false" collective="false" import="true" targetId="df87-1d11-7150-7bf1" type="selectionEntry"/>
+        <entryLink id="e708-49bb-59bd-9f32" name="Silencer*" hidden="false" collective="false" import="true" targetId="fd47-c843-97d8-a971" type="selectionEntry"/>
+        <entryLink id="09d1-f065-b0a6-adcf" name="Booze*" hidden="false" collective="false" import="true" targetId="ed4c-28cb-2d39-ab95" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+            <modifier type="set" field="b9ea-27ca-e594-464c" value="-1.0"/>
+          </modifiers>
+        </entryLink>
+        <entryLink id="ce10-d989-8a7c-b07b" name="Medical Supplies*" hidden="false" collective="false" import="true" targetId="3a3b-e053-2d6d-0d2f" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
+            <modifier type="set" field="ef87-08c7-5075-2acf" value="-1.0"/>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="b53c-4b65-3bab-0571" name="Injury Conditions" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="b090-2d3f-5397-a203" name="Arm Injury" hidden="false" collective="false" import="true" targetId="c929-600b-92a2-b451" type="selectionEntry"/>
+        <entryLink id="891f-3450-cdcb-75e5" name="Captured" hidden="false" collective="false" import="true" targetId="1745-c5ae-86c2-14cb" type="selectionEntry"/>
+        <entryLink id="7bd4-8c80-e8de-7baa" name="Blinded in One Eye" hidden="false" collective="false" import="true" targetId="6fd5-b00e-ad08-8bc0" type="selectionEntry"/>
+        <entryLink id="1635-76d4-2452-8189" name="Shell-Schoked" hidden="false" collective="false" import="true" targetId="6787-a054-5437-748b" type="selectionEntry"/>
+        <entryLink id="2f46-cb3d-478e-1d27" name="Leg Injury" hidden="false" collective="false" import="true" targetId="c8d4-a0f5-627f-965e" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
