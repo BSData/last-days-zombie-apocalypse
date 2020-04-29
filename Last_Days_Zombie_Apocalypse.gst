@@ -1659,10 +1659,7 @@
     </selectionEntry>
     <selectionEntry id="40e8-6367-a342-33f0" name="The Farm House" hidden="false" collective="false" import="true" type="upgrade">
       <entryLinks>
-        <entryLink id="d0e1-9dc9-ffc2-8dd8" name="Fenced-OFF Garden" hidden="false" collective="false" import="true" targetId="dd46-a7ab-3773-8553" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="b34f-9647-091d-63f5" value="0.0"/>
-          </modifiers>
+        <entryLink id="d0e1-9dc9-ffc2-8dd8" name="Fenced-OFF Garden." hidden="false" collective="false" import="true" targetId="fa66-4db7-d883-220b" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e6d-b333-a5b2-7fe9" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b36-f44a-c05e-3a91" type="max"/>
@@ -1799,10 +1796,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f3c-1ebb-3326-fd98" type="min"/>
           </constraints>
         </entryLink>
-        <entryLink id="ebd9-2475-3842-5daa" name="Infirmary" hidden="false" collective="false" import="true" targetId="c097-b616-b543-8d7c" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="b34f-9647-091d-63f5" value="0.0"/>
-          </modifiers>
+        <entryLink id="ebd9-2475-3842-5daa" name="Infirmary." hidden="false" collective="false" import="true" targetId="7d70-7ba6-fef0-084d" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd41-e8df-fad3-a722" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89b1-8196-f433-ebed" type="max"/>
@@ -1827,6 +1821,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="3b4e-7a92-8bd9-ac08" name="Armoury" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbb6-9844-4976-46ab" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="4499-b479-2353-0036" name="ARMOURY" hidden="false" targetId="2e9f-b15c-d80a-8750" type="rule"/>
       </infoLinks>
@@ -1847,6 +1844,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="154e-cfb2-10c2-74d5" name="Escape Vehicle" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="30f6-2a40-684b-bd28" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="0b12-c9a5-26cd-4c03" name="Escape Vehicle" hidden="false" targetId="1ce1-9713-c06f-1ae0" type="rule"/>
       </infoLinks>
@@ -1857,6 +1857,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="244e-d351-3316-24be" name="Fences" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1aed-2e44-2441-fe36" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="7ae5-5c42-0dcc-a784" name="FENCES" hidden="false" targetId="9242-9a96-f130-b865" type="rule"/>
       </infoLinks>
@@ -1867,6 +1870,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="230d-32c5-043d-64d6" name="Fortified Windows" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47e5-d2a6-6e0b-4ee2" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="0aa9-a28c-6ea4-e507" name="Fortified Window" hidden="false" targetId="cc57-e3de-1702-5722" type="rule"/>
       </infoLinks>
@@ -1887,6 +1893,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="34ad-c20e-f264-74be" name="Radio Room" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70b6-80cc-bd36-f936" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="70be-1563-6191-3e5b" name="Radio Room" hidden="false" targetId="3b53-63d3-2a5e-e133" type="rule"/>
       </infoLinks>
@@ -1897,6 +1906,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4781-c8bf-c708-a456" name="Reinforced Door" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="626f-ac14-3e7f-95b8" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="b92f-1900-a1d8-3835" name="Reinforced Door" hidden="false" targetId="ba78-4fe3-c7fc-a5ce" type="rule"/>
       </infoLinks>
@@ -1907,6 +1919,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="10ae-cac2-f141-60e6" name="Solid Structure" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="254b-fb4f-207d-b4df" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="acc2-f210-1e81-e939" name="Solid Structure" hidden="false" targetId="820b-8235-5cf7-9285" type="rule"/>
       </infoLinks>
@@ -1917,6 +1932,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="22f2-9a37-bd0d-36c8" name="Store Room" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2817-74d4-aa22-7222" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="4387-f23a-e750-f23a" name="Store ROOM" hidden="false" targetId="6a52-8b7e-fd80-93cd" type="rule"/>
       </infoLinks>
@@ -1927,6 +1945,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="2310-78f9-0523-d0e0" name="Watch Tower" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d768-7668-4cc8-f9bf" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="f392-ff6c-1dab-bf6c" name="Watch Tower" hidden="false" targetId="a26a-15b1-ac43-cf75" type="rule"/>
       </infoLinks>
@@ -2187,6 +2208,24 @@
       <costs>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fa66-4db7-d883-220b" name="Fenced-OFF Garden." hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ac20-ae1b-c554-e2cc" name="Fenced-OFF Garden" hidden="false" targetId="ddd5-5eb0-add6-3a99" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7d70-7ba6-fef0-084d" name="Infirmary." hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="bfb6-77db-9201-fb22" name="Infirmary" hidden="false" targetId="a8d6-d422-32d4-1d3e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
       </costs>
     </selectionEntry>
