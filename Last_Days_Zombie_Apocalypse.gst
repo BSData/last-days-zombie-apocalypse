@@ -41,6 +41,16 @@
         <characteristicType id="4489-6dd8-9aa2-b650" name="Special Rules"/>
       </characteristicTypes>
     </profileType>
+    <profileType id="79e6-8333-ca71-bca1" name="Injury">
+      <characteristicTypes>
+        <characteristicType id="57b2-d0b3-9acb-d717" name="Injury"/>
+      </characteristicTypes>
+    </profileType>
+    <profileType id="c015-2d78-be7c-4f3c" name="Equipment">
+      <characteristicTypes>
+        <characteristicType id="13cb-b960-846b-b810" name="Equipment"/>
+      </characteristicTypes>
+    </profileType>
   </profileTypes>
   <categoryEntries>
     <categoryEntry id="3934-f417-bab4-db18" name="Selfless" hidden="false"/>
@@ -111,6 +121,11 @@
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="a130-0341-02a9-f1c2" type="equalTo"/>
           </conditions>
+        </modifier>
+        <modifier type="increment" field="62c1-4475-892a-55f1" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="da91-f9e1-d6d1-02cb" repeats="1" roundUp="false"/>
+          </repeats>
         </modifier>
       </modifiers>
       <constraints>
@@ -255,6 +270,16 @@
                 <repeat field="selections" scope="3bd6-a6ec-0d5f-20b3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8afd-da26-9930-4081" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="decrement" field="27a9-9ee9-af76-5959" value="1.0">
+              <conditions>
+                <condition field="selections" scope="3bd6-a6ec-0d5f-20b3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6fd5-b00e-ad08-8bc0" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="f7f9-43eb-c02e-6f77" value="1.0">
+              <conditions>
+                <condition field="selections" scope="3bd6-a6ec-0d5f-20b3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6787-a054-5437-748b" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77">6</characteristic>
@@ -366,6 +391,16 @@
                 <repeat field="selections" scope="b327-81e0-b6f5-0845" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8afd-da26-9930-4081" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
+            <modifier type="decrement" field="27a9-9ee9-af76-5959" value="1.0">
+              <conditions>
+                <condition field="selections" scope="b327-81e0-b6f5-0845" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6fd5-b00e-ad08-8bc0" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="f7f9-43eb-c02e-6f77" value="1.0">
+              <conditions>
+                <condition field="selections" scope="b327-81e0-b6f5-0845" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6787-a054-5437-748b" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <characteristics>
             <characteristic name="AP" typeId="f7f9-43eb-c02e-6f77">6</characteristic>
@@ -476,6 +511,16 @@
               <repeats>
                 <repeat field="selections" scope="cbcf-fcb3-bdaf-ba86" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="8afd-da26-9930-4081" repeats="1" roundUp="false"/>
               </repeats>
+            </modifier>
+            <modifier type="decrement" field="27a9-9ee9-af76-5959" value="1.0">
+              <conditions>
+                <condition field="selections" scope="cbcf-fcb3-bdaf-ba86" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6fd5-b00e-ad08-8bc0" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="f7f9-43eb-c02e-6f77" value="1.0">
+              <conditions>
+                <condition field="selections" scope="cbcf-fcb3-bdaf-ba86" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="6787-a054-5437-748b" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <characteristics>
@@ -697,13 +742,11 @@
                 <entryLink id="e6d5-97c7-1f76-1a6a" name="Booze*" hidden="false" collective="false" import="true" targetId="ed4c-28cb-2d39-ab95" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
-                    <modifier type="set" field="b9ea-27ca-e594-464c" value="-1.0"/>
                   </modifiers>
                 </entryLink>
                 <entryLink id="ce60-1ad1-330b-5239" name="Medical Supplies*" hidden="false" collective="false" import="true" targetId="3a3b-e053-2d6d-0d2f" type="selectionEntry">
                   <modifiers>
                     <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
-                    <modifier type="set" field="ef87-08c7-5075-2acf" value="-1.0"/>
                   </modifiers>
                 </entryLink>
               </entryLinks>
@@ -1605,11 +1648,8 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="2f39-6822-35e1-7fc7" name="Tactical Vest*" publicationId="7ef1-f5b1-da7f-ede3" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="467f-6e63-83ae-01e6" type="max"/>
-      </constraints>
       <infoLinks>
-        <infoLink id="d3b3-077e-1f7a-aa64" name="Tactical Vest" hidden="false" targetId="490a-759a-294b-4131" type="rule"/>
+        <infoLink id="eac7-ea4d-4ff0-336e" name="TACTICAL VEST (*)" hidden="false" targetId="c56b-b470-6327-4f80" type="profile"/>
       </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
@@ -1777,6 +1817,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="dd46-a7ab-3773-8553" name="Fenced-OFF Garden" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b4b3-a995-5228-5b99" name="Fenced-OFF Garden" hidden="false" targetId="ddd5-5eb0-add6-3a99" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
@@ -1784,6 +1827,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="3b4e-7a92-8bd9-ac08" name="Armoury" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4499-b479-2353-0036" name="ARMOURY" hidden="false" targetId="2e9f-b15c-d80a-8750" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
@@ -1791,6 +1837,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="da91-f9e1-d6d1-02cb" name="Bunk Beds" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5d25-b4ac-7986-c1df" name="BUNK BEDS" hidden="false" targetId="d894-6154-6cc1-8e09" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
@@ -1798,6 +1847,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="154e-cfb2-10c2-74d5" name="Escape Vehicle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0b12-c9a5-26cd-4c03" name="Escape Vehicle" hidden="false" targetId="1ce1-9713-c06f-1ae0" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
@@ -1805,6 +1857,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="244e-d351-3316-24be" name="Fences" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7ae5-5c42-0dcc-a784" name="FENCES" hidden="false" targetId="9242-9a96-f130-b865" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
@@ -1812,6 +1867,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="230d-32c5-043d-64d6" name="Fortified Windows" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0aa9-a28c-6ea4-e507" name="Fortified Window" hidden="false" targetId="cc57-e3de-1702-5722" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
@@ -1819,6 +1877,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="c097-b616-b543-8d7c" name="Infirmary" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="feb2-4364-4531-a2c5" name="Infirmary" hidden="false" targetId="a8d6-d422-32d4-1d3e" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
@@ -1826,6 +1887,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="34ad-c20e-f264-74be" name="Radio Room" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="70be-1563-6191-3e5b" name="Radio Room" hidden="false" targetId="3b53-63d3-2a5e-e133" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
@@ -1833,6 +1897,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4781-c8bf-c708-a456" name="Reinforced Door" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b92f-1900-a1d8-3835" name="Reinforced Door" hidden="false" targetId="ba78-4fe3-c7fc-a5ce" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
@@ -1840,6 +1907,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="10ae-cac2-f141-60e6" name="Solid Structure" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="acc2-f210-1e81-e939" name="Solid Structure" hidden="false" targetId="820b-8235-5cf7-9285" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
@@ -1847,6 +1917,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="22f2-9a37-bd0d-36c8" name="Store Room" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4387-f23a-e750-f23a" name="Store ROOM" hidden="false" targetId="6a52-8b7e-fd80-93cd" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
@@ -1854,6 +1927,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="2310-78f9-0523-d0e0" name="Watch Tower" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f392-ff6c-1dab-bf6c" name="Watch Tower" hidden="false" targetId="a26a-15b1-ac43-cf75" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="1.0"/>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
@@ -1870,6 +1946,7 @@
     <selectionEntry id="3046-d884-6442-47c6" name="Assault Armor (Heavy1)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="1ade-611a-8663-5f25" name="HEAVY X" hidden="false" targetId="c6c4-e500-9aeb-c713" type="rule"/>
+        <infoLink id="b691-9fc7-885f-4a77" name="ASSAULT ARMOUR (HEAVY 1) (*)" hidden="false" targetId="b675-c334-d568-df65" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
@@ -1878,14 +1955,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="ed4c-28cb-2d39-ab95" name="Booze*" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9ea-27ca-e594-464c" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="ef19-7424-5b8c-a6be" name="Booze*" hidden="false">
-          <description>Nothing puts the horror of a world of living corpses to rest like a stiff drink. Any Character equipped with this may choose to use it at the beginning of the game. The model will receive a +1 bonus to their CQC, Endurance, and Courage characteristics for the entire game, but will suffer a penalty of -1 to their Action Points, Firearms, and Intelligence characteristics as well. This item is one-use.</description>
-        </rule>
-      </rules>
+      <infoLinks>
+        <infoLink id="c9f6-388a-a437-e8f5" name="BOOZE (*)" hidden="false" targetId="0131-6298-2b13-06ad" type="profile"/>
+      </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="2.0"/>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
@@ -1893,14 +1965,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="3a3b-e053-2d6d-0d2f" name="Medical Supplies*" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef87-08c7-5075-2acf" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="d71c-0e3d-4073-fc90" name="Medical Supplies*" hidden="false">
-          <description>Disinfectant, bandages, and painkillers can mean the difference between infection and death in this world without 911 and hospitals. As long as the model equipped with Medical Supplies is not Out of Action at the end of the game, they may use this equipment to adjust the total roll on the Injuries table up or down by one (e.g. an 8 to a 7 or a 10 to an 11). It can be used for secondary rolls. Yes, this can avoid a ‘Dead’ result! This can be combined with the First Aid Training skill to alter the final result after dice have been re-rolled. This item is one-use.</description>
-        </rule>
-      </rules>
+      <infoLinks>
+        <infoLink id="084d-3177-dd93-2231" name="MEDICAL SUPPLIES (*)" hidden="false" targetId="5ccd-70b9-f627-532f" type="profile"/>
+      </infoLinks>
       <costs>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="2.0"/>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
@@ -1908,6 +1975,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="30cd-5402-1d6e-c7d0" name="Climbing Gear*" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="68c5-4bd5-b212-7ace" name="CLIMBING GEAR (*)" hidden="false" targetId="8b62-c502-82a8-1abe" type="profile"/>
+      </infoLinks>
       <costs>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
@@ -1915,6 +1985,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="3f64-3f22-a657-14cf" name="Mod-Kit" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1591-3987-eabd-06bc" name="MOD-KIT" hidden="false" targetId="b1a3-8dd2-dba3-976e" type="profile"/>
+      </infoLinks>
       <costs>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
@@ -1922,6 +1995,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="3875-0a83-bf4a-9d91" name="Noise-Maker" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e7ad-28b8-e5d0-5be7" name="NOISEMAKERS" hidden="false" targetId="82c6-24c5-f568-c33d" type="profile"/>
+      </infoLinks>
       <costs>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
@@ -1929,6 +2005,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="503b-8316-bf0d-243a" name="Reflex Sight*" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2436-abe9-131e-b93f" name="REFLEX SIGHT (*)" hidden="false" targetId="df97-3d89-a745-0f38" type="profile"/>
+      </infoLinks>
       <costs>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
@@ -1938,6 +2017,7 @@
     <selectionEntry id="d993-8b85-8993-50bf" name="Riot Shield (Heavy 1)*" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="1f06-fc5b-b595-29f0" name="HEAVY X" hidden="false" targetId="c6c4-e500-9aeb-c713" type="rule"/>
+        <infoLink id="2127-4d72-1c0e-cc18" name="RIOT SHIELD (HEAVY 1) (*)" hidden="false" targetId="f81c-a670-ce63-a524" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
@@ -1946,6 +2026,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="df87-1d11-7150-7bf1" name="Scope*" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="69fa-217d-0f4b-125d" name="SCOPE (*)" hidden="false" targetId="8349-b6f6-ad95-f9cf" type="profile"/>
+      </infoLinks>
       <costs>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
@@ -1953,6 +2036,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="fd47-c843-97d8-a971" name="Silencer*" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5180-9eac-94d7-be9f" name="SILENCER (*)" hidden="false" targetId="daa0-e25d-626c-d027" type="profile"/>
+      </infoLinks>
       <costs>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
@@ -1960,6 +2046,9 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4912-4dd0-f144-f16e" name="Tactical Vest*" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="35db-7d84-540d-5bf6" name="TACTICAL VEST (*)" hidden="false" targetId="c56b-b470-6327-4f80" type="profile"/>
+      </infoLinks>
       <costs>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
@@ -1981,6 +2070,12 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="1745-c5ae-86c2-14cb" name="Captured" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c9f-9dd6-5415-5092" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="587b-9780-b2d1-8ca4" name="Captured" hidden="false" targetId="3f86-1cde-4c99-b9ad" type="profile"/>
+      </infoLinks>
       <costs>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
@@ -1988,6 +2083,12 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="c929-600b-92a2-b451" name="Arm Injury" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afb3-c086-37fc-ddb8" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="87f2-2542-a69e-4ea1" name="Arm-Injury" hidden="false" targetId="a8fa-0b5a-65d7-e497" type="profile"/>
+      </infoLinks>
       <costs>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
@@ -1995,6 +2096,12 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="6fd5-b00e-ad08-8bc0" name="Blinded in One Eye" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3aae-dfcb-ae52-5110" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="8fea-3f8f-c860-ac96" name="Blinded in One Eye" hidden="false" targetId="5762-1913-bcfc-fa8b" type="profile"/>
+      </infoLinks>
       <costs>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
@@ -2002,6 +2109,12 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="6787-a054-5437-748b" name="Shell-Schoked" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a21-e7a6-37cf-9961" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="6dae-5118-b2b6-6e5d" name="Shell-Shocked" hidden="false" targetId="28dd-52af-2303-bfc2" type="profile"/>
+      </infoLinks>
       <costs>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
@@ -2009,20 +2122,74 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="c8d4-a0f5-627f-965e" name="Leg Injury" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f71-7fc0-dae7-87b0" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="3c17-a22e-89cb-52b6" name="Leg Injury" hidden="false" targetId="de0d-70c0-8810-e111" type="profile"/>
+      </infoLinks>
       <costs>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
         <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7721-3f50-6e93-320d" name="+1 FA" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="4f83-94b1-ae49-f210" name="+1 CQC" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="72be-4de6-16ac-908e" name="+1 AP" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="910a-0769-23b6-2416" name="+1 S" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="a39d-d465-cc07-128c" name="+1 E" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="f04d-d642-3a5e-ac64" name="+1 C" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="8afd-da26-9930-4081" name="+1 I" hidden="false" collective="false" import="true" type="upgrade"/>
-    <selectionEntry id="9a29-feaf-1bfe-f436" name="+1 DC" hidden="false" collective="false" import="true" type="upgrade"/>
+    <selectionEntry id="7721-3f50-6e93-320d" name="+1 FA" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4f83-94b1-ae49-f210" name="+1 CQC" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="72be-4de6-16ac-908e" name="+1 AP" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="910a-0769-23b6-2416" name="+1 S" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a39d-d465-cc07-128c" name="+1 E" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f04d-d642-3a5e-ac64" name="+1 C" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8afd-da26-9930-4081" name="+1 I" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9a29-feaf-1bfe-f436" name="+1 DC" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
+        <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="9865-2a5b-42e8-e3e9" name="Ranged Weapons" hidden="false" collective="false" import="true">
@@ -2911,13 +3078,11 @@
         <entryLink id="09d1-f065-b0a6-adcf" name="Booze*" hidden="false" collective="false" import="true" targetId="ed4c-28cb-2d39-ab95" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
-            <modifier type="set" field="b9ea-27ca-e594-464c" value="-1.0"/>
           </modifiers>
         </entryLink>
         <entryLink id="ce10-d989-8a7c-b07b" name="Medical Supplies*" hidden="false" collective="false" import="true" targetId="3a3b-e053-2d6d-0d2f" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="c527-314d-4ba4-197c" value="0.0"/>
-            <modifier type="set" field="ef87-08c7-5075-2acf" value="-1.0"/>
           </modifiers>
         </entryLink>
       </entryLinks>
@@ -2929,6 +3094,27 @@
         <entryLink id="7bd4-8c80-e8de-7baa" name="Blinded in One Eye" hidden="false" collective="false" import="true" targetId="6fd5-b00e-ad08-8bc0" type="selectionEntry"/>
         <entryLink id="1635-76d4-2452-8189" name="Shell-Schoked" hidden="false" collective="false" import="true" targetId="6787-a054-5437-748b" type="selectionEntry"/>
         <entryLink id="2f46-cb3d-478e-1d27" name="Leg Injury" hidden="false" collective="false" import="true" targetId="c8d4-a0f5-627f-965e" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="cf75-b5fd-6327-2615" name="Campaign Track Animals" hidden="false" collective="false" import="true">
+      <selectionEntryGroups>
+        <selectionEntryGroup id="9dcb-0bbf-f4a4-6f09" name="Stat roll" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="5ba5-baf8-432b-8700" name="+1 CQC" hidden="false" collective="false" import="true" targetId="4f83-94b1-ae49-f210" type="selectionEntry"/>
+            <entryLink id="b44d-239e-1933-e89c" name="+1 FA" hidden="false" collective="false" import="true" targetId="7721-3f50-6e93-320d" type="selectionEntry"/>
+            <entryLink id="03cf-87d6-e282-1472" name="+1 AP" hidden="false" collective="false" import="true" targetId="72be-4de6-16ac-908e" type="selectionEntry"/>
+            <entryLink id="3fc0-cc7c-82a7-05f0" name="+1 C" hidden="false" collective="false" import="true" targetId="f04d-d642-3a5e-ac64" type="selectionEntry"/>
+            <entryLink id="8aed-d6d8-d552-5174" name="+1 DC" hidden="false" collective="false" import="true" targetId="9a29-feaf-1bfe-f436" type="selectionEntry"/>
+            <entryLink id="e120-d877-016d-0998" name="+1 E" hidden="false" collective="false" import="true" targetId="a39d-d465-cc07-128c" type="selectionEntry"/>
+            <entryLink id="9ca4-74ab-4952-e69b" name="+1 I" hidden="false" collective="false" import="true" targetId="8afd-da26-9930-4081" type="selectionEntry"/>
+            <entryLink id="4f3f-3cba-7cf1-f3da" name="+1 S" hidden="false" collective="false" import="true" targetId="910a-0769-23b6-2416" type="selectionEntry"/>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b803-47d3-94dd-2e3f" name="Unspent XP" hidden="false" collective="false" import="true" targetId="24fc-2854-24a6-994a" type="selectionEntry"/>
+        <entryLink id="bf3c-1da6-d8cb-c7e8" name="Level" hidden="false" collective="false" import="true" targetId="8707-7325-bb1f-c0ac" type="selectionEntry"/>
+        <entryLink id="8d4d-38a3-0c4f-45f2" name="Injury Conditions" hidden="false" collective="false" import="true" targetId="b53c-4b65-3bab-0571" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
@@ -3173,6 +3359,42 @@ Characters from other Groups may Interact with this piece of Equipment if there 
     <rule id="490a-759a-294b-4131" name="Tactical Vest" publicationId="7ef1-f5b1-da7f-ede3" hidden="false">
       <description>Often issued to police and security guards, this vest does not impede the movement of the wearer, and offers a bonus of +2 Endurance against damage from Ranged Attacks. It provides no benefit against damage from Close Quarter Combat Attacks. May not be combined with other armour.</description>
     </rule>
+    <rule id="2e9f-b15c-d80a-8750" name="ARMOURY" hidden="false">
+      <description>If a Character works the Armoury, during the next Encounter their Group may re-roll 3 failed Ammo Rolls. The second result must be accepted.</description>
+    </rule>
+    <rule id="d894-6154-6cc1-8e09" name="BUNK BEDS" hidden="false">
+      <description>For each Bunk Bed Perk increase the Maximum Group Size of the Refuge by 1.</description>
+    </rule>
+    <rule id="1ce1-9713-c06f-1ae0" name="Escape Vehicle" hidden="false">
+      <description>Whatever new Refuge they end up in, they may keep all of their equipment and weapons in the Group’s stash.</description>
+    </rule>
+    <rule id="ddd5-5eb0-add6-3a99" name="Fenced-OFF Garden" hidden="false">
+      <description>If a Character works this Perk the Group may collect D6 Scavenge Points between each game. This Perk may be built multiple times.</description>
+    </rule>
+    <rule id="9242-9a96-f130-b865" name="FENCES" hidden="false">
+      <description>During the Home Defense Encounter you can deploy up to 24” of fences (2” tall, climbable) at least 6” away from Refuge and not more than 8” away. These do not have to be a single line of fence. Additionally, the standard zombies plus D3 additional ones are deployed outside the fences to represent the build-up of undead.</description>
+    </rule>
+    <rule id="cc57-e3de-1702-5722" name="Fortified Window" hidden="false">
+      <description>During a Zombie Attack the Group may add +1 to the Attack Roll.</description>
+    </rule>
+    <rule id="a8d6-d422-32d4-1d3e" name="Infirmary" hidden="false">
+      <description>Each Infirmary in your Refuge can accommodate one Out of Action Character. That Character does not impose the normal -1 to the Zombie Attack Roll. This Perk may be built multiple times.</description>
+    </rule>
+    <rule id="3b53-63d3-2a5e-e133" name="Radio Room" hidden="false">
+      <description>If a Character is assigned to work this Perk they may make an Intelligence/8 Test. If passed, you may modify the Scenario roll by +1 or -1 after it is made. If both Groups have a Radio Room and pass this Test, the Scenario roll may not be modified.</description>
+    </rule>
+    <rule id="ba78-4fe3-c7fc-a5ce" name="Reinforced Door" hidden="false">
+      <description>During the Home Defense Encounter, the doors of the Refuge have +1 Damage Capacity and cannot be removed by the Entry Man skill.</description>
+    </rule>
+    <rule id="820b-8235-5cf7-9285" name="Solid Structure" hidden="false">
+      <description>During the Home Defense Encounter, Characters taking cover behind the walls of a Refuge with this perk may benefit from better cover, which imposes a -2 to the enemy’s Firearm Characteristic, instead of the normal -1.</description>
+    </rule>
+    <rule id="6a52-8b7e-fd80-93cd" name="Store ROOM" hidden="false">
+      <description>A Group with a Store Room can re-roll one of the die rolls when inventorying Supply Tokens to determine how many Scavenge points it earns. The second result must be accepted.</description>
+    </rule>
+    <rule id="a26a-15b1-ac43-cf75" name="Watch Tower" hidden="false">
+      <description>If a Character is assigned here during the Zombie Attack they may make an Intelligence/8 Test to re-roll one of the two dice during the Attack Roll. During a Home Defense Encounter deploy a piece of Scenery to represent the Watch Tower (Climbable, at least 6” tall) either on or within 3” of the Refuge. One model may be deployed on the Watch Tower and will always count as being in cover while deployed there.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="2f61-5421-de92-b321" name="High-Powered Rifle*" hidden="false" typeId="418a-0207-9e29-f81a" typeName="Ranged Weapon">
@@ -3239,6 +3461,86 @@ Characters from other Groups may Interact with this piece of Equipment if there 
         <characteristic name="KnockBack" typeId="96f2-4ed4-bc44-1fb7">5</characteristic>
         <characteristic name="Reload" typeId="3f82-7a7b-7fec-7c9a">*</characteristic>
         <characteristic name="Special Rules" typeId="6e5f-8010-455a-a180">Explosive 3, One-Use, Thrown, Noisy 2</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3f86-1cde-4c99-b9ad" name="Captured" hidden="false" typeId="79e6-8333-ca71-bca1" typeName="Injury">
+      <characteristics>
+        <characteristic name="Injury" typeId="57b2-d0b3-9acb-d717">Your Group member has been captured during the game. You may choose to automatically play the Rescue Encounter against that Group as your next game. If you are successful, you get your Group member back with his equipment intact. If you lose or choose not to play the Rescue Encounter, your opponent may keep his equipment and leave him to die (he is automatically killed) at the hands of the undead.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a8fa-0b5a-65d7-e497" name="Arm-Injury" hidden="false" typeId="79e6-8333-ca71-bca1" typeName="Injury">
+      <characteristics>
+        <characteristic name="Injury" typeId="57b2-d0b3-9acb-d717">This limits them to using only one each of Pistols, SMGs, Thrown, and CQC weapons. Also, they may no longer carry two of each type of weapon. If this result is rolled again, the Character will no longer be able to carry weapons and will count as Dead.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5762-1913-bcfc-fa8b" name="Blinded in One Eye" hidden="false" typeId="79e6-8333-ca71-bca1" typeName="Injury">
+      <characteristics>
+        <characteristic name="Injury" typeId="57b2-d0b3-9acb-d717">They suffer a permanent -1 penalty to their Firearms characteristic. If this result is rolled again, the Character is blinded and counts as Dead as they can no longer fight and become a liability.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="28dd-52af-2303-bfc2" name="Shell-Shocked" hidden="false" typeId="79e6-8333-ca71-bca1" typeName="Injury">
+      <characteristics>
+        <characteristic name="Injury" typeId="57b2-d0b3-9acb-d717">They suffers a permanent -1 penalty to their Action Point characteristic.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="de0d-70c0-8810-e111" name="Leg Injury" hidden="false" typeId="79e6-8333-ca71-bca1" typeName="Injury">
+      <characteristics>
+        <characteristic name="Injury" typeId="57b2-d0b3-9acb-d717">They must spend an additional Action Point to perform any of the following: Move Through Normal Terrain and Move Through Difficult Terrain. If this result is rolled again they will count as Dead.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b675-c334-d568-df65" name="ASSAULT ARMOUR (HEAVY 1) (*)" hidden="false" typeId="c015-2d78-be7c-4f3c" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Equipment" typeId="13cb-b960-846b-b810">As it covers the arms and legs it provides a bonus of +2 Endurance against damage from both Ranged and Close Quarters Attacks, but confers a penalty of -1 Action Points at the beginning of each Action Phase as it has the Heavy 1 attribute. May not be combined with other armour.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0131-6298-2b13-06ad" name="BOOZE (*)" hidden="false" typeId="c015-2d78-be7c-4f3c" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Equipment" typeId="13cb-b960-846b-b810">Any Character equipped with this may choose to use it at the beginning of the game. The model will receive a +1 bonus to their CQC, Endurance, and Courage characteristics for the entire game, but will suffer a penalty of -1 to their Action Points, Firearms, and Intelligence characteristics as well. This item is one-use.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8b62-c502-82a8-1abe" name="CLIMBING GEAR (*)" hidden="false" typeId="c015-2d78-be7c-4f3c" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Equipment" typeId="13cb-b960-846b-b810">Place a marker at the bottom of the terrain piece you will be climbing. It will remain there for the rest of the game and can be used by any non-zombie models (friendly or enemy). This item is one-use.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5ccd-70b9-f627-532f" name="MEDICAL SUPPLIES (*)" hidden="false" typeId="c015-2d78-be7c-4f3c" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Equipment" typeId="13cb-b960-846b-b810">As long as the model equipped with Medical Supplies is not Out of Action at the end of the game, they may use this equipment to adjust the total roll on the Injuries table up or down by one (e.g. an 8 to a 7 or a 10 to an 11). It can be used for secondary rolls. Yes, this can avoid a ‘Dead’ result! This can be combined with the First Aid Training skill to alter the final result after dice have been re-rolled. This item is one-use.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b1a3-8dd2-dba3-976e" name="MOD-KIT" hidden="false" typeId="c015-2d78-be7c-4f3c" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Equipment" typeId="13cb-b960-846b-b810">These kits will convert one weapon type to another. If used on a Hunting Rifle, it will convert it to a Surplus Assault Rifle. If used on a Semi-Automatic, it will convert it to a Surplus SMG. Both weapons suffer a -1 to their Reload characteristic as they are non-standard conversions. This item is one-use.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="82c6-24c5-f568-c33d" name="NOISEMAKERS" hidden="false" typeId="c015-2d78-be7c-4f3c" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Equipment" typeId="13cb-b960-846b-b810">A Character equipped with this item may place a 1” Token in Contact with itself for 1 AP. During the next Menace Phase this Token produces Noise/5. This item is one-use.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="df97-3d89-a745-0f38" name="REFLEX SIGHT (*)" hidden="false" typeId="c015-2d78-be7c-4f3c" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Equipment" typeId="13cb-b960-846b-b810">his piece of equipment can be mounted to the following Firearm classes: SMGs and Rifles. So long as it is equipped the Character firing the weapon may ignore the -1 penalty for additional ROF shots unless it is using the Gunfighter skill.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f81c-a670-ce63-a524" name="RIOT SHIELD (HEAVY 1) (*)" hidden="false" typeId="c015-2d78-be7c-4f3c" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Equipment" typeId="13cb-b960-846b-b810">This shield confers cover versus Ranged Attacks regardless of whether the model is in the open or not. It confers no bonus if the model is actually in cover. If the model is defending against a Close Quarters Attack it gains a bonus of +2 to its Close Quarters Combat capability. It gains no bonus when attacking. This shield is cumbersome however, and confers a penalty of -1 Action Points at the beginning of each Action Phase to the bearer as it has the Heavy 1 attribute.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8349-b6f6-ad95-f9cf" name="SCOPE (*)" hidden="false" typeId="c015-2d78-be7c-4f3c" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Equipment" typeId="13cb-b960-846b-b810">This piece of equipment can be equipped to the following Firearm classes: SMGs and Rifles. So long as it is equipped it grants that weapon the Lobotomize 1 ability as it helps pick out headshots.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="daa0-e25d-626c-d027" name="SILENCER (*)" hidden="false" typeId="c015-2d78-be7c-4f3c" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Equipment" typeId="13cb-b960-846b-b810">Silencers may be equipped to the following classes of Firearm: Pistol, SMG, and Rifle. They provide that weapon with the Silent special rule for that game only. This item is one-use.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c56b-b470-6327-4f80" name="TACTICAL VEST (*)" hidden="false" typeId="c015-2d78-be7c-4f3c" typeName="Equipment">
+      <characteristics>
+        <characteristic name="Equipment" typeId="13cb-b960-846b-b810">This vest does not impede the movement of the wearer, and offers a bonus of +2 Endurance against damage from Ranged Attacks. It provides no benefit against damage from Close Quarter Combat Attacks. May not be combined with other armour.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
