@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="ddab-c095-bf70-e8ba" name="Last Days Zombie Apocalypse" revision="4" battleScribeVersion="2.03" authorName="Andrea Nespeca" authorContact="andrea.nespeca@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="ddab-c095-bf70-e8ba" name="Last Days Zombie Apocalypse" revision="5" battleScribeVersion="2.03" authorName="Andrea Nespeca" authorContact="andrea.nespeca@gmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="91b6-9e1a-c8f3-b62d" name="Last Day: Zombie Apocalypse"/>
     <publication id="7ef1-f5b1-da7f-ede3" name="Seasons"/>
@@ -1337,7 +1337,6 @@
     <selectionEntry id="175a-41f7-273a-18e9" name="Heavy Blade" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50d3-8472-dadf-3619" type="max"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="911c-1b43-72d1-b34a" type="max"/>
       </constraints>
       <profiles>
         <profile id="5b23-185b-2dd4-b235" name="Heavy Blade" hidden="false" typeId="5b8f-a6e8-7cb3-2088" typeName="Melee Weapon">
@@ -2218,6 +2217,7 @@
       <costs>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7d70-7ba6-fef0-084d" name="Infirmary." hidden="false" collective="false" import="true" type="upgrade">
@@ -2227,6 +2227,7 @@
       <costs>
         <cost name="Max Group" typeId="3ef4-fb1a-98fe-87b3" value="0.0"/>
         <cost name=" Scavenge Points" typeId="c527-314d-4ba4-197c" value="0.0"/>
+        <cost name="Empty Space" typeId="b34f-9647-091d-63f5" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
